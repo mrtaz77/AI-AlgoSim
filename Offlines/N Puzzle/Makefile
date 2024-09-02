@@ -6,7 +6,7 @@ CXXFLAGS = -Wall -Wextra -O2
 
 EXEC = main
 
-CPP_SOURCES = main.cpp
+CPP_SOURCES = main.cpp util/util.cpp
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
 
