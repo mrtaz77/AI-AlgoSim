@@ -10,6 +10,9 @@ CPP_SOURCES = main.cpp util/util.cpp
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
 
+# Convert forward slashes to backslashes for Windows
+OBJS_WIN = $(subst /,\,$(OBJS))
+
 .PHONY: all run clean
 
 all: $(EXEC)
@@ -24,4 +27,12 @@ run: $(EXEC)
 	./$(EXEC)
 
 clean:
-	del /Q $(EXEC).exe $(OBJS)
+ifeq ($(OS),Windows_NT)
+	del /Q $(subst /,\,$(EXEC).exe) $(OBJS_WIN)
+else ifeq ($(shell uname), Linux)
+	rm -f $(EXEC) $(OBJS)
+else ifeq ($(shell uname), Darwin)
+	rm -f $(EXEC) $(OBJS)
+else
+	@echo "Unsupported OS: Please manually delete the files."
+endif
