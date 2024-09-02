@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "./util/util.hpp"
+#include "./classes/NPuzzle.hpp"
 using namespace std;
 
 int main() {
@@ -15,7 +16,8 @@ int main() {
 		return 0;
 	}
 
-	int num_of_blocks = grid_size * grid_size;
+	NPuzzle puzzle(grid_size);
+	int num_of_blocks = puzzle.get_number_of_blocks();
 	string label;
 
 	for(int i = 0; i < num_of_blocks; i++) {
