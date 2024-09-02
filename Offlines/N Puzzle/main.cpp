@@ -26,9 +26,10 @@ int main() {
 		if(label_no == -1) {
 			cout << "Invalid label: " << label << endl;
 			return 0;
-		}
+		} else puzzle.add_label(label_no);
 	}
 	cout << "Valid grid" << endl;
+	cout << "Number of Inversions : " << puzzle.get_inversion_count() << endl;
 	
 	return 0;
 }
