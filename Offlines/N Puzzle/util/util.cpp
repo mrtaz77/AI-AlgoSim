@@ -8,7 +8,12 @@ bool is_valid_block_number(int label, int num_of_blocks) {
 
 int convert_block_label_to_number(string label, int num_of_blocks) {
 	if(label == "*") return num_of_blocks;
-	else return stoi(label);
+	for (char c : label) {
+        if (!isdigit(c)) {
+            return -1;
+        }
+    }
+	return stoi(label);
 }
 
 int validate_block_label(string label, int num_of_blocks) {
