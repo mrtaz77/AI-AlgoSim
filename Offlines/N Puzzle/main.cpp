@@ -30,6 +30,7 @@ int main() {
 	}
 	cout << "Valid grid" << endl;
 	cout << "Number of Inversions : " << puzzle.get_inversion_count() << endl;
+	cout << "Row of blank from bottom : " << puzzle.get_row_of_blank_from_bottom() << endl;
 	
 	return 0;
 }

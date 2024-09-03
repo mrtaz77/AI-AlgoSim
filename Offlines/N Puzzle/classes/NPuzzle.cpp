@@ -45,3 +45,11 @@ int NPuzzle::merge_number_of_inversions(int start, int mid, int end) {
 int NPuzzle::get_inversion_count() {
 	return number_of_inversions(0, get_number_of_blocks() - 2);
 }
+
+int NPuzzle::get_row_of_blank_from_bottom() {
+	int blank = get_number_of_blocks();
+	for(int i = 0; i < blank; i++) {
+		if(grid[blank - i - 1] == blank) return (i / grid_size) + 1;
+	}
+	return -1;
+}
