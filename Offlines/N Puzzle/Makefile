@@ -7,10 +7,11 @@ CXXFLAGS = -Wall -Wextra -O2
 EXEC = main
 
 CPP_SOURCES = main.cpp \
-			util/util.cpp \
-			classes/NPuzzle.cpp \
-            classes/solvability/EvenSolvable.cpp \
-			classes/solvability/OddSolvable.cpp
+util/util.cpp \
+classes/NPuzzle.cpp \
+classes/solvability/EvenSolvable.cpp \
+classes/solvability/OddSolvable.cpp
+
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
 
