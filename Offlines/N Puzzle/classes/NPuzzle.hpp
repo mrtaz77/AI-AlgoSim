@@ -14,10 +14,13 @@ class NPuzzle {
 	Solvable* solvability;
 	int number_of_inversions(int, int);
 	int merge_number_of_inversions(int, int, int);
+	void set_solvability_strategy();
+	void refresh_inversion_util();
 	public:
 	NPuzzle(int);
 	int get_number_of_blocks ();
 	void add_label(int);
 	int get_inversion_count();
 	int get_row_of_blank_from_bottom();
+	bool is_solvable();
 };
