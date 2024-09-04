@@ -2,6 +2,7 @@
 #include <vector>
 #include "./util/util.hpp"
 #include "./classes/NPuzzle.hpp"
+#include "./classes/solver/Solver.hpp"
 using namespace std;
 
 int main() {
@@ -16,6 +17,7 @@ int main() {
 		return 0;
 	}
 
+	vector<int> grid_for_solver;
 	NPuzzle puzzle(grid_size);
 	int num_of_blocks = puzzle.get_number_of_blocks();
 	string label;
@@ -26,12 +28,18 @@ int main() {
 		if(label_no == -1) {
 			cout << "Invalid label: " << label << endl;
 			return 0;
-		} else puzzle.add_label(label_no);
+		} else {
+			puzzle.add_label(label_no);
+			grid_for_solver.push_back(label_no);
+		}
 	}
 	cout << "Valid grid" << endl;
 	cout << "Number of Inversions : " << puzzle.get_inversion_count() << endl;
 	cout << "Row of blank from bottom : " << puzzle.get_row_of_blank_from_bottom() << endl;
 	cout << "Solvable: " << boolalpha << puzzle.is_solvable() << endl;
+
+	Solver solver(grid_size, grid_for_solver);
+	cout << solver << endl;
 	
 	return 0;
 }
