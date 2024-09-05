@@ -17,7 +17,6 @@ int main() {
 		return 0;
 	}
 
-	vector<int> grid_for_solver;
 	NPuzzle puzzle(grid_size);
 	int num_of_blocks = puzzle.get_number_of_blocks();
 	string label;
@@ -30,7 +29,6 @@ int main() {
 			return 0;
 		} else {
 			puzzle.add_label(label_no);
-			grid_for_solver.push_back(label_no);
 		}
 	}
 	cout << "Valid grid" << endl;
@@ -38,8 +36,11 @@ int main() {
 	cout << "Row of blank from bottom : " << puzzle.get_row_of_blank_from_bottom() << endl;
 	cout << "Solvable: " << boolalpha << puzzle.is_solvable() << endl;
 
-	Solver solver(grid_size, grid_for_solver);
-	cout << solver << endl;
+	puzzle.set_solver("hamming");
+	puzzle.solve();
+
+	puzzle.set_solver("manhattan");
+	puzzle.solve();
 	
 	return 0;
 }

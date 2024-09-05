@@ -5,7 +5,7 @@ ManhattanSolver::ManhattanSolver(int grid_size, const vector<int>& grid)
 
 void ManhattanSolver::set_heuristic_cost() {
 	int blank = grid.size();
-	for(size_t i = 0; i < blank ; i++) {
+	for(int i = 0; i < blank ; i++) {
 		if(!(grid[i] == blank ||  i == grid[i] - 1)) {
 			int actual_idx = grid[i] - 1;
 			int actual_row = actual_idx / grid_size;

@@ -5,7 +5,7 @@ HammingSolver::HammingSolver(int grid_size, const vector<int>& grid)
 
 void HammingSolver::set_heuristic_cost() {
 	int blank = grid.size();
-	for(size_t i = 0; i < blank ; i++) {
+	for(int i = 0; i < blank ; i++) {
 		if(!(grid[i] == blank ||  i == grid[i] - 1)) heuristic_cost++;
 	}
 }

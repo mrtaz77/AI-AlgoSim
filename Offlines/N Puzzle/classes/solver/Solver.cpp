@@ -29,5 +29,9 @@ ostream& operator<<(ostream& out, const Solver& solver) {
 int Solver::get_heuristic_cost() const { return heuristic_cost; }
 
 Solver::~Solver() {
-	if(parent) delete parent;
+	delete parent;
 }
+
+void Solver::set_parent(Solver* parent) { this->parent = parent; }
+
+Solver* Solver::get_parent() const { return parent; }

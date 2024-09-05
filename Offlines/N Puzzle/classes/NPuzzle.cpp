@@ -73,3 +73,14 @@ void NPuzzle::refresh_inversion_util() {
 		if(grid[i] != blank) inversion_util.push_back(grid[i]);
 	}
 }
+
+void NPuzzle::set_solver(string heuristic) {
+	if(heuristic == "hamming") root_solver = new HammingSolver(grid_size, grid);
+	else if(heuristic == "manhattan") root_solver = new ManhattanSolver(grid_size, grid);
+	else cout << "Unknown Heuristic " << heuristic << endl;
+}
+
+void NPuzzle::solve() {
+	root_solver->set_heuristic_cost();
+	cout << "Heuristic cost: " << root_solver->get_heuristic_cost() << endl;
+}

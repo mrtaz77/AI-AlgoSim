@@ -11,7 +11,9 @@ util/util.cpp \
 classes/NPuzzle.cpp \
 classes/solvability/EvenSolvable.cpp \
 classes/solvability/OddSolvable.cpp \
-classes/solver/Solver.cpp
+classes/solver/Solver.cpp \
+classes/solver/HammingSolver.cpp \
+classes/solver/ManhattanSolver.cpp \
 
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
