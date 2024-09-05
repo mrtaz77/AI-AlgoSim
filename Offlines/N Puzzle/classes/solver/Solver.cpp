@@ -2,11 +2,11 @@
 
 Solver::Solver(int grid_size, const vector<int>& grid, Solver* parent = nullptr) :
 	actual_cost(0),
-	parent_blank_idx(-1),
 	grid_size(grid_size),
 	heuristic_cost(0),
 	grid(grid),
 	parent(parent) {
+	set_blank_idx();
 	set_hash();
 }
 
@@ -54,3 +54,9 @@ void Solver::set_hash() {
 string Solver::get_hash() const { return hash; }
 
 bool Solver::operator==(const Solver& other) const { return this->hash == other.hash; }
+
+void Solver::set_blank_idx() {
+	int blank = grid.size();
+	auto it = find(grid.begin(), grid.end(), blank);
+	blank_idx = distance(grid.begin(), it);
+}

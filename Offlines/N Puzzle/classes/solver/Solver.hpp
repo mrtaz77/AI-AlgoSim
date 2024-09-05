@@ -4,11 +4,12 @@
 #include <vector>
 #include <iomanip>
 #include <sstream>
+#include <algorithm>
 using namespace std;
 
 class Solver {
 	int actual_cost;
-	int parent_blank_idx;
+	int blank_idx;
 	Solver* parent;
 	string hash;
 protected:
@@ -34,4 +35,5 @@ public:
 	bool operator==(const Solver&) const;
 	void set_hash();
 	string get_hash() const;
+	void set_blank_idx();
 };
