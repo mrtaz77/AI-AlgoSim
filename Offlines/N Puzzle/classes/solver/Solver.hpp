@@ -8,13 +8,14 @@ using namespace std;
 class Solver {
 	int actual_cost;
 	int parent_blank_idx;
-	vector<Solver*> children;
-	protected:
+	Solver* parent;
+protected:
 	int grid_size;
 	int heuristic_cost;
 	vector<int> grid;
-	public:
+public:
 	Solver(int, const vector<int>&);
+	~Solver();
 	virtual void set_heuristic_cost() = 0;
 	int get_heuristic_cost() const;
 	friend ostream& operator<<(ostream&, const Solver&);
