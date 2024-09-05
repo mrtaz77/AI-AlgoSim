@@ -97,4 +97,5 @@ void NPuzzle::set_heuristic(string heuristic) { this->heuristic = heuristic; }
 Solver* NPuzzle::get_heuristic_based_solver(int grid_size, const vector<int>& grid, Solver* parent) {
 	if(heuristic == "hamming") return new HammingSolver(grid_size, grid, parent);
 	else if(heuristic == "manhattan") return new ManhattanSolver(grid_size, grid, parent);
+	else return nullptr;
 }
