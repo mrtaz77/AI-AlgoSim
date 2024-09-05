@@ -21,7 +21,7 @@ class NPuzzle {
 	int merge_number_of_inversions(int, int, int);
 	void set_solvability_strategy();
 	void refresh_inversion_util();
-	public:
+public:
 	NPuzzle(int);
 	int get_number_of_blocks ();
 	void add_label(int);
