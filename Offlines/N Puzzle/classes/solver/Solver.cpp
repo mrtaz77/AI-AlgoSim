@@ -2,9 +2,9 @@
 
 Solver::Solver(int grid_size, const vector<int>& grid) :
 	actual_cost(0),
-	heuristic_cost(0),
 	parent_blank_idx(-1),
 	grid_size(grid_size),
+	heuristic_cost(0),
 	grid(grid) {}
 
 ostream& operator<<(ostream& out, const Solver& solver) {
@@ -25,3 +25,5 @@ ostream& operator<<(ostream& out, const Solver& solver) {
     out << "Actual Cost: " << solver.actual_cost << "\nHeuristic Cost: " << solver.heuristic_cost << endl;
     return out;
 }
+
+int Solver::get_heuristic_cost() const { return heuristic_cost; }
