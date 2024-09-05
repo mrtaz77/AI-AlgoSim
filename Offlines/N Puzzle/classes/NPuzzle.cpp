@@ -74,13 +74,27 @@ void NPuzzle::refresh_inversion_util() {
 	}
 }
 
-void NPuzzle::set_solver(string heuristic) {
-	if(heuristic == "hamming") root_solver = new HammingSolver(grid_size, grid);
-	else if(heuristic == "manhattan") root_solver = new ManhattanSolver(grid_size, grid);
-	else cout << "Unknown Heuristic " << heuristic << endl;
+void NPuzzle::solve() {
+	root_solver = get_heuristic_based_solver(grid_size, grid, nullptr);
+	root_solver->set_heuristic_cost();
+	priority_queue<Solver*, vector<Solver*>, Solver::CompareSolver> queue;
+	unordered_set<string> closed_list;
+	queue.push(root_solver);
+
+	while(!queue.empty()) {
+		auto current_solver = queue.top();
+		queue.pop();
+		if(!current_solver->get_heuristic_cost()) {
+			cout << current_solver << endl;
+			break;
+		}
+		
+	}
 }
 
-void NPuzzle::solve() {
-	root_solver->set_heuristic_cost();
-	cout << "Heuristic cost: " << root_solver->get_heuristic_cost() << endl;
+void NPuzzle::set_heuristic(string heuristic) { this->heuristic = heuristic; }
+
+Solver* NPuzzle::get_heuristic_based_solver(int grid_size, const vector<int>& grid, Solver* parent) {
+	if(heuristic == "hamming") return new HammingSolver(grid_size, grid, parent);
+	else if(heuristic == "manhattan") return new ManhattanSolver(grid_size, grid, parent);
 }

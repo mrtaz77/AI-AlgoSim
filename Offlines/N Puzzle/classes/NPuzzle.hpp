@@ -9,6 +9,9 @@
 #include "./solver/HammingSolver.hpp"
 #include "./solver/ManhattanSolver.hpp"
 #include <string>
+#include <queue>
+#include <functional>
+#include <unordered_set>
 using namespace std;
 
 class NPuzzle {
@@ -17,10 +20,13 @@ class NPuzzle {
 	vector<int> inversion_util;
 	Solvable* solvability;
 	Solver* root_solver;
+	string heuristic;
 	int number_of_inversions(int, int);
 	int merge_number_of_inversions(int, int, int);
 	void set_solvability_strategy();
 	void refresh_inversion_util();
+	Solver* get_heuristic_based_solver(int, const vector<int>&, Solver*);
+	vector<Solver*> get_neighbors();
 public:
 	NPuzzle(int);
 	int get_number_of_blocks ();
@@ -28,6 +34,6 @@ public:
 	int get_inversion_count();
 	int get_row_of_blank_from_bottom();
 	bool is_solvable();
-	void set_solver(string);
 	void solve();
+	void set_heuristic(string);
 };
