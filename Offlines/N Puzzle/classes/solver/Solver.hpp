@@ -36,4 +36,5 @@ public:
 	void set_hash();
 	string get_hash() const;
 	void set_blank_idx();
+	int get_blank_idx() const;
 };

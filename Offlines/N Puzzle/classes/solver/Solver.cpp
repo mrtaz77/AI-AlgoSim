@@ -60,3 +60,5 @@ void Solver::set_blank_idx() {
 	auto it = find(grid.begin(), grid.end(), blank);
 	blank_idx = distance(grid.begin(), it);
 }
+
+int Solver::get_blank_idx() const { return blank_idx; }
