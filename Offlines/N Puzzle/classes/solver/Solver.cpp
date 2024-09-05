@@ -36,3 +36,9 @@ Solver::~Solver() {
 void Solver::set_parent(Solver* parent) { this->parent = parent; }
 
 Solver* Solver::get_parent() const { return parent; }
+
+void Solver::increment_actual_cost() { actual_cost++; }
+
+int Solver::get_actual_cost() const { return actual_cost; }
+
+int Solver::get_total_cost() const { return actual_cost + heuristic_cost; }
