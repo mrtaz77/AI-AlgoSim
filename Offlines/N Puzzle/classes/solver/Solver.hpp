@@ -8,9 +8,9 @@ using namespace std;
 class Solver {
 	int actual_cost;
 	int parent_blank_idx;
-	int grid_size;
 	vector<Solver*> children;
 	protected:
+	int grid_size;
 	int heuristic_cost;
 	vector<int> grid;
 	public:
