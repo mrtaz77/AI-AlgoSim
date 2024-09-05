@@ -1,16 +1,17 @@
 #include "./Solver.hpp"
 
-Solver::Solver(int grid_size, const vector<int>& grid) :
+Solver::Solver(int grid_size, const vector<int>& grid, Solver* parent = nullptr) :
 	actual_cost(0),
 	parent_blank_idx(-1),
 	grid_size(grid_size),
 	heuristic_cost(0),
-	grid(grid) {}
+	grid(grid),
+	parent(parent) {}
 
 ostream& operator<<(ostream& out, const Solver& solver) {
     int blank_label = solver.grid.size();
-    int width = to_string(blank_label).size(); // Determine the width needed for the largest number
-    int line_length = solver.grid_size * (width + 3) + 1; // Calculate the length of the border line
+    int width = to_string(blank_label).size(); // width needed for the largest number
+    int line_length = solver.grid_size * (width + 3) + 1; // length of the border line
 
     out << string(line_length, '-') << endl;
 

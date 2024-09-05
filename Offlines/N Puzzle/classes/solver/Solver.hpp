@@ -14,7 +14,7 @@ protected:
 	int heuristic_cost;
 	vector<int> grid;
 public:
-	Solver(int, const vector<int>&);
+	Solver(int, const vector<int>&, Solver* parent=nullptr);
 	virtual ~Solver();
 	virtual void set_heuristic_cost() = 0;
 	int get_heuristic_cost() const;
