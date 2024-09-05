@@ -6,7 +6,9 @@ Solver::Solver(int grid_size, const vector<int>& grid, Solver* parent = nullptr)
 	grid_size(grid_size),
 	heuristic_cost(0),
 	grid(grid),
-	parent(parent) {}
+	parent(parent) {
+	set_hash();
+}
 
 ostream& operator<<(ostream& out, const Solver& solver) {
     int blank_label = solver.grid.size();
@@ -42,3 +44,13 @@ void Solver::increment_actual_cost() { actual_cost++; }
 int Solver::get_actual_cost() const { return actual_cost; }
 
 int Solver::get_total_cost() const { return actual_cost + heuristic_cost; }
+
+void Solver::set_hash() {
+	stringstream ss;
+    for (int label : grid) ss << label;
+    hash = ss.str();
+}
+
+string Solver::get_hash() const { return hash; }
+
+bool Solver::operator==(const Solver& other) const { return this->hash == other.hash; }

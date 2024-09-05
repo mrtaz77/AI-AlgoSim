@@ -3,12 +3,14 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <sstream>
 using namespace std;
 
 class Solver {
 	int actual_cost;
 	int parent_blank_idx;
 	Solver* parent;
+	string hash;
 protected:
 	int grid_size;
 	int heuristic_cost;
@@ -29,4 +31,7 @@ public:
             return lhs->get_total_cost() > rhs->get_total_cost();  // Min-heap based on total cost
         }
     };
+	bool operator==(const Solver&) const;
+	void set_hash();
+	string get_hash() const;
 };
