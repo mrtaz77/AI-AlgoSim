@@ -77,24 +77,24 @@ void NPuzzle::refresh_inversion_util() {
 void NPuzzle::solve() {
 	root_solver = get_heuristic_based_solver(grid, nullptr);
 	root_solver->set_heuristic_cost();
-	priority_queue<Solver*, vector<Solver*>, CompareSolver> queue;
+	priority_queue<Solver*, vector<Solver*>, CompareSolver> open_list;
 	unordered_set<string> closed_list;
-	queue.push(root_solver);
+	open_list.push(root_solver);
 	Solver* dest = nullptr;
-	while(!queue.empty()) {
-		auto current = queue.top();
-		queue.pop();
+	while(!open_list.empty()) {
+		auto current = open_list.top();
+		open_list.pop();
 		if(!current->get_heuristic_cost()) {
 			dest = current;
 			print_solution_steps(dest);
 			break;
 		}
-		if (closed_list.find(current->get_hash()) != closed_list.end()) continue;
 		closed_list.insert(current->get_hash());
 		auto neighbors = get_neighbors(current);
 		for(auto& neighbor : neighbors) {
+			if(closed_list.find(neighbor->get_hash()) != closed_list.end())continue;
 			neighbor->set_heuristic_cost();
-			queue.push(neighbor);
+			open_list.push(neighbor);
 		}
 	}
 }
@@ -139,13 +139,14 @@ vector<Solver*> NPuzzle::get_neighbors(Solver* parent) {
 void NPuzzle::print_solution_steps(Solver* dest){
 	if(dest == nullptr) return;
 	cout << "Optimal cost: " << dest->get_total_cost() << endl;
-	cout << "Steps:\n"; 
 	vector<Solver*> steps;
 	while(dest != nullptr) {
 		steps.push_back(dest);
 		dest = dest->get_parent();
 	}
-	for(int i = steps.size() - 1; i >= 0; i--) {
+	auto num_steps = steps.size();
+	for(int i = num_steps - 1; i >= 0; i--) {
+		cout << "Step# " << (num_steps - i - 1) << endl;
 		cout << *steps[i] << endl;
 	}
 }
