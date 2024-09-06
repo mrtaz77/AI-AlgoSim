@@ -3,6 +3,7 @@
 .vscode/
 *.txt
 main
+2005020/
 
 # Prerequisites
 *.d
