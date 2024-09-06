@@ -14,6 +14,7 @@ classes/solvability/OddSolvable.cpp \
 classes/solver/Solver.cpp \
 classes/solver/HammingSolver.cpp \
 classes/solver/ManhattanSolver.cpp \
+classes/solver/CompareSolver.cpp
 
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)

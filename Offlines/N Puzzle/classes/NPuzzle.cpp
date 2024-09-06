@@ -77,19 +77,17 @@ void NPuzzle::refresh_inversion_util() {
 void NPuzzle::solve() {
 	root_solver = get_heuristic_based_solver(grid_size, grid, nullptr);
 	root_solver->set_heuristic_cost();
-	priority_queue<Solver*, vector<Solver*>, Solver::CompareSolver> queue;
+	cout << *root_solver << endl;
+	priority_queue<Solver*, vector<Solver*>, CompareSolver> queue;
 	unordered_set<string> closed_list;
 	queue.push(root_solver);
-
-	while(!queue.empty()) {
-		auto current_solver = queue.top();
-		queue.pop();
-		if(!current_solver->get_heuristic_cost()) {
-			cout << current_solver << endl;
-			break;
-		}
-		
+	auto neighbors = get_neighbors(root_solver);
+	for(const auto& neighbor : neighbors) {
+		neighbor->set_heuristic_cost();
+		neighbor->increment_actual_cost();
+		cout << *neighbor << endl;
 	}
+	cout << endl;
 }
 
 void NPuzzle::set_heuristic(string heuristic) { this->heuristic = heuristic; }
@@ -98,4 +96,33 @@ Solver* NPuzzle::get_heuristic_based_solver(int grid_size, const vector<int>& gr
 	if(heuristic == "hamming") return new HammingSolver(grid_size, grid, parent);
 	else if(heuristic == "manhattan") return new ManhattanSolver(grid_size, grid, parent);
 	else return nullptr;
+}
+
+vector<Solver*> NPuzzle::get_neighbors(Solver* parent) {
+	auto parent_grid = parent->get_grid();
+	auto parent_blank_idx = parent->get_blank_idx();
+	auto parent_blank_row = parent_blank_idx / grid_size;
+	auto parent_blank_col = parent_blank_idx % grid_size;
+
+	vector<Solver*> neighbors;
+
+	vector<pair<int, int>> directions = {
+        {-1, 0},
+        {1, 0},
+        {0, 1},
+        {0, -1}
+    };
+
+	for (const auto& dir : directions) {
+        int new_row = parent_blank_row + dir.first;
+        int new_col = parent_blank_col + dir.second;
+
+        if (new_row >= 0 && new_row < grid_size && new_col >= 0 && new_col < grid_size) {
+            int new_idx = new_row * grid_size + new_col;
+            vector<int> new_grid = grid;
+            swap(new_grid[parent_blank_idx], new_grid[new_idx]);
+            neighbors.push_back(get_heuristic_based_solver(grid_size, new_grid, parent));
+        }
+    }
+	return neighbors;
 }

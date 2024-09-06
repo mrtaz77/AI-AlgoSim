@@ -8,10 +8,12 @@
 #include "./solver/Solver.hpp"
 #include "./solver/HammingSolver.hpp"
 #include "./solver/ManhattanSolver.hpp"
+#include "./solver/CompareSolver.hpp"
 #include <string>
 #include <queue>
 #include <functional>
 #include <unordered_set>
+#include <utility>
 using namespace std;
 
 class NPuzzle {
@@ -26,7 +28,7 @@ class NPuzzle {
 	void set_solvability_strategy();
 	void refresh_inversion_util();
 	Solver* get_heuristic_based_solver(int, const vector<int>&, Solver*);
-	vector<Solver*> get_neighbors();
+	vector<Solver*> get_neighbors(Solver*);
 public:
 	NPuzzle(int);
 	int get_number_of_blocks ();

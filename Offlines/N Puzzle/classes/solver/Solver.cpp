@@ -1,11 +1,11 @@
 #include "./Solver.hpp"
 
-Solver::Solver(int grid_size, const vector<int>& grid, Solver* parent = nullptr) :
+Solver::Solver(int grid_size, const vector<int>& grid, Solver* parent) :
 	actual_cost(0),
+	parent(parent),
 	grid_size(grid_size),
 	heuristic_cost(0),
-	grid(grid),
-	parent(parent) {
+	grid(grid) {
 	set_blank_idx();
 	set_hash();
 }
