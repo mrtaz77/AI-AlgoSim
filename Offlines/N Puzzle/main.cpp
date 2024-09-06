@@ -2,7 +2,6 @@
 #include <vector>
 #include "./util/util.hpp"
 #include "./classes/NPuzzle.hpp"
-#include "./classes/solver/Solver.hpp"
 using namespace std;
 
 int main() {
