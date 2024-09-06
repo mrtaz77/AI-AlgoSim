@@ -1,7 +1,7 @@
 #include "./ManhattanSolver.hpp"
 
-ManhattanSolver::ManhattanSolver(int grid_size, const vector<int>& grid, Solver*)
-    : Solver(grid_size, grid) {}
+ManhattanSolver::ManhattanSolver(int grid_size, const vector<int>& grid, Solver* parent)
+    : Solver(grid_size, grid, parent) {}
 
 void ManhattanSolver::set_heuristic_cost() {
 	int blank = grid.size();

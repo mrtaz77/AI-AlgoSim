@@ -5,6 +5,6 @@
 
 class ManhattanSolver : public Solver {
 	public:
-	ManhattanSolver(int, const vector<int>&, Solver*);
+	ManhattanSolver(int, const vector<int>&, Solver* parent = nullptr);
 	void set_heuristic_cost() override;
 };
