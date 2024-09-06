@@ -1,11 +1,12 @@
-# This Makefile is designed to be simple and readable. It does not
-# aim at portability. It requires GNU Make.
+# This Makefile is designed for separate compilation.
+# It requires GNU Make.
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -O2
 
 EXEC = main
 
+# List of all source files
 CPP_SOURCES = main.cpp \
 util/util.cpp \
 classes/NPuzzle.cpp \
@@ -19,21 +20,17 @@ classes/solver/CompareSolver.cpp
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
 
-# Convert forward slashes to backslashes for Windows
 OBJS_WIN = $(subst /,\,$(OBJS))
 
 .PHONY: all run clean
 
 all: $(EXEC)
 
+$(EXEC): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
-
-$(EXEC): $(OBJS)
-	$(CXX) -o $@ $(OBJS)
-
-run: $(EXEC)
-	./$(EXEC)
 
 clean:
 ifeq ($(OS),Windows_NT)
@@ -45,3 +42,6 @@ else ifeq ($(shell uname), Darwin)
 else
 	@echo "Unsupported OS: Please manually delete the files."
 endif
+
+run: $(EXEC)
+	./$(EXEC)

@@ -36,8 +36,10 @@ int main() {
 	cout << "Row of blank from bottom : " << puzzle.get_row_of_blank_from_bottom() << endl;
 	cout << "Solvable: " << boolalpha << puzzle.is_solvable() << endl;
 
+	cout << "Hamming Heuristic:\n" ;
 	puzzle.set_heuristic("hamming");
 	puzzle.solve();
+	cout << "Manhattan Heuristic:\n" ;
 	puzzle.set_heuristic("manhattan");
 	puzzle.solve();
 	
