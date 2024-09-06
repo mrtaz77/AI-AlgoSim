@@ -6,6 +6,7 @@ Solver::Solver(int grid_size, const vector<int>& grid, Solver* parent) :
 	grid_size(grid_size),
 	heuristic_cost(0),
 	grid(grid) {
+	if(parent != nullptr) actual_cost = parent->get_actual_cost() + 1;
 	set_blank_idx();
 	set_hash();
 }
@@ -38,8 +39,6 @@ Solver::~Solver() {
 void Solver::set_parent(Solver* parent) { this->parent = parent; }
 
 Solver* Solver::get_parent() const { return parent; }
-
-void Solver::increment_actual_cost() { actual_cost++; }
 
 int Solver::get_actual_cost() const { return actual_cost; }
 

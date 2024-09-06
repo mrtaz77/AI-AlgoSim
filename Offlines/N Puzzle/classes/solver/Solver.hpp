@@ -27,7 +27,6 @@ public:
 	friend ostream &operator<<(ostream &, const Solver &);
 	void set_parent(Solver *);
 	Solver *get_parent() const;
-	void increment_actual_cost();
 	int get_actual_cost() const;
 	int get_total_cost() const;
 	struct CompareSolver {
