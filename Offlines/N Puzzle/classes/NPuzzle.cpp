@@ -81,20 +81,23 @@ void NPuzzle::solve() {
 	unordered_set<string> closed_list;
 	open_list.push(root_solver);
 	Solver* dest = nullptr;
+	int number_of_explored_nodes = 0, number_of_expanded_nodes = 0;
 	while(!open_list.empty()) {
 		auto current = open_list.top();
 		open_list.pop();
 		if(!current->get_heuristic_cost()) {
 			dest = current;
-			print_solution_steps(dest);
+			print_solution(dest, number_of_explored_nodes, number_of_expanded_nodes);
 			break;
 		}
+		number_of_expanded_nodes++;
 		closed_list.insert(current->get_hash());
 		auto neighbors = get_neighbors(current);
 		for(auto& neighbor : neighbors) {
 			if(closed_list.find(neighbor->get_hash()) != closed_list.end())continue;
 			neighbor->set_heuristic_cost();
 			open_list.push(neighbor);
+			number_of_explored_nodes++;
 		}
 	}
 }
@@ -136,9 +139,11 @@ vector<Solver*> NPuzzle::get_neighbors(Solver* parent) {
 	return neighbors;
 }
 
-void NPuzzle::print_solution_steps(Solver* dest){
+void NPuzzle::print_solution(Solver* dest, int number_of_explored_nodes, int number_of_expanded_nodes){
 	if(dest == nullptr) return;
 	cout << "Optimal cost: " << dest->get_total_cost() << endl;
+	cout << "Explored nodes# " << number_of_explored_nodes << endl;
+	cout << "Expanded nodes# " << number_of_expanded_nodes << endl;
 	vector<Solver*> steps;
 	while(dest != nullptr) {
 		steps.push_back(dest);
