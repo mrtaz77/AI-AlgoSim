@@ -1,12 +1,12 @@
 #include "./Solver.hpp"
 
 Solver::Solver(int grid_size, const vector<int>& grid, Solver* parent) :
-	actual_cost(0),
+	step_cost(0),
 	parent(parent),
 	grid_size(grid_size),
 	heuristic_cost(0),
 	grid(grid) {
-	if(parent != nullptr) actual_cost = parent->get_actual_cost() + 1;
+	if(parent != nullptr) step_cost = parent->get_step_cost() + 1;
 	set_blank_idx();
 	set_hash();
 }
@@ -26,7 +26,7 @@ ostream& operator<<(ostream& out, const Solver& solver) {
         if ((i + 1) % solver.grid_size == 0)
             out << "|\n" << string(line_length, '-') << endl;
     }
-    out << "Actual Cost: " << solver.actual_cost << "\nHeuristic Cost: " << solver.heuristic_cost << endl;
+    out << "Actual Cost: " << solver.step_cost << "\nHeuristic Cost: " << solver.heuristic_cost << endl;
     return out;
 }
 
@@ -40,9 +40,9 @@ void Solver::set_parent(Solver* parent) { this->parent = parent; }
 
 Solver* Solver::get_parent() const { return parent; }
 
-int Solver::get_actual_cost() const { return actual_cost; }
+int Solver::get_step_cost() const { return step_cost; }
 
-int Solver::get_total_cost() const { return actual_cost + heuristic_cost; }
+int Solver::get_total_cost() const { return step_cost + heuristic_cost; }
 
 void Solver::set_hash() {
 	stringstream ss;
