@@ -37,5 +37,5 @@ public:
 	bool is_solvable();
 	void solve();
 	void set_heuristic(string);
-	void print_solution_steps(Solver*);
+	void print_solution(Solver*, int, int);
 };
