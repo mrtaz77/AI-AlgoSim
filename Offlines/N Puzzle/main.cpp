@@ -39,6 +39,7 @@ int main() {
 	cout << "Hamming Heuristic:\n" ;
 	puzzle.set_heuristic("hamming");
 	puzzle.solve();
+	cout << "================================================================\n";
 	cout << "Manhattan Heuristic:\n" ;
 	puzzle.set_heuristic("manhattan");
 	puzzle.solve();
