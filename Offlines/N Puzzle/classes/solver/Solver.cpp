@@ -62,3 +62,5 @@ void Solver::set_blank_idx() {
 }
 
 int Solver::get_blank_idx() const { return blank_idx; }
+
+vector<int> Solver::get_grid() const { return grid; }
