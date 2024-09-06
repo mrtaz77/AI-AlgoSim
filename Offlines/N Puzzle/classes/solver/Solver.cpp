@@ -26,7 +26,7 @@ ostream& operator<<(ostream& out, const Solver& solver) {
         if ((i + 1) % solver.grid_size == 0)
             out << "|\n" << string(line_length, '-') << endl;
     }
-    out << "Actual Cost: " << solver.step_cost << "\nHeuristic Cost: " << solver.heuristic_cost << endl;
+    out << "Step Cost: " << solver.step_cost << "\nHeuristic Cost: " << solver.heuristic_cost << endl;
     return out;
 }
 
