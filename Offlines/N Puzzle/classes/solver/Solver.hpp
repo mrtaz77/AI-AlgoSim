@@ -29,14 +29,6 @@ public:
 	Solver *get_parent() const;
 	int get_step_cost() const;
 	int get_total_cost() const;
-	struct CompareSolver {
-		bool operator()(Solver *lhs, Solver *rhs) const {
-			if (lhs->get_total_cost() == rhs->get_total_cost())	{
-				return lhs->get_step_cost() > rhs->get_step_cost();
-			}
-			return lhs->get_total_cost() > rhs->get_total_cost();
-		}
-	};
 	bool operator==(const Solver &) const;
 	void set_hash();
 	string get_hash() const;
