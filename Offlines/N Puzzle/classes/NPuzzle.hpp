@@ -13,7 +13,6 @@
 #include <queue>
 #include <functional>
 #include <unordered_set>
-#include <utility>
 using namespace std;
 
 class NPuzzle {
@@ -27,7 +26,7 @@ class NPuzzle {
 	int merge_number_of_inversions(int, int, int);
 	void set_solvability_strategy();
 	void refresh_inversion_util();
-	Solver* get_heuristic_based_solver(int, const vector<int>&, Solver*);
+	Solver* get_heuristic_based_solver(const vector<int>&, Solver*);
 	vector<Solver*> get_neighbors(Solver*);
 public:
 	NPuzzle(int);

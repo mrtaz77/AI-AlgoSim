@@ -75,7 +75,7 @@ void NPuzzle::refresh_inversion_util() {
 }
 
 void NPuzzle::solve() {
-	root_solver = get_heuristic_based_solver(grid_size, grid, nullptr);
+	root_solver = get_heuristic_based_solver(grid, nullptr);
 	root_solver->set_heuristic_cost();
 	priority_queue<Solver*, vector<Solver*>, CompareSolver> queue;
 	unordered_set<string> closed_list;
@@ -101,7 +101,7 @@ void NPuzzle::solve() {
 
 void NPuzzle::set_heuristic(string heuristic) { this->heuristic = heuristic; }
 
-Solver* NPuzzle::get_heuristic_based_solver(int grid_size, const vector<int>& grid, Solver* parent) {
+Solver* NPuzzle::get_heuristic_based_solver(const vector<int>& grid, Solver* parent) {
 	if(heuristic == "hamming") return new HammingSolver(grid_size, grid, parent);
 	else if(heuristic == "manhattan") return new ManhattanSolver(grid_size, grid, parent);
 	else return nullptr;
@@ -130,7 +130,7 @@ vector<Solver*> NPuzzle::get_neighbors(Solver* parent) {
             int new_idx = new_row * grid_size + new_col;
             vector<int> new_grid = parent_grid;
             swap(new_grid[parent_blank_idx], new_grid[new_idx]);
-            neighbors.push_back(get_heuristic_based_solver(grid_size, new_grid, parent));
+            neighbors.push_back(get_heuristic_based_solver(new_grid, parent));
         }
     }
 	return neighbors;
@@ -145,9 +145,7 @@ void NPuzzle::print_solution_steps(Solver* dest){
 		steps.push_back(dest);
 		dest = dest->get_parent();
 	}
-
 	for(int i = steps.size() - 1; i >= 0; i--) {
 		cout << *steps[i] << endl;
 	}
-
 }
