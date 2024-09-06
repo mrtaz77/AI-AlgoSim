@@ -33,9 +33,10 @@ int main() {
 	cout << "Valid grid" << endl;
 	cout << "Number of Inversions : " << puzzle.get_inversion_count() << endl;
 	cout << "Row of blank from bottom : " << puzzle.get_row_of_blank_from_bottom() << endl;
-	cout << "Solvable: " << boolalpha << puzzle.is_solvable() << endl;
+	bool is_solvable = puzzle.is_solvable();
+	cout << "Solvable: " << boolalpha << is_solvable << endl;
 
-	if(puzzle.is_solvable()) {
+	if(is_solvable) {
 		cout << "Hamming Heuristic:\n" ;
 		puzzle.set_heuristic("hamming");
 		puzzle.solve();
