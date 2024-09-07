@@ -37,12 +37,12 @@ int main() {
 	cout << "Solvable: " << boolalpha << is_solvable << endl;
 
 	if(is_solvable) {
-		cout << "Hamming Heuristic:\n" ;
-		puzzle.set_heuristic("hamming");
-		puzzle.solve();
-		cout << "================================================================\n";
 		cout << "Manhattan Heuristic:\n" ;
 		puzzle.set_heuristic("manhattan");
+		puzzle.solve();
+		cout << "\n================================================================\n";
+		cout << "Hamming Heuristic:\n" ;
+		puzzle.set_heuristic("hamming");
 		puzzle.solve();
 	}
 
