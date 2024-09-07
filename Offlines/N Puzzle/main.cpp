@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include "./util/util.hpp"
 #include "./classes/NPuzzle.hpp"
 using namespace std;
@@ -40,7 +39,7 @@ int main() {
 		cout << "Manhattan Heuristic:\n" ;
 		puzzle.set_heuristic("manhattan");
 		puzzle.solve();
-		cout << "\n================================================================\n";
+		cout << "\n================================================================\n\n";
 		cout << "Hamming Heuristic:\n" ;
 		puzzle.set_heuristic("hamming");
 		puzzle.solve();
