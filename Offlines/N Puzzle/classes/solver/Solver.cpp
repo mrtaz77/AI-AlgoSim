@@ -46,7 +46,7 @@ int Solver::get_total_cost() const { return step_cost + heuristic_cost; }
 
 void Solver::set_hash() {
 	stringstream ss;
-    for (int label : grid) ss << label;
+    for (int label : grid) ss << label << ",";
     hash = ss.str();
 }
 
