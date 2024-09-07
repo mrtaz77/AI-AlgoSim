@@ -77,9 +77,14 @@ void NPuzzle::refresh_inversion_util() {
 void NPuzzle::solve() {
 	root_solver = get_heuristic_based_solver(grid, nullptr);
 	root_solver->set_heuristic_cost();
+
 	priority_queue<Solver*, vector<Solver*>, CompareSolver> open_list;
 	unordered_set<string> closed_list;
+	unordered_map<string, int> open_list_map;
+
 	open_list.push(root_solver);
+	open_list_map[root_solver->get_hash()] = root_solver->get_total_cost();
+
 	Solver* dest = nullptr;
 	int number_of_explored_nodes = 0, number_of_expanded_nodes = 0;
 	while(!open_list.empty()) {
@@ -90,13 +95,27 @@ void NPuzzle::solve() {
 			print_solution(dest, number_of_explored_nodes, number_of_expanded_nodes);
 			break;
 		}
+
 		number_of_expanded_nodes++;
+		
 		closed_list.insert(current->get_hash());
-		auto neighbors = get_neighbors(current);
-		for(auto& neighbor : neighbors) {
-			if(closed_list.find(neighbor->get_hash()) != closed_list.end())continue;
+		open_list_map.erase(current->get_hash());
+		
+		for(auto& neighbor : get_neighbors(current)) {
+			string neighbor_hash = neighbor->get_hash();
+
+			if(closed_list.find(neighbor_hash) != closed_list.end())continue;
+			
 			neighbor->set_heuristic_cost();
+
+			if (open_list_map.find(neighbor_hash) != open_list_map.end() &&
+                open_list_map[neighbor_hash] <= neighbor->get_total_cost()) {
+                continue;
+            }
+			
 			open_list.push(neighbor);
+			open_list_map[neighbor_hash] = neighbor->get_total_cost();
+			
 			number_of_explored_nodes++;
 		}
 	}
