@@ -39,7 +39,7 @@ bool GameSnapshot::isGameOver() const {
     return sumA == 0 || sumB == 0;
 }
 
-int GameSnapshot::getBin(int binIndex) {
+int GameSnapshot::getStonesInBin(int binIndex) {
     return board[binIndex];
 }
 
