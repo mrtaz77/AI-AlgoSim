@@ -13,7 +13,10 @@ classes/game/GameIO.cpp \
 classes/turn/PlayerATurn.cpp \
 classes/turn/PlayerBTurn.cpp \
 classes/util/util.cpp \
-classes/turn/Turn.cpp
+classes/turn/Turn.cpp \
+classes/game/modes/HumanVsHuman.cpp \
+classes/game/modes/Mode.cpp \
+classes/game/modes/ModeFactory.cpp \
 
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
