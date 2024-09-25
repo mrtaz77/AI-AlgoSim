@@ -102,3 +102,15 @@ void GameSnapshot::finish_game(int sumA, int sumB){
     if(sumA == 0) board[BOARD_SIZE - 1] += sumB;
     else if(sumB == 0) board[NUM_OF_BINS_PER_SIDE] += sumA;
 }
+
+int GameSnapshot::get_stones_in_mancalaA() const {
+    int stones = 0;
+    for(int i = 0; i < NUM_OF_BINS_PER_SIDE; i++) stones+= board[i];
+    return stones;
+}
+
+int GameSnapshot::get_stones_in_mancalaB() const {
+    int stones = 0;
+    for(int i = NUM_OF_BINS_PER_SIDE + 1; i < BOARD_SIZE - 2; i++) stones+= board[i];
+    return stones;
+}

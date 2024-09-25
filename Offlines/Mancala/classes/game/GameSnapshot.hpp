@@ -20,5 +20,7 @@ public:
     void set_stones_in_bin(int, int);
     int get_storageA() const;
     int get_storageB() const;
+    int get_stones_in_mancalaA() const;
+    int get_stones_in_mancalaB() const;
     void finish_game(int, int);
 };
