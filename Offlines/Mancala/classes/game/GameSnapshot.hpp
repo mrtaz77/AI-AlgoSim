@@ -35,5 +35,4 @@ public:
     void set_playerA_stones_captured(int);
     int get_playerB_stones_captured() const;
     void set_playerB_stones_captured(int);
-    void reset_dynamic_info();
 };
