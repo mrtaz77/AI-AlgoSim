@@ -9,20 +9,40 @@ int validate_move(string move) {
     return stoi(move);
 }
 
-enum Modes validate_choice(string choice) {
+enum Modes validate_mode_choice(string choice) {
     for (char c : choice) {
         if (!isdigit(c)) {
             return Modes::INVALID;
         }
     }
     switch(stoi(choice)) {
-        case 0:
-            return Modes::PLAYER_VS_PLAYER;
         case 1:
-            return Modes::PLAYER_VS_AI;
+            return Modes::HUMAN_VS_HUMAN;
         case 2:
+            return Modes::HUMAN_VS_AI;
+        case 3:
             return Modes::AI_VS_AI;
         default:
             return Modes::INVALID;
+    }
+}
+
+enum Heuristics validate_heuristic_choice(string choice) {
+    for (char c : choice) {
+        if (!isdigit(c)) {
+            return Heuristics::INVALID;
+        }
+    }
+    switch(stoi(choice)) {
+        case 1:
+            return Heuristics::H1;
+        case 2:
+            return Heuristics::H2;
+        case 3:
+            return Heuristics::H3;
+        case 4:
+            return Heuristics::H4;
+        default:
+            return Heuristics::INVALID;
     }
 }
