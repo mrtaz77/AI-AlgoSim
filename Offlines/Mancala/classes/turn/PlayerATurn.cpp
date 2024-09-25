@@ -40,3 +40,11 @@ void PlayerATurn::make_move(GameSnapshot& game_snap, int bin_index) {
     }
     game_snap.set_turn(make_unique<PlayerBTurn>());
 }
+
+vector<int> PlayerATurn::get_valid_moves(GameSnapshot& game_snap) {
+    vector<int> valid_moves;
+    for(int i = 0; i < NUM_OF_BINS_PER_SIDE; i++) {
+        if(game_snap.get_stones_in_bin(i) > 0) valid_moves.push_back(i);
+    }
+    return valid_moves;
+}
