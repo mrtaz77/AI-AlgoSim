@@ -1,7 +1,11 @@
 #pragma once
+
 #include "Turn.hpp"
+#include "../game/GameSnapshot.hpp"
+#include "PlayerBTurn.hpp"
 
 class PlayerATurn : public Turn {
 public:
-    void makeMove(GameSnapshot&, int) override;
+    bool is_valid_turn(GameSnapshot&, int) override;
+    void make_move(GameSnapshot&, int) override;
 };

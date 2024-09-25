@@ -15,9 +15,10 @@ public:
     void make_move(int);
     bool is_playerA_turn() const;
     void set_turn(unique_ptr<Turn>);
-    bool is_game_over() const;
+    bool is_game_over();
     int get_stones_in_bin(int);
     void set_stones_in_bin(int, int);
     int get_storageA() const;
     int get_storageB() const;
+    void finish_game(int, int);
 };
