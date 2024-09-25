@@ -24,12 +24,16 @@ void PlayerATurn::make_move(GameSnapshot& game_snap, int bin_index) {
         if (i == BOARD_SIZE - 1) i = 0;
         else i++;
     }
-    if (i == NUM_OF_BINS_PER_SIDE + 1) return; // last stone in own storage
+    if (i == NUM_OF_BINS_PER_SIDE + 1) {
+        game_snap.increment_playerA_additional_moves();
+        return; // last stone in own storage
+    }
     if (
         i <= NUM_OF_BINS_PER_SIDE // own mancala
         && game_snap.get_stones_in_bin(i - 1) == 1 // last stone in empty bin 
         && game_snap.get_stones_in_bin(BOARD_SIZE - i - 1) > 0 // opposite bin not empty
     ) {
+        game_snap.set_playerA_stones_captured(game_snap.get_playerA_stones_captured() + game_snap.get_stones_in_bin(BOARD_SIZE - i - 1));
         game_snap.set_stones_in_bin(NUM_OF_BINS_PER_SIDE, game_snap.get_storageA() + game_snap.get_stones_in_bin(BOARD_SIZE - i - 1) + 1);
         game_snap.set_stones_in_bin(BOARD_SIZE - i - 1, 0);
         game_snap.set_stones_in_bin(i - 1, 0);

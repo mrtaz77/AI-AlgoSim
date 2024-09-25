@@ -4,6 +4,8 @@ GameSnapshot::GameSnapshot() {
     board = vector<int>(BOARD_SIZE, INITIAL_NUM_OF_STONES_PER_BIN);
     board[NUM_OF_BINS_PER_SIDE] = board[BOARD_SIZE - 1] = 0;
     current_turn = make_unique<PlayerATurn>();
+    playerA_additonal_moves = playerB_additonal_moves = 0;
+    playerA_stones_captured = playerB_stones_captured = 0;
 }
 
 ostream& operator<<(ostream& out, const GameSnapshot& game_snap) {
@@ -113,4 +115,36 @@ int GameSnapshot::get_stones_in_mancalaB() const {
     int stones = 0;
     for(int i = NUM_OF_BINS_PER_SIDE + 1; i < BOARD_SIZE - 2; i++) stones+= board[i];
     return stones;
+}
+
+int GameSnapshot::get_playerA_additional_moves() const {
+    return playerA_additonal_moves;
+}
+
+int GameSnapshot::get_playerB_additional_moves() const {
+    return playerB_additonal_moves;
+}
+
+void GameSnapshot::increment_playerA_additional_moves() {
+    playerA_additonal_moves++;
+}
+
+void GameSnapshot::increment_playerB_additional_moves() {
+    playerB_additonal_moves++;
+}
+
+int GameSnapshot::get_playerA_stones_captured() const {
+    return playerA_stones_captured;
+}
+
+void GameSnapshot::set_playerA_stones_captured(int stones) {
+    playerA_stones_captured = stones;
+}
+
+int GameSnapshot::get_playerB_stones_captured() const {
+    return playerB_stones_captured;
+}
+
+void GameSnapshot::set_playerB_stones_captured(int stones) {
+    playerB_stones_captured = stones;
 }
