@@ -5,7 +5,7 @@ void HumanVsHuman::prompt_player_turn(GameSnapshot *game_snap) {
     else cout << "Player B's turn: ";
 }
 
-int HumanVsHuman::get_player_move() {
+int HumanVsHuman::get_player_move(GameSnapshot*) {
     string in;
     cin >> in;
     return validate_move(in);

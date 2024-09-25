@@ -7,5 +7,5 @@ using namespace std;
 class HumanVsHuman : public Mode {
 public:
     void prompt_player_turn(GameSnapshot*) override;
-    int get_player_move() override;
+    int get_player_move(GameSnapshot*) override;
 };
