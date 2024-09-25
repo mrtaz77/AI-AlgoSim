@@ -148,3 +148,5 @@ int GameSnapshot::get_playerB_stones_captured() const {
 void GameSnapshot::set_playerB_stones_captured(int stones) {
     playerB_stones_captured = stones;
 }
+
+vector<int> GameSnapshot::get_valid_moves() { return current_turn->get_valid_moves(*this); }
