@@ -6,5 +6,7 @@ using namespace std;
 int main() {
     GameIO game;
     game.chose_mode();
+    game.set_number_of_games();
     game.start();
+    game.display_final_results();
 }

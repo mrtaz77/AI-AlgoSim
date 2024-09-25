@@ -1,11 +1,25 @@
 #include "GameIO.hpp"
 
-GameIO::GameIO() : game_snap(make_unique<GameSnapshot>()){
-    cout << "*** Welcome to Mancala ***" << endl;
+GameIO::GameIO() : 
+game_snap(make_unique<GameSnapshot>()),
+number_of_games(0),
+playerAWins(0),
+playerBWins(0),
+draws(0) {
+    cout << "***** Welcome to Mancala *****" << endl;
     signal(SIGINT, keyboard_interrupt);
 }
 
 void GameIO::start() {
+    for (int i = 0; i < number_of_games; i++) {
+        cout << "\n*** Match " << (i+1) << " ***" << endl;
+        match();
+        update_results();
+        game_snap = make_unique<GameSnapshot>();
+    }
+}
+
+void GameIO::match() {
     cout << *game_snap;
     while (!game_snap->is_game_over()) {
         mode->prompt_player_turn(game_snap.get());
@@ -57,4 +71,50 @@ void GameIO::chose_mode() {
         exit(0);
     }
     mode = ModeFactory::createGameMode(mode_choice);
+}
+
+void GameIO::set_number_of_games() {
+    string n;
+    cout << "Enter number of games to play: ";
+    cin >> n;
+    number_of_games = validate_move(n);
+    if (number_of_games < 1) {
+        cout << "Invalid number of games. Exiting mancala...\n";
+        exit(0);
+    }
+}
+
+void GameIO::update_results() {
+    if (game_snap->get_storageA() > game_snap->get_storageB()) {
+        playerAWins++;
+    } else if (game_snap->get_storageB() > game_snap->get_storageA()) {
+        playerBWins++;
+    } else {
+        draws++;
+    }
+}
+
+void GameIO::display_final_results() {
+    cout << "\n+-----------------+------------+\n";
+    cout << "|     Results     |   Games    |\n";
+    cout << "+-----------------+------------+\n";
+    cout << "| Player A Wins   |   " << setw(6) << playerAWins << "   |\n";
+    cout << "+-----------------+------------+\n";
+    cout << "| Player B Wins   |   " << setw(6) << playerBWins << "   |\n";
+    cout << "+-----------------+------------+\n";
+    cout << "| Draws           |   " << setw(6) << draws << "   |\n";
+    cout << "+-----------------+------------+\n";
+    
+    if (number_of_games > 0) {
+        cout << "| Player A Win%   |   " << setw(5) << fixed << setprecision(2) << (playerAWins * 100.0) / number_of_games << "%   |\n";
+        cout << "+-----------------+------------+\n";
+        cout << "| Player B Win%   |   " << setw(5) << fixed << setprecision(2) << (playerBWins * 100.0) / number_of_games << "%   |\n";
+    } else {
+        cout << "| Player A Win%   |     N/A    |\n";
+        cout << "+-----------------+------------+\n";
+        cout << "| Player B Win%   |     N/A    |\n";
+    }
+
+    cout << "+-----------------+------------+\n";
+    cout << "\n";
 }
