@@ -8,18 +8,18 @@ EXEC = main
 
 # List of all source files
 CPP_SOURCES = main.cpp \
-classes/constants/Constants.cpp \
 classes/game/GameSnapshot.cpp \
 classes/game/GameIO.cpp \
 classes/turn/PlayerATurn.cpp \
 classes/turn/PlayerBTurn.cpp \
 classes/util/util.cpp \
 classes/turn/Turn.cpp \
-classes/game/modes/HumanVsHuman.cpp \
 classes/game/modes/Mode.cpp \
 classes/game/modes/ModeFactory.cpp \
 classes/ai/AI.cpp \
+classes/game/modes/HumanVsHuman.cpp \
 classes/game/modes/HumanVsAI.cpp \
+classes/game/modes/AIVsAI.cpp \
 classes/heuristics/H1.cpp \
 classes/heuristics/H2.cpp \
 classes/heuristics/H3.cpp \
