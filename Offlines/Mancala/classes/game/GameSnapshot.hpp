@@ -15,10 +15,11 @@ class GameSnapshot {
     int playerB_stones_captured;
 public:
     GameSnapshot();
+    GameSnapshot(const GameSnapshot&);
+    GameSnapshot& operator=(const GameSnapshot&);
     friend ostream& operator<<(ostream&, const GameSnapshot&);
-    void make_move(int);
+    void make_move(int, bool);
     bool is_playerA_turn() const;
-    void set_turn(unique_ptr<Turn>);
     bool is_game_over();
     int get_stones_in_bin(int);
     void set_stones_in_bin(int, int);
@@ -36,4 +37,5 @@ public:
     int get_playerB_stones_captured() const;
     void set_playerB_stones_captured(int);
     vector<int> get_valid_moves();
+    void change_turn();
 };

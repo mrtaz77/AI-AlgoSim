@@ -11,7 +11,7 @@ using namespace std;
 class GameIO {
     unique_ptr<GameSnapshot> game_snap;
     unique_ptr<Mode> mode;
-    int number_of_games;
+    int number_of_matches;
     int playerAWins;
     int playerBWins;
     int draws;
@@ -22,7 +22,7 @@ public:
     void match();
     void declare_winner();
     static void keyboard_interrupt(int);
-    void set_number_of_games();
+    void set_number_of_matches();
     void update_results();
     void display_final_results();
 };

@@ -11,7 +11,9 @@ enum class Modes {
 
 class Mode {
 public:
+    Mode();
     virtual ~Mode() = default;
     virtual void prompt_player_turn(GameSnapshot*) = 0;
     virtual int get_player_move(GameSnapshot*) = 0;
+    static void keyboard_interrupt(int);
 };

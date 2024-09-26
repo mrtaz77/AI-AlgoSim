@@ -14,7 +14,7 @@ bool PlayerBTurn::is_valid_turn(GameSnapshot& game_snap, int bin_index) {
     }
 }
 
-void PlayerBTurn::make_move(GameSnapshot& game_snap, int bin_index) {
+void PlayerBTurn::make_move(GameSnapshot& game_snap, int bin_index, bool change_turn) {
     int stones = game_snap.get_stones_in_bin(bin_index);
     game_snap.set_stones_in_bin(bin_index, 0);
     int i = bin_index + 1;
@@ -40,13 +40,15 @@ void PlayerBTurn::make_move(GameSnapshot& game_snap, int bin_index) {
         game_snap.set_stones_in_bin(BOARD_SIZE - i - 1, 0);
         game_snap.set_stones_in_bin(i - 1, 0);
     }
-    game_snap.set_turn(make_unique<PlayerATurn>());
+    if(change_turn) game_snap.change_turn();
 }
 
-vector<int> PlayerBTurn(GameSnapshot& game_snap) {
+vector<int> PlayerBTurn::get_valid_moves(GameSnapshot& game_snap) {
     vector<int> valid_moves;
     for(int i = NUM_OF_BINS_PER_SIDE + 1; i < BOARD_SIZE - 1; i++) {
         if(game_snap.get_stones_in_bin(i) > 0) valid_moves.push_back(i);
     }
     return valid_moves;
 }
+
+unique_ptr<Turn> PlayerBTurn::clone() const { return make_unique<PlayerBTurn>(*this); }

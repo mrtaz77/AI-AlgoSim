@@ -3,6 +3,7 @@
 #include <bits/stdc++.h>
 #include "Mode.hpp"
 #include "HumanVsHuman.hpp"
+#include "HumanVsAI.hpp"
 
 using namespace std;
 

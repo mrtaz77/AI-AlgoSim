@@ -2,16 +2,17 @@
 
 GameIO::GameIO() : 
 game_snap(make_unique<GameSnapshot>()),
-number_of_games(0),
+number_of_matches(0),
 playerAWins(0),
 playerBWins(0),
 draws(0) {
+    cout << "\033[2J\033[H";
     cout << "***** Welcome to Mancala *****" << endl;
     signal(SIGINT, keyboard_interrupt);
 }
 
 void GameIO::start() {
-    for (int i = 0; i < number_of_games; i++) {
+    for (int i = 0; i < number_of_matches; i++) {
         cout << "\n*** Match " << (i+1) << " ***" << endl;
         match();
         update_results();
@@ -23,9 +24,9 @@ void GameIO::match() {
     cout << *game_snap;
     while (!game_snap->is_game_over()) {
         mode->prompt_player_turn(game_snap.get());
-        int move = mode->get_player_move();
+        int move = mode->get_player_move(game_snap.get());
         if(move == -1) continue;
-        game_snap->make_move(move);
+        game_snap->make_move(move, true);
         cout << *game_snap;
     }
     declare_winner();
@@ -61,11 +62,11 @@ void GameIO::chose_mode() {
     string choice;
     cout << "Select Game Mode:\n";
     cout << "1) Human vs Human\n";
-    cout << "2) Human vs AI (Coming Soon)\n";
+    cout << "2) Human vs AI\n";
     cout << "3) AI vs AI (Coming Soon)\n";
     cout << "Enter your choice: ";
     cin >> choice;
-    Modes mode_choice = validate_choice(choice);
+    Modes mode_choice = validate_mode_choice(choice);
     if (mode_choice == Modes::INVALID) {
         cout << "Invalid choice. Exiting mancala...\n";
         exit(0);
@@ -73,13 +74,13 @@ void GameIO::chose_mode() {
     mode = ModeFactory::createGameMode(mode_choice);
 }
 
-void GameIO::set_number_of_games() {
+void GameIO::set_number_of_matches() {
     string n;
-    cout << "Enter number of games to play: ";
+    cout << "Enter number of matches to play: ";
     cin >> n;
-    number_of_games = validate_move(n);
-    if (number_of_games < 1) {
-        cout << "Invalid number of games. Exiting mancala...\n";
+    number_of_matches = validate_move(n);
+    if (number_of_matches < 1) {
+        cout << "Invalid number of matches. Exiting mancala...\n";
         exit(0);
     }
 }
@@ -105,10 +106,10 @@ void GameIO::display_final_results() {
     cout << "| Draws           |   " << setw(6) << draws << "   |\n";
     cout << "+-----------------+------------+\n";
     
-    if (number_of_games > 0) {
-        cout << "| Player A Win%   |   " << setw(5) << fixed << setprecision(2) << (playerAWins * 100.0) / number_of_games << "%   |\n";
+    if (number_of_matches > 0) {
+        cout << "| Player A Win%   |   " << setw(5) << fixed << setprecision(2) << (playerAWins * 100.0) / number_of_matches << "%   |\n";
         cout << "+-----------------+------------+\n";
-        cout << "| Player B Win%   |   " << setw(5) << fixed << setprecision(2) << (playerBWins * 100.0) / number_of_games << "%   |\n";
+        cout << "| Player B Win%   |   " << setw(5) << fixed << setprecision(2) << (playerBWins * 100.0) / number_of_matches << "%   |\n";
     } else {
         cout << "| Player A Win%   |     N/A    |\n";
         cout << "+-----------------+------------+\n";

@@ -59,8 +59,8 @@ ostream& operator<<(ostream& out, const GameSnapshot& game_snap) {
     return out;
 }
 
-void GameSnapshot::make_move(int bin_index) {
-    if(current_turn->is_valid_turn(*this, bin_index)) current_turn->make_move(*this, bin_index);
+void GameSnapshot::make_move(int bin_index, bool change_turn) {
+    if(current_turn->is_valid_turn(*this, bin_index)) current_turn->make_move(*this, bin_index, change_turn);
 }
 
 bool GameSnapshot::is_playerA_turn() const {
@@ -96,13 +96,18 @@ void GameSnapshot::set_stones_in_bin(int bin_index, int stones) {
     board[bin_index] = stones;
 }
 
-void GameSnapshot::set_turn(unique_ptr<Turn> turn) {
-    current_turn = move(turn);
+void GameSnapshot::change_turn() {
+    if(is_playerA_turn()) current_turn = make_unique<PlayerBTurn>();
+    else current_turn = make_unique<PlayerATurn>();
 }
 
 void GameSnapshot::finish_game(int sumA, int sumB){
     if(sumA == 0) board[BOARD_SIZE - 1] += sumB;
     else if(sumB == 0) board[NUM_OF_BINS_PER_SIDE] += sumA;
+    for(int i = 0; i < NUM_OF_BINS_PER_SIDE; i++) {
+        board[i] = 0;
+        board[i + NUM_OF_BINS_PER_SIDE + 1] = 0;
+    }
 }
 
 int GameSnapshot::get_stones_in_mancalaA() const {
@@ -150,3 +155,23 @@ void GameSnapshot::set_playerB_stones_captured(int stones) {
 }
 
 vector<int> GameSnapshot::get_valid_moves() { return current_turn->get_valid_moves(*this); }
+
+GameSnapshot::GameSnapshot(const GameSnapshot& other) 
+: board(other.board),
+current_turn(other.current_turn->clone()),
+playerA_additonal_moves(other.playerA_additonal_moves),
+playerB_additonal_moves(other.playerB_additonal_moves),
+playerA_stones_captured(other.playerA_stones_captured),
+playerB_stones_captured(other.playerB_stones_captured) {}
+
+GameSnapshot& GameSnapshot::operator=(const GameSnapshot& other) {
+    if (this != &other) {
+        board = other.board;
+        playerA_additonal_moves = other.playerA_additonal_moves;
+        playerB_additonal_moves = other.playerB_additonal_moves;
+        playerA_stones_captured = other.playerA_stones_captured;
+        playerB_stones_captured = other.playerB_stones_captured;
+        current_turn = other.current_turn->clone();
+    }
+    return *this;
+}
