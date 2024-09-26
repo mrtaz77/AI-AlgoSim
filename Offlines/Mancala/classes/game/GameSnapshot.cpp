@@ -118,7 +118,7 @@ int GameSnapshot::get_stones_in_mancalaA() const {
 
 int GameSnapshot::get_stones_in_mancalaB() const {
     int stones = 0;
-    for(int i = NUM_OF_BINS_PER_SIDE + 1; i < BOARD_SIZE - 2; i++) stones+= board[i];
+    for(int i = NUM_OF_BINS_PER_SIDE + 1; i < BOARD_SIZE - 1; i++) stones+= board[i];
     return stones;
 }
 
