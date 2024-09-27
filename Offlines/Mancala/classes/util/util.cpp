@@ -21,6 +21,8 @@ Modes validate_mode_choice(string choice) {
         case 2:
             return Modes::HUMAN_VS_AI;
         case 3:
+            return Modes::AI_VS_HUMAN;
+        case 4:	
             return Modes::AI_VS_AI;
         default:
             return Modes::INVALID;

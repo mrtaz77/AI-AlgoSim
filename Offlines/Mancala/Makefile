@@ -19,6 +19,7 @@ classes/game/modes/ModeFactory.cpp \
 classes/ai/AI.cpp \
 classes/game/modes/HumanVsHuman.cpp \
 classes/game/modes/HumanVsAI.cpp \
+classes/game/modes/AIVsHuman.cpp \
 classes/game/modes/AIVsAI.cpp \
 classes/heuristics/H1.cpp \
 classes/heuristics/H2.cpp \

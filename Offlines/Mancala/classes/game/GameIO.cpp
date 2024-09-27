@@ -65,7 +65,8 @@ void GameIO::chose_mode() {
     cout << "Select Game Mode:\n";
     cout << "1) Human vs Human\n";
     cout << "2) Human vs AI\n";
-    cout << "3) AI vs AI\n";
+    cout << "3) AI vs Human\n";
+    cout << "4) AI vs AI\n";
     cout << "Enter your choice: ";
     cin >> choice;
     Modes mode_choice = validate_mode_choice(choice);

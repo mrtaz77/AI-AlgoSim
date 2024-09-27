@@ -4,6 +4,7 @@
 #include "Mode.hpp"
 #include "HumanVsHuman.hpp"
 #include "HumanVsAI.hpp"
+#include "AIVsHuman.hpp"
 #include "AIVsAI.hpp"
 #include "Modes.hpp"
 
