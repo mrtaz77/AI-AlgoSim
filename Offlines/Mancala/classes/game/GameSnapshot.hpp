@@ -18,7 +18,7 @@ public:
     GameSnapshot(const GameSnapshot&);
     GameSnapshot& operator=(const GameSnapshot&);
     friend ostream& operator<<(ostream&, const GameSnapshot&);
-    void make_move(int, bool);
+    void make_move(int);
     bool is_playerA_turn() const;
     bool is_game_over();
     int get_stones_in_bin(int);

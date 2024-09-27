@@ -59,8 +59,8 @@ ostream& operator<<(ostream& out, const GameSnapshot& game_snap) {
     return out;
 }
 
-void GameSnapshot::make_move(int bin_index, bool change_turn) {
-    if(current_turn->is_valid_turn(*this, bin_index)) current_turn->make_move(*this, bin_index, change_turn);
+void GameSnapshot::make_move(int bin_index) {
+    if(current_turn->is_valid_turn(*this, bin_index)) current_turn->make_move(*this, bin_index);
 }
 
 bool GameSnapshot::is_playerA_turn() const {

@@ -28,7 +28,7 @@ void GameIO::match() {
         mode->prompt_player_turn(game_snap.get());
         int move = mode->get_player_move(game_snap.get());
         if(move == -1) continue;
-        game_snap->make_move(move, true);
+        game_snap->make_move(move);
         cout << *game_snap;
     }
     declare_winner();

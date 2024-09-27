@@ -5,7 +5,7 @@
 #define TOTAL_NUM_OF_BINS (NUM_OF_BINS_PER_SIDE * NUM_OF_PLAYERS)
 #define NUM_OF_STORAGE NUM_OF_PLAYERS
 #define BOARD_SIZE (TOTAL_NUM_OF_BINS + NUM_OF_STORAGE)
-#define INITIAL_NUM_OF_STONES_PER_BIN 5
+#define INITIAL_NUM_OF_STONES_PER_BIN 2
 
 #include <string>
 #include "../game/modes/Modes.hpp"

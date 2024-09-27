@@ -14,7 +14,7 @@ bool PlayerATurn::is_valid_turn(GameSnapshot& game_snap, int bin_index) {
     }
 }
 
-void PlayerATurn::make_move(GameSnapshot& game_snap, int bin_index, bool change_turn) {
+void PlayerATurn::make_move(GameSnapshot& game_snap, int bin_index) {
     int stones = game_snap.get_stones_in_bin(bin_index);
     game_snap.set_stones_in_bin(bin_index, 0);
     int i = bin_index + 1;
@@ -38,7 +38,7 @@ void PlayerATurn::make_move(GameSnapshot& game_snap, int bin_index, bool change_
         game_snap.set_stones_in_bin(BOARD_SIZE - i - 1, 0);
         game_snap.set_stones_in_bin(i - 1, 0);
     }
-    if(change_turn) game_snap.change_turn();
+    game_snap.change_turn();
 }
 
 vector<int> PlayerATurn::get_valid_moves(GameSnapshot& game_snap) {

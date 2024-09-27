@@ -14,7 +14,7 @@ int AI::decide_move(unique_ptr<GameSnapshot> game_snap) {
     for(int valid_move : valid_moves) {
         unique_ptr<GameSnapshot> new_game_snap = make_unique<GameSnapshot>(*game_snap);
         bool currentTurn = new_game_snap->is_playerA_turn();
-        new_game_snap->make_move(valid_move, true);
+        new_game_snap->make_move(valid_move);
         int score = minimax(move(new_game_snap), depth - 1, alpha, beta, currentTurn == new_game_snap->is_playerA_turn());
         cout <<"Depth: " << depth << " Alpha: max(" << bestScore << ", " << score << ", " << alpha << ") = "; 
         if(score > bestScore) {
@@ -46,7 +46,7 @@ int AI::minimax(unique_ptr<GameSnapshot> game_snap, int depth, int alpha, int be
         for(int valid_move : valid_moves) {
             unique_ptr<GameSnapshot> new_game_snap = make_unique<GameSnapshot>(*game_snap);
             bool currentTurn = new_game_snap->is_playerA_turn();
-            new_game_snap->make_move(valid_move, true);
+            new_game_snap->make_move(valid_move);
             int eval = minimax(move(new_game_snap), depth - 1, alpha, beta, currentTurn == new_game_snap->is_playerA_turn());
             cout <<"Depth: " << depth << " Alpha: max(" << maxEval << ", " << eval << ", " << alpha << ") = "; 
             maxEval = max(maxEval, eval);
@@ -61,7 +61,7 @@ int AI::minimax(unique_ptr<GameSnapshot> game_snap, int depth, int alpha, int be
         for(int valid_move : valid_moves) {
             unique_ptr<GameSnapshot> new_game_snap = make_unique<GameSnapshot>(*game_snap);
             bool currentTurn = new_game_snap->is_playerA_turn();
-            new_game_snap->make_move(valid_move, true);
+            new_game_snap->make_move(valid_move);
             int eval = minimax(move(new_game_snap), depth - 1, alpha, beta, !(currentTurn == new_game_snap->is_playerA_turn()));
             cout <<"Depth: " << depth << " Beta: min(" << minEval << ", " << eval << ", " << beta << ") = "; 
             minEval = min(minEval, eval);
