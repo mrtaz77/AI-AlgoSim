@@ -12,12 +12,14 @@ draws(0) {
 }
 
 void GameIO::start() {
+    if(is_ai_vs_ai_mode()) redirect_output(true);
     for (int i = 0; i < number_of_matches; i++) {
         cout << "\n*** Match " << (i+1) << " ***" << endl;
         match();
         update_results();
         game_snap = make_unique<GameSnapshot>();
     }
+    if(is_ai_vs_ai_mode()) redirect_output(false);
 }
 
 void GameIO::match() {
@@ -63,7 +65,7 @@ void GameIO::chose_mode() {
     cout << "Select Game Mode:\n";
     cout << "1) Human vs Human\n";
     cout << "2) Human vs AI\n";
-    cout << "3) AI vs AI (Coming Soon)\n";
+    cout << "3) AI vs AI\n";
     cout << "Enter your choice: ";
     cin >> choice;
     Modes mode_choice = validate_mode_choice(choice);
@@ -107,9 +109,11 @@ void GameIO::display_final_results() {
     cout << "+-----------------+------------+\n";
     
     if (number_of_matches > 0) {
-        cout << "| Player A Win%   |   " << setw(5) << fixed << setprecision(2) << (playerAWins * 100.0) / number_of_matches << "%   |\n";
+        cout << "| Player A Win%   |   " << setw(6) << fixed << setprecision(2) 
+            << (playerAWins * 100.0) / number_of_matches << "%  |\n";
         cout << "+-----------------+------------+\n";
-        cout << "| Player B Win%   |   " << setw(5) << fixed << setprecision(2) << (playerBWins * 100.0) / number_of_matches << "%   |\n";
+        cout << "| Player B Win%   |   " << setw(6) << fixed << setprecision(2) 
+            << (playerBWins * 100.0) / number_of_matches << "%  |\n";    
     } else {
         cout << "| Player A Win%   |     N/A    |\n";
         cout << "+-----------------+------------+\n";
@@ -119,3 +123,13 @@ void GameIO::display_final_results() {
     cout << "+-----------------+------------+\n";
     cout << "\n";
 }
+
+bool GameIO::is_ai_vs_ai_mode() {
+    return dynamic_cast<AIVsAI*>(mode.get()) != nullptr;
+}
+
+void GameIO::redirect_output(bool to_file) {
+    if (to_file) freopen("ai_vs_ai_output.txt", "w", stdout);
+    else freopen("/dev/tty", "w", stdout);
+}
+

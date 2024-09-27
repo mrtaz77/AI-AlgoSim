@@ -2,18 +2,18 @@
 # It requires GNU Make.
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -O2
+CXXFLAGS = -Wall -Wextra -O2 -MMD
 
 EXEC = main
 
 # List of all source files
 CPP_SOURCES = main.cpp \
+classes/util/util.cpp \
 classes/game/GameSnapshot.cpp \
 classes/game/GameIO.cpp \
+classes/turn/Turn.cpp \
 classes/turn/PlayerATurn.cpp \
 classes/turn/PlayerBTurn.cpp \
-classes/util/util.cpp \
-classes/turn/Turn.cpp \
 classes/game/modes/Mode.cpp \
 classes/game/modes/ModeFactory.cpp \
 classes/ai/AI.cpp \
@@ -54,3 +54,5 @@ endif
 
 run: $(EXEC)
 	./$(EXEC)
+
+-include $(CPP_SOURCES:.cpp=.d) # Include dependency files

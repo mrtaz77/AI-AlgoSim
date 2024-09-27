@@ -154,7 +154,16 @@ void GameSnapshot::set_playerB_stones_captured(int stones) {
     playerB_stones_captured = stones;
 }
 
-vector<int> GameSnapshot::get_valid_moves() { return current_turn->get_valid_moves(*this); }
+vector<int> GameSnapshot::get_valid_moves() { 
+    vector<int> valid_moves = current_turn->get_valid_moves(*this);
+    random_device rd;
+    mt19937 mt(rd());
+    shuffle(valid_moves.begin(), valid_moves.end(), mt);
+    cout << "**************************************************" << endl;
+    for(int move : valid_moves) cout << move << " ";
+    cout << "\n**************************************************" << endl;
+    return valid_moves;
+}
 
 GameSnapshot::GameSnapshot(const GameSnapshot& other) 
 : board(other.board),

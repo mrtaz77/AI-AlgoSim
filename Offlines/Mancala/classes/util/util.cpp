@@ -9,7 +9,7 @@ int validate_move(string move) {
     return stoi(move);
 }
 
-enum Modes validate_mode_choice(string choice) {
+Modes validate_mode_choice(string choice) {
     for (char c : choice) {
         if (!isdigit(c)) {
             return Modes::INVALID;
@@ -27,7 +27,7 @@ enum Modes validate_mode_choice(string choice) {
     }
 }
 
-enum Heuristics validate_heuristic_choice(string choice) {
+Heuristics validate_heuristic_choice(string choice) {
     for (char c : choice) {
         if (!isdigit(c)) {
             return Heuristics::INVALID;

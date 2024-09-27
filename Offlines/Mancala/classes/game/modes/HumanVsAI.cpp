@@ -1,6 +1,6 @@
 #include "HumanVsAI.hpp"
 
-HumanVsAI::HumanVsAI() : ai(AI()) {}
+HumanVsAI::HumanVsAI() : ai(AI(prompt_heuristics(), prompt_depth())) {}
 
 void HumanVsAI::prompt_player_turn(GameSnapshot *game_snap) {
     if (game_snap->is_playerA_turn()) cout << "Player A's turn: ";

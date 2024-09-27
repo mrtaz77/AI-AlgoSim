@@ -49,4 +49,4 @@ vector<int> PlayerATurn::get_valid_moves(GameSnapshot& game_snap) {
     return valid_moves;
 }
 
-unique_ptr<Turn> PlayerATurn::clone() const { return make_unique<PlayerATurn>(*this); }
+unique_ptr<Turn> PlayerATurn::clone() { return make_unique<PlayerATurn>(*this); }

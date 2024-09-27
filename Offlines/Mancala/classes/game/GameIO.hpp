@@ -25,4 +25,6 @@ public:
     void set_number_of_matches();
     void update_results();
     void display_final_results();
+    bool is_ai_vs_ai_mode();
+    void redirect_output(bool);
 };

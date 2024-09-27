@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 #include "../turn/Turn.hpp"
 #include "../turn/PlayerATurn.hpp"
-#include "../constants/Constants.hpp"
+#include "../util/util.hpp"
 using namespace std;
 
 class GameSnapshot {

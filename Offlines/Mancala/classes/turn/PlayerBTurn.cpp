@@ -51,4 +51,4 @@ vector<int> PlayerBTurn::get_valid_moves(GameSnapshot& game_snap) {
     return valid_moves;
 }
 
-unique_ptr<Turn> PlayerBTurn::clone() const { return make_unique<PlayerBTurn>(*this); }
+unique_ptr<Turn> PlayerBTurn::clone() { return make_unique<PlayerBTurn>(*this); }

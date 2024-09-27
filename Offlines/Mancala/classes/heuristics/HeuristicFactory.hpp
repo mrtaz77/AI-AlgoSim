@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Heuristic.hpp"
+#include "Heuristics.hpp"
 #include "H1.hpp"
 #include "H2.hpp"
 #include "H3.hpp"
