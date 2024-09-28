@@ -110,13 +110,13 @@ void GameSnapshot::finish_game(int sumA, int sumB){
     }
 }
 
-int GameSnapshot::get_stones_in_mancalaA() const {
+int GameSnapshot::get_stones_in_bins_of_A() const {
     int stones = 0;
     for(int i = 0; i < NUM_OF_BINS_PER_SIDE; i++) stones+= board[i];
     return stones;
 }
 
-int GameSnapshot::get_stones_in_mancalaB() const {
+int GameSnapshot::get_stones_in_bins_of_B() const {
     int stones = 0;
     for(int i = NUM_OF_BINS_PER_SIDE + 1; i < BOARD_SIZE - 1; i++) stones+= board[i];
     return stones;
@@ -159,9 +159,9 @@ vector<int> GameSnapshot::get_valid_moves() {
     random_device rd;
     mt19937 mt(rd());
     shuffle(valid_moves.begin(), valid_moves.end(), mt);
-    cout << "**************************************************" << endl;
-    for(int move : valid_moves) cout << move << " ";
-    cout << "\n**************************************************" << endl;
+    // cout << "**************************************************" << endl;
+    // for(int move : valid_moves) cout << move << " ";
+    // cout << "\n**************************************************" << endl;
     return valid_moves;
 }
 
