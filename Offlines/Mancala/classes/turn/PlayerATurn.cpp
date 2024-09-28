@@ -19,9 +19,13 @@ void PlayerATurn::make_move(GameSnapshot& game_snap, int bin_index) {
     game_snap.set_stones_in_bin(bin_index, 0);
     int i = bin_index + 1;
     while (stones > 0) {
-        i = (i + 1) % BOARD_SIZE;
+        if(i == BOARD_SIZE - 1) {
+            i = 0;
+            continue; // skip player B's mancala
+        }
         game_snap.set_stones_in_bin(i, game_snap.get_stones_in_bin(i) + 1);
         stones--;
+        i++;
     }
     if (i == NUM_OF_BINS_PER_SIDE + 1) {
         game_snap.increment_playerA_additional_moves();
