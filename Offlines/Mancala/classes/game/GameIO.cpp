@@ -12,14 +12,38 @@ draws(0) {
 }
 
 void GameIO::start() {
-    if(is_ai_vs_ai_mode()) redirect_output(true);
+    const int barWidth = 50;  // Width of the progress bar
     for (int i = 0; i < number_of_matches; i++) {
-        cout << "\n*** Match " << (i+1) << " ***" << endl;
+        if (is_ai_vs_ai_mode()) {
+            // Clear the current line before printing progress bar
+            cout << "\r";  // Move cursor to the start of the line
+            // Progress bar
+            cout << "[";
+            int pos = (i * barWidth) / number_of_matches;
+            for (int j = 0; j < barWidth; ++j) {
+                if (j < pos) cout << "=";
+                else if (j == pos) cout << ">";
+                else cout << " ";
+            }
+            cout << "] " << std::setw(3) << ((i + 1) * 100) / number_of_matches << "%";
+            cout.flush();  // Ensure the progress bar is printed immediately
+            redirect_output(true);
+        }
+        // Process match
         match();
+        if (is_ai_vs_ai_mode()) redirect_output(false);
         update_results();
         game_snap = make_unique<GameSnapshot>();
     }
-    if(is_ai_vs_ai_mode()) redirect_output(false);
+    if (is_ai_vs_ai_mode()) {
+        // Print final completed bar
+        cout << "\r";  // Move cursor to the start of the line
+        cout << "[";
+        for (int j = 0; j < barWidth; ++j) {
+            cout << "=";  // Complete the bar
+        }
+        cout << "] 100%" << endl;  // Complete progress bar and print 100%
+    }
 }
 
 void GameIO::match() {
