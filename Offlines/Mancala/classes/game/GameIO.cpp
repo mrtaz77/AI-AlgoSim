@@ -42,7 +42,7 @@ void GameIO::start() {
         for (int j = 0; j < barWidth; ++j) {
             cout << "=";  // Complete the bar
         }
-        cout << "] 100%" << endl;  // Complete progress bar and print 100%
+        cout << "] 100%";  // Complete progress bar and print 100%
     }
 }
 
