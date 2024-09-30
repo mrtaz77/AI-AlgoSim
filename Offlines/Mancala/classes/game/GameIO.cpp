@@ -154,7 +154,7 @@ bool GameIO::is_ai_vs_ai_mode() {
 }
 
 void GameIO::redirect_output(bool to_file) {
-    if (to_file) freopen("ai_vs_ai_output.txt", "w", stdout);
+    if (to_file) freopen("ai_vs_ai_output.txt", "a", stdout);
     else freopen("/dev/tty", "w", stdout);
 }
 
