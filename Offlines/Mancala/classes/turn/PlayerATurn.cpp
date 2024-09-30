@@ -36,7 +36,7 @@ void PlayerATurn::make_move(GameSnapshot& game_snap, int bin_index) {
         && game_snap.get_stones_in_bin(i - 1) == 1 // last stone in empty bin 
         && game_snap.get_stones_in_bin(BOARD_SIZE - i - 1) > 0 // opposite bin not empty
     ) {
-        game_snap.set_playerA_stones_captured(game_snap.get_playerA_stones_captured() + game_snap.get_stones_in_bin(BOARD_SIZE - i - 1));
+        game_snap.set_playerA_stones_captured(game_snap.get_playerA_stones_captured() + game_snap.get_stones_in_bin(BOARD_SIZE - i - 1) + 1);
         game_snap.set_stones_in_bin(NUM_OF_BINS_PER_SIDE, game_snap.get_storageA() + game_snap.get_stones_in_bin(BOARD_SIZE - i - 1) + 1);
         game_snap.set_stones_in_bin(BOARD_SIZE - i - 1, 0);
         game_snap.set_stones_in_bin(i - 1, 0);
