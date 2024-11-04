@@ -1,7 +1,14 @@
 #pragma once
 
 #include <iostream>
+#include <filesystem>
+#include <string>
+#include <getopt.h>
 
 using namespace std;
+namespace fs = filesystem;
 
 void print_usage(const char*);
+bool check_directory(const string&);
+void create_or_clear_directory(const string&);
+bool parse_arguments(int, char* [], string&, string&, string&);
