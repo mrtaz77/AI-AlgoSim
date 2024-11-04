@@ -1,9 +1,6 @@
 #pragma once
 
-#include <iostream>
-#include <filesystem>
-#include <string>
-#include <getopt.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 namespace fs = filesystem;

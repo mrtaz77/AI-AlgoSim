@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <filesystem>
 #include "classes/util/util.hpp"
 
 int main(int argc, char* argv[]) {
