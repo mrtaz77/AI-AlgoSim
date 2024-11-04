@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "classes/util/util.hpp"
+#include "classes/graph/Graph.hpp"
 
 int main(int argc, char* argv[]) {
     string inputDir, inputFile, outputDir;
@@ -19,14 +20,52 @@ int main(int argc, char* argv[]) {
     }
 
     if (!inputDir.empty()) {
-        cout << "Input Directory: " << inputDir << "\n";
+        vector<Graph> graphs;
+        for (const auto& entry : fs::directory_iterator(inputDir)) {
+            if (entry.is_regular_file() && has_valid_ext(entry.path().string(), ".tsp")) {
+                ifstream inputFile(entry.path());
+                if (!inputFile) {
+                    cerr << "Error: Unable to open file " << entry.path() << "\n";
+                    continue;
+                }
+
+                Graph g;
+                inputFile >> g;
+                graphs.push_back(g);
+
+                string outputFilePath = outputDir + "/" + entry.path().stem().string() + ".txt";
+                ofstream outputFile(outputFilePath);
+                if (outputFile) {
+                    outputFile << g;
+                } else {
+                    cerr << "Error: Unable to open output file " << outputFilePath << "\n";
+                }
+            }
+        }
     }
-    
+
     if (!inputFile.empty()) {
-        cout << "Input File: " << inputFile << "\n";
-    }
-    if (!outputDir.empty()) {
-        cout << "Output Directory: " << outputDir << "\n";
+        if (!has_valid_ext(inputFile, ".tsp")) {
+            cerr << "Error: Invalid file extension for " << inputFile << ". Only .tsp files are valid.\n";
+            return 1;
+        }
+
+        ifstream inputFileStream(inputFile);
+        if (!inputFileStream) {
+            cerr << "Error: Unable to open file " << inputFile << "\n";
+            return 1;
+        }
+
+        Graph g;
+        inputFileStream >> g;
+
+        string outputFilePath = outputDir + "/" + fs::path(inputFile).stem().string() + ".txt";
+        ofstream outputFile(outputFilePath);
+        if (outputFile) {
+            outputFile << g;
+        } else {
+            cerr << "Error: Unable to open output file " << outputFilePath << "\n";
+        }
     }
 
     return 0;

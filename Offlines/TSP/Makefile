@@ -8,7 +8,8 @@ EXEC = main
 
 # List of all source files
 CPP_SOURCES = main.cpp \
-classes/util/util.cpp
+classes/util/util.cpp \
+classes/graph/Graph.cpp
 
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
