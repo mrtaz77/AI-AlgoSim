@@ -61,3 +61,7 @@ bool parse_arguments(int argc, char* argv[], string& inputDir, string& inputFile
     }
     return true;
 }
+
+bool has_valid_ext(const string& filename, const string& extension) {
+    return fs::path(filename).extension() == extension;
+}
