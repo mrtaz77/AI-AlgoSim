@@ -9,7 +9,10 @@ EXEC = main
 # List of all source files
 CPP_SOURCES = main.cpp \
 classes/util/util.cpp \
-classes/graph/Graph.cpp
+classes/graph/Graph.cpp \
+classes/tsp/TSP.cpp \
+classes/tsp/heuristics/Heuristic.cpp \
+classes/tsp/heuristics/constructive/NearestNeighbour.cpp
 
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)

@@ -83,3 +83,5 @@ ostream& operator<<(ostream& out, const Graph& g) {
 int Graph::get_number_of_vertices() const { return number_of_vertices; }
 
 long double Graph::get_edge_weight(int i, int j) const { return graph[i][j]; }
+
+const string& Graph::get_name() const { return name; }

@@ -2,6 +2,8 @@
 #include <string>
 #include "classes/util/util.hpp"
 #include "classes/graph/Graph.hpp"
+#include "classes/tsp/TSP.hpp"
+#include "classes/tsp/heuristics/Heuristics.hpp"
 
 int main(int argc, char* argv[]) {
     string inputDir, inputFile, outputDir;
@@ -33,13 +35,18 @@ int main(int argc, char* argv[]) {
                 inputFile >> g;
                 graphs.push_back(g);
 
-                string outputFilePath = outputDir + "/" + entry.path().stem().string() + ".txt";
-                ofstream outputFile(outputFilePath);
-                if (outputFile) {
-                    outputFile << g;
-                } else {
-                    cerr << "Error: Unable to open output file " << outputFilePath << "\n";
-                }
+                TSP tsp(g);
+
+                tsp.set_graph(g);
+                tsp.set_heuristic(Heuristics::NEAREST_NEIGHBOUR);
+                tsp.run();
+
+                const auto& tour = tsp.get_tour();
+                auto cost = tsp.get_cost();
+                auto time = tsp.get_time();
+
+                string csvFilePath = outputDir + "/" + entry.path().stem().string() + ".csv";
+                write_csv(csvFilePath, g.get_name(), "Nearest Neighbour", tour, cost, time);
             }
         }
     }
@@ -59,13 +66,18 @@ int main(int argc, char* argv[]) {
         Graph g;
         inputFileStream >> g;
 
-        string outputFilePath = outputDir + "/" + fs::path(inputFile).stem().string() + ".txt";
-        ofstream outputFile(outputFilePath);
-        if (outputFile) {
-            outputFile << g;
-        } else {
-            cerr << "Error: Unable to open output file " << outputFilePath << "\n";
-        }
+        TSP tsp(g);
+
+        tsp.set_graph(g);
+        tsp.set_heuristic(Heuristics::NEAREST_NEIGHBOUR);
+        tsp.run();
+
+        const auto& tour = tsp.get_tour();
+        auto cost = tsp.get_cost();
+        auto time = tsp.get_time();
+
+        string csvFilePath = outputDir + "/" + fs::path(inputFile).stem().string() + ".csv";
+        write_csv(csvFilePath, g.get_name(), "Nearest Neighbour", tour, cost, time);
     }
 
     return 0;

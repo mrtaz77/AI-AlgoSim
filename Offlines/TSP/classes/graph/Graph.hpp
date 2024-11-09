@@ -18,4 +18,5 @@ public:
     friend ostream& operator<<(ostream& , const Graph&);
     int get_number_of_vertices() const;
     long double get_edge_weight(int, int) const;
+    const string& get_name() const;
 };

@@ -65,3 +65,37 @@ bool parse_arguments(int argc, char* argv[], string& inputDir, string& inputFile
 bool has_valid_ext(const string& filename, const string& extension) {
     return fs::path(filename).extension() == extension;
 }
+
+void write_csv(const string& file_path, 
+    const string& graph_name,
+    const string& heuristic_name, 
+    const vector<int>& tour, 
+    long double cost, 
+    long double time
+) {
+    ofstream file(file_path);
+    if (!file) {
+        cerr << "Error: Unable to open file " << file_path << " for writing.\n";
+        return;
+    }
+
+    // Write headers
+    file << "Graph Name,Heuristic,Tour,Cost,Time\n";
+    
+    // Write data
+    file << graph_name << ",";
+    file << heuristic_name << ",";
+    
+    // Write tour
+    for (size_t i = 0; i < tour.size(); ++i) {
+        file << tour[i];
+        if (i < tour.size() - 1) {
+            file << "-";
+        }
+    }
+    file << ",";
+    
+    // Write cost and time with fixed precision
+    file << fixed << setprecision(2) << cost << ",";
+    file << fixed << setprecision(4) << time * 1000 << "ms\n";
+}
