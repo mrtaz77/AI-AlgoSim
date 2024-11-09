@@ -15,7 +15,9 @@ istream& operator>>(istream& is, Graph& g) {
     int dimension = 0;
 
     while (getline(is, line)) {
-        if (line.find("COMMENT") != string::npos) {
+        if (line.find("NAME") != string::npos) {
+            g.filename = line.substr(line.find(":") + 2);
+        } else if (line.find("COMMENT") != string::npos) {
             g.name = line.substr(line.find(":") + 2);
         } else if (line.find("DIMENSION") != string::npos) {
             dimension = stoi(line.substr(line.find(':') + 2));
@@ -85,3 +87,7 @@ int Graph::get_number_of_vertices() const { return number_of_vertices; }
 long double Graph::get_edge_weight(int i, int j) const { return graph[i][j]; }
 
 const string& Graph::get_name() const { return name; }
+
+void Graph::set_filename(const string& filename) { this->filename = filename; }
+
+const string& Graph::get_filename() const { return filename; }

@@ -4,17 +4,20 @@
 #include "../graph/Graph.hpp"
 #include "heuristics/Heuristic.hpp"
 #include "heuristics/Heuristics.hpp"
-#include "heuristics/Constructive/NearestNeighbour.hpp"
+#include "heuristics/constructive/NearestNeighbour.hpp"
+#include "heuristics/constructive/Constructive.hpp"
+#include "heuristics/constructive/Versions.hpp"
 
 using namespace std;
 
 class TSP {
     Graph& g;
-    unique_ptr<Heuristic> heuristic;
+    unique_ptr<Constructive> constructive_heuristic;
 public:
     TSP(Graph&);
     void run();
     void set_heuristic(Heuristics);
+    void set_version(Versions);
     void set_graph(Graph&);
     string get_heuristic_name() const;
     vector<int>& get_tour();

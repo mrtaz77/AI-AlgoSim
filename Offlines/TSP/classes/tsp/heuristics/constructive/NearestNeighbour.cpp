@@ -3,10 +3,10 @@
 void NearestNeighbour::solve() {
     auto start = chrono::high_resolution_clock::now();
 
-    int numVertices = g.get_number_of_vertices();
+    int num_vertices = g.get_number_of_vertices();
     tour.clear();
-    tour.reserve(numVertices);
-    vector<bool> visited(numVertices, false);
+    tour.reserve(num_vertices + 1);
+    vector<bool> visited(num_vertices, false);
 
     int currentNode = 0;
     visited[currentNode] = true;
@@ -14,22 +14,28 @@ void NearestNeighbour::solve() {
 
     tour_cost = 0.0;
 
-    for (int i = 1; i < numVertices; ++i) {
-        int nextNode = -1;
-        double minDistance = numeric_limits<double>::max();
-
-        for (int j = 0; j < numVertices; ++j) {
-            if (!visited[j] && g.get_edge_weight(currentNode, j) < minDistance) {
-                minDistance = g.get_edge_weight(currentNode, j);
-                nextNode = j;
+    for (int i = 1; i < num_vertices; ++i) {
+        vector<pair<int, long double>> candidates;
+        for (int j = 0; j < num_vertices; ++j) {
+            if (!visited[j]) {
+                long double distance = g.get_edge_weight(currentNode, j);
+                candidates.emplace_back(j, distance);
             }
         }
 
+        sort(candidates.begin(), candidates.end(), [](const auto& a, const auto& b) {
+            return a.second < b.second;
+        });
+
+        int nextNode = select_from_candidates(candidates);
         if (nextNode != -1) {
             visited[nextNode] = true;
             tour.push_back(nextNode);
-            tour_cost += minDistance;
+            tour_cost += g.get_edge_weight(currentNode, nextNode);
             currentNode = nextNode;
+        } else {
+            cerr << "Warning: Could not complete tour, graph might not be fully connected.\n";
+            break;
         }
     }
 

@@ -21,63 +21,30 @@ int main(int argc, char* argv[]) {
         create_or_clear_directory(outputDir);
     }
 
+    vector<Graph> graphs;
+
     if (!inputDir.empty()) {
-        vector<Graph> graphs;
-        for (const auto& entry : fs::directory_iterator(inputDir)) {
-            if (entry.is_regular_file() && has_valid_ext(entry.path().string(), ".tsp")) {
-                ifstream inputFile(entry.path());
-                if (!inputFile) {
-                    cerr << "Error: Unable to open file " << entry.path() << "\n";
-                    continue;
-                }
-
-                Graph g;
-                inputFile >> g;
-                graphs.push_back(g);
-
-                TSP tsp(g);
-
-                tsp.set_graph(g);
-                tsp.set_heuristic(Heuristics::NEAREST_NEIGHBOUR);
-                tsp.run();
-
-                const auto& tour = tsp.get_tour();
-                auto cost = tsp.get_cost();
-                auto time = tsp.get_time();
-
-                string csvFilePath = outputDir + "/" + entry.path().stem().string() + ".csv";
-                write_csv(csvFilePath, g.get_name(), "Nearest Neighbour", tour, cost, time);
-            }
+        load_graphs_from_directory(inputDir, graphs);
+        for (auto& g : graphs) {
+            process_all_versions(g, outputDir, Heuristics::NEAREST_NEIGHBOUR);
         }
     }
 
     if (!inputFile.empty()) {
         if (!has_valid_ext(inputFile, ".tsp")) {
-            cerr << "Error: Invalid file extension for " << inputFile << ". Only .tsp files are valid.\n";
+            std::cerr << "Error: Invalid file extension for " << inputFile << ". Only .tsp files are valid.\n";
             return 1;
         }
 
-        ifstream inputFileStream(inputFile);
+        std::ifstream inputFileStream(inputFile);
         if (!inputFileStream) {
-            cerr << "Error: Unable to open file " << inputFile << "\n";
+            std::cerr << "Error: Unable to open file " << inputFile << "\n";
             return 1;
         }
 
         Graph g;
         inputFileStream >> g;
-
-        TSP tsp(g);
-
-        tsp.set_graph(g);
-        tsp.set_heuristic(Heuristics::NEAREST_NEIGHBOUR);
-        tsp.run();
-
-        const auto& tour = tsp.get_tour();
-        auto cost = tsp.get_cost();
-        auto time = tsp.get_time();
-
-        string csvFilePath = outputDir + "/" + fs::path(inputFile).stem().string() + ".csv";
-        write_csv(csvFilePath, g.get_name(), "Nearest Neighbour", tour, cost, time);
+        process_all_versions(g, outputDir, Heuristics::NEAREST_NEIGHBOUR);
     }
 
     return 0;
