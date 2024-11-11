@@ -15,7 +15,7 @@ public:
     Heuristic(Graph&);
     virtual ~Heuristic() = default;
     virtual void solve() = 0;
-    virtual const string& get_heuristic_name() const = 0;
+    virtual const string get_heuristic_name() const = 0;
     vector<int>& get_tour();
     long double get_time_taken() const;
     long double get_tour_cost() const;
