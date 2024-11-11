@@ -1,11 +1,11 @@
 #include "util.hpp"
 
 void print_usage(const char* program_name) {
-    cout << "Usage: " << program_name << " [-i <input_dir> | -f <input_file>] [-o <output_dir>] [-h]\n";
+    cout << "Usage: " << program_name << " [-i <input_dir> | -f <input_file>] [-o <output_file>] [-h]\n";
     cout << "Options:\n";
     cout << "  -i <input_dir>    Specify the input directory.\n";
     cout << "  -f <input_file>   Specify the input file.\n";
-    cout << "  -o <output_dir>   Specify the output directory.\n";
+    cout << "  -o <output_file>  Specify the output file.\n";
     cout << "  -h                Display this help message.\n";
 }
 
@@ -13,17 +13,7 @@ bool check_directory(const string& dir_path) {
     return fs::exists(dir_path) && fs::is_directory(dir_path);
 }
 
-void create_or_clear_directory(const string& dir_path) {
-    if (fs::exists(dir_path)) {
-        for (const auto& entry : fs::directory_iterator(dir_path)) {
-            fs::remove_all(entry.path());
-        }
-    } else {
-        fs::create_directories(dir_path);
-    }
-}
-
-bool parse_arguments(int argc, char* argv[], string& input_dir, string& input_file, string& output_dir) {
+bool parse_arguments(int argc, char* argv[], string& input_dir, string& input_file, string& output_file) {
     int opt;
     while ((opt = getopt(argc, argv, "i:f:o:h")) != -1) {
         switch (opt) {
@@ -44,7 +34,7 @@ bool parse_arguments(int argc, char* argv[], string& input_dir, string& input_fi
                 input_file = optarg;
                 break;
             case 'o':
-                output_dir = optarg;
+                output_file = optarg;
                 break;
             case 'h':
                 print_usage(argv[0]);
@@ -66,56 +56,12 @@ bool has_valid_ext(const string& file_name, const string& extension) {
     return fs::path(file_name).extension() == extension;
 }
 
-void write_csv(const string& file_path, 
-            const string& graph_name,
-            const string& version_name,
-            const string& heuristic_name, 
-            const vector<int>& tour, 
-            long double cost, 
-            long double time) {
-    ofstream file(file_path, ios::app);
-    bool new_file = file.tellp() == 0;
-    
-    if (!file) {
-        cerr << "Error: Unable to open file " << file_path << " for writing.\n";
-        return;
-    }
-
-    if (new_file) {
-        file << "Graph Name,Version,Heuristic,Tour,Cost,Time\n";
-    }
-
-    file << graph_name << ",";
-    file << version_name << ",";
-    file << heuristic_name << ",";
-
-    for (size_t i = 0; i < tour.size(); ++i) {
-        file << tour[i];
-        if (i < tour.size() - 1) {
-            file << "-";
-        }
-    }
-    file << ",";
-
-    file << fixed << setprecision(2) << cost << ",";
-    file << fixed << setprecision(4) << time * 1000 << "ms\n";
-}
-
-void process_graph_with_heuristic_version(Graph& graph, const string& output_dir, Heuristics heuristic_type, Versions version) {
+void generate_tsp_with_heuristics_and_version(Graph& graph, const string& output_file, Heuristics constructive_heuristic_type, Heuristics perturbative_heuristic_type, Versions version) {
     TSP tsp(graph);
-    tsp.set_heuristic(heuristic_type);
+    tsp.set_heuristics(constructive_heuristic_type, perturbative_heuristic_type);
     tsp.set_version(version);
     tsp.run();
-
-    const auto& tour = tsp.get_tour();
-    auto cost = tsp.get_cost();
-    auto time = tsp.get_time();
-
-    string heuristic_name = (heuristic_type == Heuristics::NEAREST_NEIGHBOUR) ? "Nearest Neighbour" : "Unknown";
-    string version_name = (version == Versions::GREEDY) ? "Greedy" : (version == Versions::SEMI_GREEDY_3) ? "Semi-Greedy-3" : "Semi-Greedy-5";
-    string csv_file_path = output_dir + "/" + graph.get_filename() + ".csv";
-
-    write_csv(csv_file_path, graph.get_name(), version_name, heuristic_name, tour, cost, time);
+    write_to_file(output_file, tsp);
 }
 
 void load_graphs_from_directory(const string& input_dir, vector<Graph>& graphs) {
@@ -133,10 +79,68 @@ void load_graphs_from_directory(const string& input_dir, vector<Graph>& graphs) 
     }
 }
 
-void process_all_versions(Graph& g, const string& outputDir, Heuristics heuristicType) {
+void generate_tsp_tours(Graph& graph, const string& output_file) {
     vector<Versions> versions = {Versions::GREEDY, Versions::SEMI_GREEDY_3, Versions::SEMI_GREEDY_5};
-
-    for (const auto version : versions) {
-        process_graph_with_heuristic_version(g, outputDir, heuristicType, version);
+    vector<Heuristics> constructive_heuristics = {Heuristics::NEAREST_NEIGHBOUR}; 
+    vector<Heuristics> perturbative_heuristics = {Heuristics::TWO_OPT};
+    for (auto version : versions) {
+        for (auto constructive_heuristic : constructive_heuristics) {
+            for (auto perturbative_heuristic : perturbative_heuristics) {
+                generate_tsp_with_heuristics_and_version(graph, output_file, constructive_heuristic, perturbative_heuristic, version);
+            }
+        }
     }
+}
+
+void write_to_file(const string& output_file, const TSP& tsp) {
+    ofstream file(output_file + ".csv", ios::app);
+    if (!file) {
+        cerr << "Error: Unable to open file " << output_file << " for writing.\n";
+        exit(1);
+    }
+    
+    string version = (tsp.get_version() == Versions::GREEDY) ? "Greedy" :
+                    (tsp.get_version() == Versions::SEMI_GREEDY_3) ? "Semi-Greedy 3" : "Semi-Greedy 5";
+    file << fixed << setprecision(3);
+    file << tsp.get_graph().get_filename() << "," << tsp.get_graph().get_name() << ","
+        << version << "," << tsp.get_heuristic_name(Heuristics::CONSTRUCTIVE) << ","
+        << tsp.get_avg_cost(Heuristics::CONSTRUCTIVE) << "," 
+        << tsp.get_avg_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
+        << tsp.get_worst_cost(Heuristics::CONSTRUCTIVE) << "," 
+        << tsp.get_worst_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
+        << tsp.get_best_cost(Heuristics::CONSTRUCTIVE) << "," 
+        << tsp.get_best_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << endl;
+    file.close();
+}
+
+void initialize_output_file(const string& output_file) {
+    ofstream file(output_file + ".csv");
+    if (!file) {
+        cerr << "Error: Unable to open file " << output_file << " for writing.\n";
+        exit(1);
+    }
+    file << "Graph File,Graph Name," 
+        << "Version,Heuristic,"
+        << "Avg Cost,Avg Time (µs),"
+        << "Worst Cost,Worst Time (µs),"
+        << "Best Cost,Best Time (µs)" << endl;
+    file.close();
+}
+
+void show_progress(int current, int total) {
+    const int bar_width = 50;
+    float progress = float(current) / total;
+    
+    cout << "[";
+    int pos = bar_width * progress;
+    for (int i = 0; i < bar_width; ++i) {
+        if (i < pos)
+            cout << "=";
+        else if (i == pos)
+            cout << ">";
+        else
+            cout << " ";
+    }
+    cout << "] " << int(progress * 100.0) << " %\r"; // Carriage return to overwrite the line
+    cout.flush();
 }

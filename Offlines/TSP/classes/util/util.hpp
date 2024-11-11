@@ -12,10 +12,11 @@ namespace fs = filesystem;
 
 void print_usage(const char*);
 bool check_directory(const string&);
-void create_or_clear_directory(const string&);
 bool parse_arguments(int, char* [], string&, string&, string&);
 bool has_valid_ext(const string&, const string&);
-void write_csv(const string&, const string&, const string&, const string&, const vector<int>&, long double, long double);
-void process_graph_with_heuristic_version(Graph&, const string&, Heuristics, Versions);
-void process_all_versions(Graph&, const string&, Heuristics);
+void generate_tsp_with_heuristics_and_version(Graph&, const string&, Heuristics, Heuristics, Versions);
+void generate_tsp_tours(Graph&, const string&);
 void load_graphs_from_directory(const string&, vector<Graph>&);
+void write_to_file(const string&, const TSP&);
+void initialize_output_file(const string& output_file);
+void show_progress(int, int);

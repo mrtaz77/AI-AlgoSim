@@ -6,45 +6,48 @@
 #include "classes/tsp/heuristics/Heuristics.hpp"
 
 int main(int argc, char* argv[]) {
-    string inputDir, inputFile, outputDir;
+    string input_dir, input_file, output_file;
 
-    if (!parse_arguments(argc, argv, inputDir, inputFile, outputDir)) {
+    if (!parse_arguments(argc, argv, input_dir, input_file, output_file)) {
         return 1;
     }
 
-    if (!inputDir.empty() && !check_directory(inputDir)) {
+    if (!input_dir.empty() && !check_directory(input_dir)) {
         cerr << "Error: Specified input directory does not exist.\n";
         return 1;
     }
 
-    if (!outputDir.empty()) {
-        create_or_clear_directory(outputDir);
+    if (!output_file.empty()) {
+        initialize_output_file(output_file);
     }
 
     vector<Graph> graphs;
 
-    if (!inputDir.empty()) {
-        load_graphs_from_directory(inputDir, graphs);
+    if (!input_dir.empty()) {
+        load_graphs_from_directory(input_dir, graphs);
+        int total_graphs = graphs.size();
+        int current = 0;
         for (auto& g : graphs) {
-            process_all_versions(g, outputDir, Heuristics::NEAREST_NEIGHBOUR);
+            generate_tsp_tours(g, output_file);
+            show_progress(++current, total_graphs);
         }
     }
 
-    if (!inputFile.empty()) {
-        if (!has_valid_ext(inputFile, ".tsp")) {
-            std::cerr << "Error: Invalid file extension for " << inputFile << ". Only .tsp files are valid.\n";
+    if (!input_file.empty()) {
+        if (!has_valid_ext(input_file, ".tsp")) {
+            cerr << "Error: Invalid file extension for " << input_file << ". Only .tsp files are valid.\n";
             return 1;
         }
 
-        std::ifstream inputFileStream(inputFile);
+        ifstream inputFileStream(input_file);
         if (!inputFileStream) {
-            std::cerr << "Error: Unable to open file " << inputFile << "\n";
+            cerr << "Error: Unable to open file " << input_file << "\n";
             return 1;
         }
 
         Graph g;
         inputFileStream >> g;
-        process_all_versions(g, outputDir, Heuristics::NEAREST_NEIGHBOUR);
+        generate_tsp_tours(g, output_file);
     }
 
     return 0;
