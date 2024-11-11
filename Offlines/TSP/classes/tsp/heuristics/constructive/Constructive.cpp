@@ -1,5 +1,7 @@
 #include "Constructive.hpp"
 
+Constructive::Constructive(Graph& graph) : Heuristic(graph), starting_node(0), version(Versions::GREEDY) {}
+
 void Constructive::set_version(Versions version) {
     this->version = version; 
 }
@@ -28,3 +30,5 @@ int Constructive::select_from_candidates(const vector<pair<int, long double>>& c
     uniform_int_distribution<> dis(0, limit - 1);
     return candidates[dis(gen)].first;
 }
+
+void Constructive::set_starting_node(int node) { this->starting_node = node; }
