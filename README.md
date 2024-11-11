@@ -10,3 +10,8 @@ Simulations of Algorithms for AI Lab
 * `Mancala`|`Adverserial Search`|`Minimax`|`Alpha Beta Pruning`
 * [Spec](/Spec/Assignment-2-Adversarial-Search.pdf)
 * [Solution](/Offlines/Mancala/)
+
+**Offline 3**
+* `Travelling Salesman Problem`
+* [Spec](/Spec/Assignment-3-TSP.pdf)
+* [Solution](/Offlines/TSP/)
