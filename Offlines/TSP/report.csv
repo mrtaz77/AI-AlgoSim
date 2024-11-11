@@ -1,0 +1,64 @@
+Graph File,Graph Name,Version,Heuristic,Avg Cost,Avg Time (µs),Worst Cost,Worst Time (µs),Best Cost,Best Time (µs)
+a280,drilling problem (Ludwig),Greedy,Nearest Neighbour,3340.311,1551.365,3657.824,3697.831,3070.549,1467.367
+a280,drilling problem (Ludwig),Semi-Greedy 3,Nearest Neighbour,5465.776,2506.241,6101.280,5108.260,4920.639,2389.585
+a280,drilling problem (Ludwig),Semi-Greedy 5,Nearest Neighbour,6968.576,2484.151,7853.295,5580.402,6051.947,2395.546
+berlin52,52 locations in Berlin (Groetschel),Greedy,Nearest Neighbour,9373.434,46.164,10299.371,68.215,8182.192,34.069
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,Nearest Neighbour,14484.958,213.399,17676.107,267.930,12180.937,205.894
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,Nearest Neighbour,17718.510,215.694,20316.957,272.398,15034.330,207.129
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,Nearest Neighbour,145555.301,338.678,163246.681,574.933,132999.906,295.418
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,Nearest Neighbour,227513.776,740.769,268294.313,981.089,200316.758,706.681
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,Nearest Neighbour,279030.712,770.285,315097.394,1882.698,244462.406,711.700
+ch130,130 city problem (Churritz),Greedy,Nearest Neighbour,7720.398,361.268,8644.386,582.396,7198.741,322.545
+ch130,130 city problem (Churritz),Semi-Greedy 3,Nearest Neighbour,12674.591,952.005,14107.303,1567.317,11164.972,747.644
+ch130,130 city problem (Churritz),Semi-Greedy 5,Nearest Neighbour,15927.474,895.237,17978.584,1462.280,13459.907,748.609
+ch150,150 city Problem (churritz),Greedy,Nearest Neighbour,7697.119,483.621,8451.159,677.030,7078.445,454.009
+ch150,150 city Problem (churritz),Semi-Greedy 3,Nearest Neighbour,13228.690,955.769,14904.585,1223.308,11728.391,932.319
+ch150,150 city Problem (churritz),Semi-Greedy 5,Nearest Neighbour,16720.326,964.814,18744.367,1259.732,14811.131,934.460
+eil101,101-city problem (Christofides/Eilon),Greedy,Nearest Neighbour,844.889,205.730,906.845,284.823,753.463,184.052
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,Nearest Neighbour,1156.671,549.564,1351.893,690.048,1004.784,513.200
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,Nearest Neighbour,1382.622,578.600,1558.703,789.191,1169.971,515.162
+eil51,51-city problem (Christofides/Eilon),Greedy,Nearest Neighbour,561.223,63.341,626.442,478.650,505.298,46.733
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,Nearest Neighbour,772.462,226.894,939.215,259.209,623.724,221.282
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,Nearest Neighbour,929.886,229.307,1096.948,299.618,776.026,204.267
+eil76,76-city problem (Christofides/Eilon),Greedy,Nearest Neighbour,665.207,119.708,730.285,178.215,614.996,106.036
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,Nearest Neighbour,975.142,374.761,1125.494,558.412,865.096,343.555
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,Nearest Neighbour,1168.397,364.519,1334.404,463.889,1001.085,343.836
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,Nearest Neighbour,27045.213,203.244,28694.684,345.785,24698.497,185.678
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,Nearest Neighbour,45371.446,618.181,53316.491,823.015,38976.769,509.036
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,Nearest Neighbour,58141.897,578.492,70620.021,780.432,49306.742,512.931
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,Nearest Neighbour,27906.934,219.229,30371.786,312.160,25882.973,184.927
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,Nearest Neighbour,45911.512,608.120,54237.789,849.278,36928.054,510.154
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,Nearest Neighbour,57956.758,536.270,67116.762,663.371,47712.339,504.510
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,Nearest Neighbour,26227.273,203.423,29393.726,277.046,23566.403,187.904
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,Nearest Neighbour,44962.152,534.489,53316.251,797.660,36549.250,502.391
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,Nearest Neighbour,56809.289,524.474,65037.040,783.140,49581.093,507.191
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,Nearest Neighbour,27482.280,203.383,29998.135,334.158,24855.799,189.953
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,Nearest Neighbour,44409.690,532.659,52911.726,720.824,37279.215,508.755
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,Nearest Neighbour,56651.171,525.039,64835.634,766.866,48344.824,506.555
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,Nearest Neighbour,27496.973,200.279,30696.613,369.472,24907.022,187.572
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,Nearest Neighbour,46013.647,548.032,54566.706,818.062,37802.466,507.806
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,Nearest Neighbour,57632.044,623.008,66766.915,1323.253,47338.062,505.927
+lin105,105-city problem (Subproblem of lin318),Greedy,Nearest Neighbour,18710.885,235.149,20590.263,330.130,16939.441,174.142
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,Nearest Neighbour,32157.820,712.628,39051.596,3323.373,26407.449,507.865
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,Nearest Neighbour,41669.800,661.279,47907.855,1505.051,34300.658,518.144
+lin318,318-city problem (Lin/Kernighan),Greedy,Nearest Neighbour,52567.330,2135.859,58862.763,5044.502,49215.613,2008.561
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,Nearest Neighbour,91836.781,3236.631,101297.236,7701.248,81907.016,3051.597
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,Nearest Neighbour,117632.464,3160.972,132727.076,4337.507,105395.590,3064.459
+pr124,124-city problem (Padberg/Rinaldi),Greedy,Nearest Neighbour,71970.685,251.486,78689.075,394.345,66877.983,216.718
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,Nearest Neighbour,136807.257,670.123,156706.655,869.536,116895.175,633.103
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,Nearest Neighbour,181492.609,664.249,216937.006,846.644,153351.138,639.274
+pr144,144-city problem (Padberg/Rinaldi),Greedy,Nearest Neighbour,65688.601,335.547,78701.260,530.436,60963.265,289.469
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,Nearest Neighbour,146667.278,820.656,172061.651,1186.359,110964.926,777.938
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,Nearest Neighbour,205367.287,819.066,233281.809,1105.973,172378.271,779.055
+pr76,76-city problem (Padberg/Rinaldi),Greedy,Nearest Neighbour,147162.785,93.819,157075.977,132.285,130921.005,79.312
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,Nearest Neighbour,222983.116,363.027,261772.424,540.094,179540.880,332.392
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,Nearest Neighbour,276204.644,370.577,314865.806,496.801,241459.710,334.731
+rat195,Rattled grid (Pulleyblank),Greedy,Nearest Neighbour,2770.396,688.216,3015.891,904.277,2582.497,636.433
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,Nearest Neighbour,4729.528,1326.685,5350.909,1724.555,4160.570,1276.961
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,Nearest Neighbour,5816.195,1363.264,6665.360,3442.967,5091.549,1282.483
+rat99,Rattled grid (Pulleyblank),Greedy,Nearest Neighbour,1478.013,162.619,1629.009,246.754,1369.535,138.795
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,Nearest Neighbour,2461.648,509.369,2843.335,714.965,2147.412,464.991
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,Nearest Neighbour,3050.002,482.327,3772.407,573.508,2554.566,464.939
+st70,70-city problem (Smith/Thompson),Greedy,Nearest Neighbour,826.523,93.574,901.271,150.935,761.689,82.244
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,Nearest Neighbour,1329.025,320.838,1515.176,374.808,1051.484,305.939
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,Nearest Neighbour,1619.713,356.301,1917.429,499.536,1400.933,308.956
