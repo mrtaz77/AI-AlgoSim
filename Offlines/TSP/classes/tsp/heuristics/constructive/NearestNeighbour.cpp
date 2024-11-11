@@ -48,5 +48,4 @@ void NearestNeighbour::solve() {
     time_taken = chrono::duration<double>(end - start).count();
 }
 
-const string& NearestNeighbour::get_heuristic_name() const { return "Nearest Neighbour"; }
-
+const string NearestNeighbour::get_heuristic_name() const { return "Nearest Neighbour"; }

@@ -9,5 +9,5 @@ class NearestNeighbour : public Constructive {
 public:
     NearestNeighbour(Graph&);
     void solve() override;
-    const string& get_heuristic_name() const override;
+    const string get_heuristic_name() const override;
 }; 
