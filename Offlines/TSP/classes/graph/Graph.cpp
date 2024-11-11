@@ -1,9 +1,6 @@
 #include "Graph.hpp"
 
-Graph::Graph() {
-    name = "";
-    number_of_vertices = 0;
-}
+Graph::Graph() : name(""), number_of_vertices(0) {}
 
 Graph::~Graph() {
     graph.clear();
