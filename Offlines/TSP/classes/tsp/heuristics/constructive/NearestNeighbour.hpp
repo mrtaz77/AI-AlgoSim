@@ -7,6 +7,7 @@ using namespace std;
 
 class NearestNeighbour : public Constructive {
 public:
-    NearestNeighbour(Graph& graph) : Constructive(graph) {}
+    NearestNeighbour(Graph&);
     void solve() override;
+    const string& get_heuristic_name() const override;
 }; 

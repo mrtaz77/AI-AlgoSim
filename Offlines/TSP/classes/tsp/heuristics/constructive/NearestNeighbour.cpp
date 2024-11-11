@@ -1,5 +1,7 @@
 #include "NearestNeighbour.hpp"
 
+NearestNeighbour::NearestNeighbour(Graph& graph) : Constructive(graph) {}
+
 void NearestNeighbour::solve() {
     auto start = chrono::high_resolution_clock::now();
 
@@ -8,7 +10,7 @@ void NearestNeighbour::solve() {
     tour.reserve(num_vertices + 1);
     vector<bool> visited(num_vertices, false);
 
-    int currentNode = 0;
+    int currentNode = starting_node;
     visited[currentNode] = true;
     tour.push_back(currentNode);
 
@@ -45,3 +47,6 @@ void NearestNeighbour::solve() {
     auto end = chrono::high_resolution_clock::now();
     time_taken = chrono::duration<double>(end - start).count();
 }
+
+const string& NearestNeighbour::get_heuristic_name() const { return "Nearest Neighbour"; }
+
