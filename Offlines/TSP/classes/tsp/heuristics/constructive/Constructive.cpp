@@ -1,6 +1,6 @@
 #include "Constructive.hpp"
 
-Constructive::Constructive(Graph& graph) : Heuristic(graph), starting_node(0), version(Versions::GREEDY) {}
+Constructive::Constructive(Graph& graph) : Heuristic(graph),  version(Versions::GREEDY), starting_node(0) {}
 
 void Constructive::set_version(Versions version) {
     this->version = version; 
