@@ -81,7 +81,7 @@ void load_graphs_from_directory(const string& input_dir, vector<Graph>& graphs) 
 
 void generate_tsp_tours(Graph& graph, const string& output_file) {
     vector<Versions> versions = {Versions::GREEDY, Versions::SEMI_GREEDY_3, Versions::SEMI_GREEDY_5};
-    vector<Heuristics> constructive_heuristics = {Heuristics::NEAREST_NEIGHBOUR}; 
+    vector<Heuristics> constructive_heuristics = {Heuristics::NEAREST_NEIGHBOUR, Heuristics::FARTHEST_INSERTION}; 
     vector<Heuristics> perturbative_heuristics = {Heuristics::TWO_OPT};
     for (auto version : versions) {
         for (auto constructive_heuristic : constructive_heuristics) {
@@ -104,12 +104,12 @@ void write_to_file(const string& output_file, const TSP& tsp) {
     file << fixed << setprecision(3);
     file << tsp.get_graph().get_filename() << "," << tsp.get_graph().get_name() << ","
         << version << "," << tsp.get_heuristic_name(Heuristics::CONSTRUCTIVE) << ","
-        << tsp.get_avg_cost(Heuristics::CONSTRUCTIVE) << "," 
-        << tsp.get_avg_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
-        << tsp.get_worst_cost(Heuristics::CONSTRUCTIVE) << "," 
-        << tsp.get_worst_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
         << tsp.get_best_cost(Heuristics::CONSTRUCTIVE) << "," 
-        << tsp.get_best_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << endl;
+        << tsp.get_avg_cost(Heuristics::CONSTRUCTIVE) << "," 
+        << tsp.get_worst_cost(Heuristics::CONSTRUCTIVE) << ","
+        << tsp.get_best_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
+        << tsp.get_avg_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
+        << tsp.get_worst_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << endl;
     file.close();
 }
 
@@ -121,9 +121,8 @@ void initialize_output_file(const string& output_file) {
     }
     file << "Graph File,Graph Name," 
         << "Version,Heuristic,"
-        << "Avg Cost,Avg Time (µs),"
-        << "Worst Cost,Worst Time (µs),"
-        << "Best Cost,Best Time (µs)" << endl;
+        << "Best Cost,Avg Cost,Worst Cost,"
+        << "Best Time (µs),Avg Time (µs),Worst Time (µs)" << endl;
     file.close();
 }
 

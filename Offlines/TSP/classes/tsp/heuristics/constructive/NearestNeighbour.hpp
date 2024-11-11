@@ -10,4 +10,5 @@ public:
     NearestNeighbour(Graph&);
     void solve() override;
     const string get_heuristic_name() const override;
+    bool is_start_variable() override;
 }; 

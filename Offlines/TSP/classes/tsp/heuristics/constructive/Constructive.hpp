@@ -13,4 +13,5 @@ public:
     Versions get_version() const;
     int select_from_candidates(const vector<pair<int, long double>>&);
     void set_starting_node(int);
+    virtual bool is_start_variable() = 0;
 };

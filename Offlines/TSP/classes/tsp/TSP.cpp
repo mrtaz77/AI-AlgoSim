@@ -7,6 +7,9 @@ void TSP::set_heuristics(Heuristics constructive_heuristic, Heuristics perturbat
         case Heuristics::NEAREST_NEIGHBOUR:
             this->constructive_heuristic = make_unique<NearestNeighbour>(graph);
             break;
+        case Heuristics::FARTHEST_INSERTION:
+            this->constructive_heuristic = make_unique<FarthestInsertion>(graph);
+            break;
         default:
             cerr << "Error: Unsupported heuristic type.\n";
             this->constructive_heuristic.reset();
@@ -28,7 +31,8 @@ void TSP::run() {
         tour_avg_costs.first = tour_avg_times.first = 0;
         tour_min_costs.first = tour_min_times.first = numeric_limits<long double>::max();
         tour_max_costs.first = tour_max_times.first = numeric_limits<long double>::min();
-        for(int i = 0; i < graph.get_number_of_vertices(); ++i) {
+        int number_of_iterations = (constructive_heuristic->is_start_variable()) ? graph.get_number_of_vertices() : 1;
+        for(int i = 0; i < number_of_iterations; ++i) {
             constructive_heuristic->set_starting_node(i);
             constructive_heuristic->solve();
             tours[i].first = constructive_heuristic->get_tour_cost();
@@ -41,8 +45,8 @@ void TSP::run() {
             tour_min_times.first = min(tour_min_times.first, tour_time);
             tour_max_times.first = max(tour_max_times.first, tour_time);
         }
-        tour_avg_costs.first /= graph.get_number_of_vertices();
-        tour_avg_times.first /= graph.get_number_of_vertices();
+        tour_avg_costs.first /= number_of_iterations;
+        tour_avg_times.first /= number_of_iterations;
     } else cerr << "Error: No constructive heuristic set. Please set a constructive heuristic before running.\n";
 }
 

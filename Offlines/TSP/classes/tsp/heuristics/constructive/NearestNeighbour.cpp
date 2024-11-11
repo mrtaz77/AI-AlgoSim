@@ -49,3 +49,5 @@ void NearestNeighbour::solve() {
 }
 
 const string NearestNeighbour::get_heuristic_name() const { return "Nearest Neighbour"; }
+
+bool NearestNeighbour::is_start_variable() { return true; }
