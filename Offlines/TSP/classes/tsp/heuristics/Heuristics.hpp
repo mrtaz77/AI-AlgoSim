@@ -1,5 +1,8 @@
 #pragma once
 
 enum class Heuristics {
-    NEAREST_NEIGHBOUR
+    CONSTRUCTIVE,
+    PERTURBATIVE,
+    NEAREST_NEIGHBOUR,
+    TWO_OPT
 };
