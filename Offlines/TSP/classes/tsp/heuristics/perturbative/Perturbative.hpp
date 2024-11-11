@@ -9,8 +9,6 @@ protected:
 
 public:
     Perturbative(Graph&);
-    virtual void solve() override = 0;
-    virtual const string& get_heuristic_name() const override = 0;
     void set_tour(vector<int>&);
     void set_cost(long double);
 };
