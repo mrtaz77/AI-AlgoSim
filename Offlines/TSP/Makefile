@@ -2,7 +2,7 @@
 # It requires GNU Make.
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -O2 -g
+CXXFLAGS = -Wall -Wextra -O2
 
 EXEC = main
 
@@ -13,7 +13,9 @@ classes/graph/Graph.cpp \
 classes/tsp/TSP.cpp \
 classes/tsp/heuristics/Heuristic.cpp \
 classes/tsp/heuristics/constructive/Constructive.cpp \
-classes/tsp/heuristics/constructive/NearestNeighbour.cpp
+classes/tsp/heuristics/constructive/NearestNeighbour.cpp \
+classes/tsp/heuristics/perturbative/Perturbative.cpp \
+classes/tsp/heuristics/perturbative/TwoOpt.cpp \
 
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
