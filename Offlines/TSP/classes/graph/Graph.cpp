@@ -13,9 +13,9 @@ istream& operator>>(istream& is, Graph& g) {
 
     while (getline(is, line)) {
         if (line.find("NAME") != string::npos) {
-            g.filename = line.substr(line.find(":") + 2);
+            g.filename = g.strip(line.substr(line.find(":") + 2));
         } else if (line.find("COMMENT") != string::npos) {
-            g.name = line.substr(line.find(":") + 2);
+            g.name = g.strip(line.substr(line.find(":") + 2));
         } else if (line.find("DIMENSION") != string::npos) {
             dimension = stoi(line.substr(line.find(':') + 2));
             g.number_of_vertices = dimension;
@@ -88,3 +88,13 @@ const string& Graph::get_name() const { return name; }
 void Graph::set_filename(const string& filename) { this->filename = filename; }
 
 const string& Graph::get_filename() const { return filename; }
+
+string Graph::strip(const string &str) {
+    size_t start = str.find_first_not_of(" \t\n\r\f\v"); 
+    size_t end = str.find_last_not_of(" \t\n\r\f\v");    
+
+    if (start == string::npos) {
+        return "";
+    }
+    return str.substr(start, end - start + 1);
+}

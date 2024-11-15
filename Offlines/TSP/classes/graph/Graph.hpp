@@ -12,6 +12,7 @@ class Graph {
     vector<std::pair<long double, long double>> coordinates;
     long double euclidean_distance(int, int);
     void initialize_graph();
+    string strip(const string &str); 
 public:
     Graph();
     ~Graph();
