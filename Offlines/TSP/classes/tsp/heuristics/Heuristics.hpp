@@ -6,5 +6,6 @@ enum class Heuristics {
     NEAREST_NEIGHBOUR,
     FARTHEST_INSERTION,
     MINIMUM_SPANNING_TREE,
-    TWO_OPT
+    TWO_OPT,
+    NODE_SHIFT
 };

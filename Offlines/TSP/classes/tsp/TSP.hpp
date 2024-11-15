@@ -11,6 +11,7 @@
 #include "heuristics/constructive/Versions.hpp"
 #include "heuristics/perturbative/Perturbative.hpp"
 #include "heuristics/perturbative/TwoOpt.hpp"
+#include "heuristics/perturbative/NodeShift.hpp"
 
 using namespace std;
 

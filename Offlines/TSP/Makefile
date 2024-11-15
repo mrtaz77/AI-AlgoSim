@@ -2,7 +2,7 @@
 # It requires GNU Make.
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -O2
+CXXFLAGS = -Wall -Wextra -O2 -g
 
 EXEC = main
 
@@ -18,6 +18,7 @@ classes/tsp/heuristics/constructive/FarthestInsertion.cpp \
 classes/tsp/heuristics/constructive/MST.cpp \
 classes/tsp/heuristics/perturbative/Perturbative.cpp \
 classes/tsp/heuristics/perturbative/TwoOpt.cpp \
+classes/tsp/heuristics/perturbative/NodeShift.cpp
 
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
@@ -46,4 +47,4 @@ else
 endif
 
 run: $(EXEC)
-	./$(EXEC) -f test.tsp -o report
+	./$(EXEC) $(ARGS)

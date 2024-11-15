@@ -23,6 +23,9 @@ void TSP::set_heuristics(Heuristics constructive_heuristic, Heuristics perturbat
         case Heuristics::TWO_OPT:
             this->perturbative_heuristic = make_unique<TwoOpt>(graph);
             break;
+        case Heuristics::NODE_SHIFT:
+            this->perturbative_heuristic = make_unique<NodeShift>(graph);
+            break;
         default:    
             break;
     }
@@ -30,11 +33,11 @@ void TSP::set_heuristics(Heuristics constructive_heuristic, Heuristics perturbat
 
 void TSP::run() {
     vector<pair<long double, vector<int>>> tours(graph.get_number_of_vertices(), {0.0, vector<int>(graph.get_number_of_vertices(), 0)});
+    int number_of_iterations = (constructive_heuristic->is_start_variable()) ? graph.get_number_of_vertices() : 1;
     if (constructive_heuristic) {
         tour_avg_costs.first = tour_avg_times.first = 0;
         tour_min_costs.first = tour_min_times.first = numeric_limits<long double>::max();
         tour_max_costs.first = tour_max_times.first = numeric_limits<long double>::min();
-        int number_of_iterations = (constructive_heuristic->is_start_variable()) ? graph.get_number_of_vertices() : 1;
         for(int i = 0; i < number_of_iterations; ++i) {
             constructive_heuristic->set_starting_node(i);
             constructive_heuristic->solve();
@@ -51,6 +54,26 @@ void TSP::run() {
         tour_avg_costs.first /= number_of_iterations;
         tour_avg_times.first /= number_of_iterations;
     } else cerr << "Error: No constructive heuristic set. Please set a constructive heuristic before running.\n";
+    if(perturbative_heuristic) {
+        tour_avg_costs.second = tour_avg_times.second = 0;
+        tour_min_costs.second = tour_min_times.second = numeric_limits<long double>::max();
+        tour_max_costs.second = tour_max_times.second = numeric_limits<long double>::min();
+        for(int i = 0; i < number_of_iterations; ++i) {
+            perturbative_heuristic->set_tour(tours[i].second);
+            perturbative_heuristic->set_cost(tours[i].first);
+            perturbative_heuristic->solve();
+            tours[i].first = perturbative_heuristic->get_tour_cost();
+            tour_avg_costs.second += tours[i].first;
+            tour_min_costs.second = min(tour_min_costs.second, tours[i].first);
+            tour_max_costs.second = max(tour_max_costs.second, tours[i].first);
+            long double tour_time = perturbative_heuristic->get_time_taken();
+            tour_avg_times.second += tour_time;
+            tour_min_times.second = min(tour_min_times.second, tour_time);
+            tour_max_times.second = max(tour_max_times.second, tour_time);
+        }
+        tour_avg_costs.second /= tours.size();
+        tour_avg_times.second /= tours.size();
+    } else cerr << "Error: No perturbative heuristic set. Please set a perturbative heuristic before running.\n";
 }
 
 void TSP::set_graph(Graph& graph) {

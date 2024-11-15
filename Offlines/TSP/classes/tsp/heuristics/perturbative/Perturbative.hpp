@@ -2,9 +2,10 @@
 
 #include "../Heuristic.hpp"
 
+#define THRESHOLD 0.001
+
 class Perturbative : public Heuristic {
 protected:
-    virtual long double calculate_improvement(int, int) = 0;
     virtual void apply_change(int, int) = 0;
 
 public:

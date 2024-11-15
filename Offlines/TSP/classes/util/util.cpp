@@ -82,7 +82,7 @@ void load_graphs_from_directory(const string& input_dir, vector<Graph>& graphs) 
 void generate_tsp_tours(Graph& graph, const string& output_file) {
     vector<Versions> versions = {Versions::GREEDY, Versions::SEMI_GREEDY_3, Versions::SEMI_GREEDY_5};
     vector<Heuristics> constructive_heuristics = {Heuristics::NEAREST_NEIGHBOUR, Heuristics::FARTHEST_INSERTION, Heuristics::MINIMUM_SPANNING_TREE}; 
-    vector<Heuristics> perturbative_heuristics = {Heuristics::TWO_OPT};
+    vector<Heuristics> perturbative_heuristics = {Heuristics::NODE_SHIFT};
     for (auto version : versions) {
         for (auto constructive_heuristic : constructive_heuristics) {
             for (auto perturbative_heuristic : perturbative_heuristics) {
@@ -110,6 +110,14 @@ void write_to_file(const string& output_file, const TSP& tsp) {
         << tsp.get_best_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
         << tsp.get_avg_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
         << tsp.get_worst_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << endl;
+    file << tsp.get_graph().get_filename() << "," << tsp.get_graph().get_name() << ","
+        << version << "," << tsp.get_heuristic_name(Heuristics::CONSTRUCTIVE) << "+" << tsp.get_heuristic_name(Heuristics::PERTURBATIVE) << ","
+        << tsp.get_best_cost(Heuristics::PERTURBATIVE) << "," 
+        << tsp.get_avg_cost(Heuristics::PERTURBATIVE) << "," 
+        << tsp.get_worst_cost(Heuristics::PERTURBATIVE) << ","
+        << tsp.get_best_time(Heuristics::PERTURBATIVE) * 1'000'000 << ","
+        << tsp.get_avg_time(Heuristics::PERTURBATIVE) * 1'000'000 << ","
+        << tsp.get_worst_time(Heuristics::PERTURBATIVE) * 1'000'000 << endl;
     file.close();
 }
 
