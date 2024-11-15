@@ -15,6 +15,7 @@ classes/tsp/heuristics/Heuristic.cpp \
 classes/tsp/heuristics/constructive/Constructive.cpp \
 classes/tsp/heuristics/constructive/NearestNeighbour.cpp \
 classes/tsp/heuristics/constructive/FarthestInsertion.cpp \
+classes/tsp/heuristics/constructive/MST.cpp \
 classes/tsp/heuristics/perturbative/Perturbative.cpp \
 classes/tsp/heuristics/perturbative/TwoOpt.cpp \
 
@@ -45,4 +46,4 @@ else
 endif
 
 run: $(EXEC)
-	./$(EXEC) -i benchmark -o report
+	./$(EXEC) -f test.tsp -o report

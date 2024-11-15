@@ -15,3 +15,9 @@ long double Heuristic::get_tour_cost() const {
     return tour_cost;
 }
 
+void Heuristic::compute_tour_cost() {
+    tour_cost = 0;
+    for (size_t i = 0; i < tour.size() - 1; i++) {
+        tour_cost += g.get_edge_weight(tour[i], tour[i + 1]);
+    }
+}

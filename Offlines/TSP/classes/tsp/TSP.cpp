@@ -10,6 +10,9 @@ void TSP::set_heuristics(Heuristics constructive_heuristic, Heuristics perturbat
         case Heuristics::FARTHEST_INSERTION:
             this->constructive_heuristic = make_unique<FarthestInsertion>(graph);
             break;
+        case Heuristics::MINIMUM_SPANNING_TREE:
+            this->constructive_heuristic = make_unique<MST>(graph);
+            break;
         default:
             cerr << "Error: Unsupported heuristic type.\n";
             this->constructive_heuristic.reset();

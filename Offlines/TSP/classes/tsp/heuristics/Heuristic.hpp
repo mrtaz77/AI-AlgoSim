@@ -19,4 +19,5 @@ public:
     vector<int>& get_tour();
     long double get_time_taken() const;
     long double get_tour_cost() const;
+    void compute_tour_cost();
 };

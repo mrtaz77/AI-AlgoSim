@@ -5,5 +5,6 @@ enum class Heuristics {
     PERTURBATIVE,
     NEAREST_NEIGHBOUR,
     FARTHEST_INSERTION,
+    MINIMUM_SPANNING_TREE,
     TWO_OPT
 };

@@ -6,6 +6,7 @@
 #include "heuristics/Heuristics.hpp"
 #include "heuristics/constructive/NearestNeighbour.hpp"
 #include "heuristics/constructive/FarthestInsertion.hpp"
+#include "heuristics/constructive/MST.hpp"
 #include "heuristics/constructive/Constructive.hpp"
 #include "heuristics/constructive/Versions.hpp"
 #include "heuristics/perturbative/Perturbative.hpp"
