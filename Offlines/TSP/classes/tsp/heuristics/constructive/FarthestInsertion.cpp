@@ -86,11 +86,4 @@ void FarthestInsertion::initialize_distances_to_tour(int node1, int node2) {
     }
 }
 
-void FarthestInsertion::compute_tour_cost() {
-    tour_cost = 0;
-    for (size_t i = 0; i < tour.size() - 1; i++) {
-        tour_cost += g.get_edge_weight(tour[i], tour[i + 1]);
-    }
-}
-
 bool FarthestInsertion::is_start_variable() { return false; }

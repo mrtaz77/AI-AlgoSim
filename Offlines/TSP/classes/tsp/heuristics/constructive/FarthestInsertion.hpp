@@ -9,7 +9,6 @@ class FarthestInsertion : public Constructive {
     vector<long double> minimum_distances_to_tour;
 
     pair<int, int> find_nodes_farthest_apart();
-    void compute_tour_cost();
 public:
     FarthestInsertion(Graph&);
     void solve() override;
