@@ -12,6 +12,7 @@
 #include "heuristics/perturbative/Perturbative.hpp"
 #include "heuristics/perturbative/TwoOpt.hpp"
 #include "heuristics/perturbative/NodeShift.hpp"
+#include "heuristics/perturbative/TwoHalfOpt.hpp"
 
 using namespace std;
 

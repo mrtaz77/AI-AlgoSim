@@ -26,6 +26,9 @@ void TSP::set_heuristics(Heuristics constructive_heuristic, Heuristics perturbat
         case Heuristics::NODE_SHIFT:
             this->perturbative_heuristic = make_unique<NodeShift>(graph);
             break;
+        case Heuristics::TWO_HALF_OPT:
+            this->perturbative_heuristic = make_unique<TwoHalfOpt>(graph);
+            break;
         default:    
             break;
     }
@@ -71,8 +74,8 @@ void TSP::run() {
             tour_min_times.second = min(tour_min_times.second, tour_time);
             tour_max_times.second = max(tour_max_times.second, tour_time);
         }
-        tour_avg_costs.second /= tours.size();
-        tour_avg_times.second /= tours.size();
+        tour_avg_costs.second /= number_of_iterations;
+        tour_avg_times.second /= number_of_iterations;
     } else cerr << "Error: No perturbative heuristic set. Please set a perturbative heuristic before running.\n";
 }
 
