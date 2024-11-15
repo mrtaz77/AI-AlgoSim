@@ -2,7 +2,7 @@
 
 NodeShift::NodeShift(Graph& graph) : Perturbative(graph) {}
 
-const string NodeShift::get_heuristic_name() const { return "NodeShift"; }
+const string NodeShift::get_heuristic_name() const { return "NSh"; }
 
 long double NodeShift::calculate_improvement(int x0_predecessor, int x0, int x0_successor, int y1, int y2) {
     auto prev_length = g.get_edge_weight(x0_predecessor, x0) 

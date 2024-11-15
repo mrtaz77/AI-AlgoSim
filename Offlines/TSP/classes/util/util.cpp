@@ -56,12 +56,10 @@ bool has_valid_ext(const string& file_name, const string& extension) {
     return fs::path(file_name).extension() == extension;
 }
 
-void generate_tsp_with_heuristics_and_version(Graph& graph, const string& output_file, Heuristics constructive_heuristic_type, Heuristics perturbative_heuristic_type, Versions version) {
-    TSP tsp(graph);
+void generate_tsp_with_heuristics_and_version(TSP& tsp, Heuristics constructive_heuristic_type, Heuristics perturbative_heuristic_type, Versions version) {
     tsp.set_heuristics(constructive_heuristic_type, perturbative_heuristic_type);
     tsp.set_version(version);
     tsp.run();
-    write_to_file(output_file, tsp);
 }
 
 void load_graphs_from_directory(const string& input_dir, vector<Graph>& graphs) {
@@ -80,19 +78,24 @@ void load_graphs_from_directory(const string& input_dir, vector<Graph>& graphs) 
 }
 
 void generate_tsp_tours(Graph& graph, const string& output_file) {
+    TSP tsp(graph);
     vector<Versions> versions = {Versions::GREEDY, Versions::SEMI_GREEDY_3, Versions::SEMI_GREEDY_5};
     vector<Heuristics> constructive_heuristics = {Heuristics::NEAREST_NEIGHBOUR, Heuristics::FARTHEST_INSERTION, Heuristics::MINIMUM_SPANNING_TREE}; 
-    vector<Heuristics> perturbative_heuristics = {Heuristics::NODE_SHIFT};
+    vector<Heuristics> perturbative_heuristics = {Heuristics::NODE_SHIFT, Heuristics::TWO_OPT};
+    bool new_constructive_heuristics = false;
     for (auto version : versions) {
         for (auto constructive_heuristic : constructive_heuristics) {
+            new_constructive_heuristics = true;
             for (auto perturbative_heuristic : perturbative_heuristics) {
-                generate_tsp_with_heuristics_and_version(graph, output_file, constructive_heuristic, perturbative_heuristic, version);
+                generate_tsp_with_heuristics_and_version(tsp, constructive_heuristic, perturbative_heuristic, version);
+                write_to_file(output_file, tsp, new_constructive_heuristics);
+                new_constructive_heuristics = false;
             }
         }
     }
 }
 
-void write_to_file(const string& output_file, const TSP& tsp) {
+void write_to_file(const string& output_file, const TSP& tsp, bool new_constructive_heuristics) {
     ofstream file(output_file + ".csv", ios::app);
     if (!file) {
         cerr << "Error: Unable to open file " << output_file << " for writing.\n";
@@ -102,14 +105,16 @@ void write_to_file(const string& output_file, const TSP& tsp) {
     string version = (tsp.get_version() == Versions::GREEDY) ? "Greedy" :
                     (tsp.get_version() == Versions::SEMI_GREEDY_3) ? "Semi-Greedy 3" : "Semi-Greedy 5";
     file << fixed << setprecision(3);
-    file << tsp.get_graph().get_filename() << "," << tsp.get_graph().get_name() << ","
-        << version << "," << tsp.get_heuristic_name(Heuristics::CONSTRUCTIVE) << ","
-        << tsp.get_best_cost(Heuristics::CONSTRUCTIVE) << "," 
-        << tsp.get_avg_cost(Heuristics::CONSTRUCTIVE) << "," 
-        << tsp.get_worst_cost(Heuristics::CONSTRUCTIVE) << ","
-        << tsp.get_best_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
-        << tsp.get_avg_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
-        << tsp.get_worst_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << endl;
+    if(new_constructive_heuristics) {
+        file << tsp.get_graph().get_filename() << "," << tsp.get_graph().get_name() << ","
+            << version << "," << tsp.get_heuristic_name(Heuristics::CONSTRUCTIVE) << ","
+            << tsp.get_best_cost(Heuristics::CONSTRUCTIVE) << "," 
+            << tsp.get_avg_cost(Heuristics::CONSTRUCTIVE) << "," 
+            << tsp.get_worst_cost(Heuristics::CONSTRUCTIVE) << ","
+            << tsp.get_best_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
+            << tsp.get_avg_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << ","
+            << tsp.get_worst_time(Heuristics::CONSTRUCTIVE) * 1'000'000 << endl;
+    }
     file << tsp.get_graph().get_filename() << "," << tsp.get_graph().get_name() << ","
         << version << "," << tsp.get_heuristic_name(Heuristics::CONSTRUCTIVE) << "+" << tsp.get_heuristic_name(Heuristics::PERTURBATIVE) << ","
         << tsp.get_best_cost(Heuristics::PERTURBATIVE) << "," 

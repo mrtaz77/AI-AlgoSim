@@ -2,7 +2,7 @@
 
 FarthestInsertion::FarthestInsertion(Graph& graph) : Constructive(graph), minimum_distances_to_tour(graph.get_number_of_vertices(), numeric_limits<long double>::max()) {}
 
-const string FarthestInsertion::get_heuristic_name() const { return "Farthest Insertion"; }
+const string FarthestInsertion::get_heuristic_name() const { return "FI"; }
 
 void FarthestInsertion::solve() {
     auto start = chrono::high_resolution_clock::now();

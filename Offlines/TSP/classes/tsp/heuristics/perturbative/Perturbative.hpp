@@ -2,7 +2,7 @@
 
 #include "../Heuristic.hpp"
 
-#define THRESHOLD 0.001
+#define THRESHOLD 0.1
 
 class Perturbative : public Heuristic {
 protected:

@@ -50,7 +50,7 @@ void MST::solve() {
     compute_tour_cost();
 }
 
-const string MST::get_heuristic_name() const { return "Minimum Spanning Tree"; }
+const string MST::get_heuristic_name() const { return "MST"; }
 
 bool MST::is_start_variable() { return true; }
 
