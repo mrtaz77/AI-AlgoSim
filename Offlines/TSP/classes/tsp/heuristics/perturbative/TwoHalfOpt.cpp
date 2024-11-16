@@ -109,4 +109,3 @@ void TwoHalfOpt::solve() {
     time_taken = chrono::duration<double>(end - start).count();
     compute_tour_cost();
 }
-
