@@ -25,6 +25,8 @@ void TwoOpt::apply_change(int i, int j) {
 // can by done; in every iteration looks for and applies the move
 // that gives maximal length gain.
 void TwoOpt::solve() {
+    tour_cost -= g.get_edge_weight(tour[g.get_number_of_vertices() - 1], tour[g.get_number_of_vertices()]);
+    tour.pop_back();
     auto start = chrono::high_resolution_clock::now();
     int best_move_i, best_move_j;
     long double best_move_improvement;
@@ -38,7 +40,7 @@ void TwoOpt::solve() {
             i = counter_1;
             x1 = tour[i];
             x2 = tour[(i + 1) % g.get_number_of_vertices()];
-            counter_2_limit = (!i) ? g.get_number_of_vertices() - 2 : g.get_number_of_vertices() - 1;
+            counter_2_limit = (i == 0) ? g.get_number_of_vertices() - 2 : g.get_number_of_vertices() - 1;
             for(int counter_2 = i + 2; counter_2 <= counter_2_limit; counter_2++) {
                 j = counter_2;
                 y1 = tour[j];
@@ -54,11 +56,12 @@ void TwoOpt::solve() {
         }
         if(!locally_optimal) {
             apply_change(best_move_i, best_move_j);
-            tour_cost -= best_move_improvement;
         }
     }
+    tour.push_back(tour[0]);
     auto end = chrono::high_resolution_clock::now();
     time_taken = chrono::duration<double>(end - start).count();
+    compute_tour_cost();
 
 }
 

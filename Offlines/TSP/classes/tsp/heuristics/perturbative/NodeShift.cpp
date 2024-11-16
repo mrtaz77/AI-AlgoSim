@@ -31,30 +31,33 @@ void NodeShift::apply_change(int i, int j) {
 }
 
 void NodeShift::solve() {
+    tour_cost -= g.get_edge_weight(tour[g.get_number_of_vertices() - 1], tour[g.get_number_of_vertices()]);
+    tour.pop_back();
     auto start = chrono::high_resolution_clock::now();
     auto locally_optimal = false;
     int i, j, x0_predecessor, x0, x0_successor, y1, y2;
     while(!locally_optimal) {
         locally_optimal = true;
-        for(int k = 0; k < g.get_number_of_vertices(); k++) {
-            i = k;
+        for(int counter_1 = 0; counter_1 < g.get_number_of_vertices(); counter_1++) {
+            i = counter_1;
             x0_predecessor = tour[(i - 1 + g.get_number_of_vertices()) % g.get_number_of_vertices()];
             x0 = tour[i];
             x0_successor = tour[(i + 1) % g.get_number_of_vertices()];
-            for(int l = 1; l < g.get_number_of_vertices() - 1; l++) {
-                j = (i + l) % g.get_number_of_vertices();
+            for(int counter_2 = 1; counter_2 < g.get_number_of_vertices() - 1; counter_2++) {
+                j = (i + counter_2) % g.get_number_of_vertices();
                 y1 = tour[j];
                 y2 = tour[(j + 1) % g.get_number_of_vertices()];
                 auto improvement = calculate_improvement(x0_predecessor, x0, x0_successor, y1, y2);
                 if(improvement > THRESHOLD) {
                     apply_change(i, j);
-                    tour_cost -= improvement;
                     locally_optimal = false;
                     break;
                 }
             }
         }
     }
+    tour.push_back(tour[0]);
     auto end = chrono::high_resolution_clock::now();
     time_taken = chrono::duration<double>(end - start).count();
+    compute_tour_cost();
 }

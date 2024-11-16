@@ -80,8 +80,16 @@ void load_graphs_from_directory(const string& input_dir, vector<Graph>& graphs) 
 void generate_tsp_tours(Graph& graph, const string& output_file) {
     TSP tsp(graph);
     vector<Versions> versions = {Versions::GREEDY, Versions::SEMI_GREEDY_3, Versions::SEMI_GREEDY_5};
-    vector<Heuristics> constructive_heuristics = {Heuristics::NEAREST_NEIGHBOUR, Heuristics::FARTHEST_INSERTION, Heuristics::MINIMUM_SPANNING_TREE}; 
-    vector<Heuristics> perturbative_heuristics = {Heuristics::NODE_SHIFT, Heuristics::TWO_OPT};
+    vector<Heuristics> constructive_heuristics = {
+        Heuristics::NEAREST_NEIGHBOUR,
+        Heuristics::FARTHEST_INSERTION, 
+        Heuristics::MINIMUM_SPANNING_TREE,
+    }; 
+    vector<Heuristics> perturbative_heuristics = {
+        Heuristics::NODE_SHIFT,
+        Heuristics::TWO_OPT,
+        Heuristics::TWO_HALF_OPT,
+    };
     bool new_constructive_heuristics = false;
     for (auto version : versions) {
         for (auto constructive_heuristic : constructive_heuristics) {
