@@ -2,8 +2,10 @@
 .lh/
 .vscode/
 *.txt
+!comparison_report.txt
 main
 2005020/
+plots/
 
 # Prerequisites
 *.d
