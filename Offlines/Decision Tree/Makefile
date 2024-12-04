@@ -2,7 +2,7 @@
 # It requires GNU Make.
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -O2
+CXXFLAGS = -Wall -Wextra -O2 -MMD
 
 EXEC = main
 
@@ -11,7 +11,8 @@ CPP_SOURCES = main.cpp \
 classes/validator/ColumnValidator.cpp \
 classes/validator/FileExists.cpp \
 classes/validator/RowValidator.cpp \
-classes/validator/Validator.cpp
+classes/validator/Validator.cpp \
+classes/Dataset.cpp
 
 CPP_OBJS = $(CPP_SOURCES:.cpp=.o)
 OBJS = $(CPP_OBJS)
@@ -42,7 +43,7 @@ else
 endif
 
 run: $(EXEC)
-	./$(EXEC) $(ARGS)
+	./$(EXEC) $(file) $(run)
 
 # Include dependency files
 -include $(DEPS)
