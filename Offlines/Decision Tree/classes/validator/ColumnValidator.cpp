@@ -11,8 +11,8 @@ bool ColumnValidator::validate(const string& file_path)
     while (getline(stream, value, ',')) {
         columns.push_back(value);
     }
-    if (columns.size() != 7) {
-        cout << "Error: Each row must have exactly 7 columns." << endl;
+    if (columns.size() != N_COLS) {
+        cout << "Error: Each row must have exactly " << N_COLS << " columns." << endl;
         return false;
     }
   }

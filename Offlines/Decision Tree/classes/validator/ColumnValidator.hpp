@@ -1,6 +1,7 @@
 
 #pragma once
 
+#include "ValidatorConstants.hpp"
 #include "Validator.hpp"
 
 using namespace std;
