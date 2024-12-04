@@ -16,6 +16,6 @@ class RowValidator : public Validator
   
   bool is_valid_row(const vector<string>&);
 
-  public:
-    bool validate(const string&) override;
+public:
+  bool validate(const string&) override;
 };
