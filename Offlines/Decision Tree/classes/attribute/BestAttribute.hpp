@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Attribute.hpp"
+#include "AttributeSelector.hpp"
 
-class BestAttribute : public Attribute
+class BestAttribute : public AttributeSelector
 {
 public:
   int select(const vector<pair<int, double>>& attribute_scores) const override;
