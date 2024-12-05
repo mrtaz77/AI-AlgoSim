@@ -16,6 +16,7 @@ InformationGain::current_entropy(const vector<vector<string>>& dataset)
     double probability = static_cast<double>(count) / total_rows;
     entropy -= probability * log2(probability);
   }
+  return entropy;
 }
 
 double
