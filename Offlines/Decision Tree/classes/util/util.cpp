@@ -71,15 +71,15 @@ train_and_test(Dataset& dataset, int runs)
     tree_builder->build_tree(train_set);
     accuracies_best_ig.push_back(tree_builder->calculate_accuracy(test_set));
 
-    tree_builder->set_attribute(random_top);
+    tree_builder = make_shared<TreeBuilder>(ig, random_top);
     tree_builder->build_tree(train_set);
     accuracies_top3_ig.push_back(tree_builder->calculate_accuracy(test_set));
 
-    tree_builder->set_heuristic(gini);
+    tree_builder = make_shared<TreeBuilder>(gini, random_top);
     tree_builder->build_tree(train_set);
     accuracies_top3_gini.push_back(tree_builder->calculate_accuracy(test_set));
 
-    tree_builder->set_attribute(best);
+    tree_builder = make_shared<TreeBuilder>(gini, best);
     tree_builder->build_tree(train_set);
     accuracies_best_gini.push_back(tree_builder->calculate_accuracy(test_set));
   }
@@ -121,7 +121,7 @@ statistics(
   size_t runs = accuracies_best_ig.size();
 
   cout << "+-------------------------------------------+----------------------------------+----------------------------------+----------------------------------+" << endl;
-  cout << "|              # of Runs = " << runs << "               |         Average accuracy         |        Standard Deviation        |     Co-efficient of Variation    |" << endl;
+  cout << "|              # of Runs = " << setw(2) << runs << "               |         Average accuracy         |        Standard Deviation        |     Co-efficient of Variation    |" << endl;
   cout << "+-------------------------------------------+------------------+---------------+----------------------------------+----------------------------------+" << endl;
   cout << "|       Attribute Selection Strategy        | Information gain | Gini Impurity | Information gain | Gini Impurity | Information gain | Gini Impurity |" << endl;
   cout << "+-------------------------------------------+------------------+---------------+------------------+---------------+------------------+---------------+" << endl;
