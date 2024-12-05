@@ -11,4 +11,3 @@ public:
   void add_child(const string&, shared_ptr<DecisionTree>);
   string classify(const vector<string>&) const override;
 };
-
