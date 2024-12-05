@@ -73,3 +73,9 @@ ostream& operator<<(ostream& out, const Dataset& d)
 
   return out;
 }
+
+vector<vector<string>>
+Dataset::get_dataset() const
+{
+  return dataset;
+}

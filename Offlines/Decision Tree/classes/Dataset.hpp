@@ -11,4 +11,5 @@ public:
   pair<Dataset, Dataset> split(double);
   friend istream& operator>>(istream&, Dataset&);
   friend ostream& operator<<(ostream&, const Dataset&);
+  vector<vector<string>> get_dataset() const;
 };
