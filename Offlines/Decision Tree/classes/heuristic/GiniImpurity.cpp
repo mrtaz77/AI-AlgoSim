@@ -37,5 +37,5 @@ GiniImpurity::calculate(const vector<vector<string>>& dataset, int attribute_ind
     weighted_gini_impurity += (subset_size / total_rows) * subset_gini_impurity;
   }
 
-  return weighted_gini_impurity;
+  return -weighted_gini_impurity;
 }
