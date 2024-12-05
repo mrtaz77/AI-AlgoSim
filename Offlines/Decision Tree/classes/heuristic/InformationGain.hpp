@@ -9,5 +9,6 @@ using namespace std;
 class InformationGain : public Heuristic
 {
 public:
-  double calculate(const vector<vector<string>>& dataset, int attribute_index) const override;
+  double current_entropy(const vector<vector<string>>&);
+  double calculate(const vector<vector<string>>& dataset, int attribute_index) override;
 };

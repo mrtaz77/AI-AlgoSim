@@ -3,5 +3,6 @@
 class GiniImpurity : public Heuristic
 {
 public:
-  double calculate(const vector<vector<string>>& dataset, int attribute_index) const override;
+  double current_gini_impurity(const vector<vector<string>>& dataset);
+  double calculate(const vector<vector<string>>& dataset, int attribute_index) override;
 };
