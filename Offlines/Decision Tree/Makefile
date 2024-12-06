@@ -2,7 +2,7 @@
 # It requires GNU Make.
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -O2 -MMD -g3
+CXXFLAGS = -Wall -Wextra -O2 -MMD
 
 EXEC = main
 
@@ -12,6 +12,7 @@ classes/validator/ColumnValidator.cpp \
 classes/validator/FileExists.cpp \
 classes/validator/RowValidator.cpp \
 classes/validator/Validator.cpp \
+classes/DatasetConstants.cpp \
 classes/Dataset.cpp \
 classes/attribute/BestAttribute.cpp \
 classes/attribute/RandomTopAttribute.cpp \
