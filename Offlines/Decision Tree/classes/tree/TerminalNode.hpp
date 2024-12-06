@@ -8,4 +8,5 @@ class TerminalNode : public DecisionTree
 public:
   TerminalNode(const string&);
   string classify(const vector<string>&) const override;
+  void print(ostream&, int) const override;
 };

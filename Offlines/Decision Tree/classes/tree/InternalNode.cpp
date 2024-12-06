@@ -16,3 +16,15 @@ InternalNode::classify(const vector<string>& instance) const
     return it->second->classify(instance);
   return "unknown";
 }
+
+void
+InternalNode::print(ostream& os, int depth) const
+{
+  for(const auto& [attribute_value, subtree] : children)
+  {
+    os << string(depth, ' ');
+    os << "<" << attribute_name(attribute_index) << ":" << attribute_value << "> -> ";
+    os << (dynamic_cast<InternalNode*>(subtree.get()) ? "\n" : "");
+    subtree->print(os, depth+4);
+  }
+}
