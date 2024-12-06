@@ -18,16 +18,15 @@ TreeBuilder::set_attribute(shared_ptr<AttributeSelector> attribute_selector)
 shared_ptr<DecisionTree>
 TreeBuilder::build_tree(const vector<vector<string>>& dataset)
 {
-  const vector<string> labels;
   vector<int> attributes;
   for(int i = 0; i < ATTRIBUTES; i++)
     attributes.push_back(i);
-  root = build_tree_recursively(dataset, attributes, labels);
+  root = build_tree_recursively(dataset, attributes, dataset);
   return root;
 }
 
 shared_ptr<DecisionTree>
-TreeBuilder::build_tree_recursively(const vector<vector<string>>& examples, const vector<int>& attributes, const vector<string>& parent_labels)
+TreeBuilder::build_tree_recursively(const vector<vector<string>>& examples, const vector<int>& attributes, const vector<vector<string>>& parent_examples)
 {
   /**
    * No example has been observed for
@@ -36,7 +35,7 @@ TreeBuilder::build_tree_recursively(const vector<vector<string>>& examples, cons
    * aka plurality of parent_labels
   */
   if(examples.empty()) {
-    auto plurality_label = find_plurality_label(parent_labels);
+    auto plurality_label = find_plurality_label(parent_examples);
     return make_shared<TerminalNode>(plurality_label);
   }
 
@@ -54,56 +53,46 @@ TreeBuilder::build_tree_recursively(const vector<vector<string>>& examples, cons
    * Possible error or noise in data
    * return plurality of examples
   */
-  vector<string> example_labels;
-  if(attributes.empty()) {
-    example_labels = get_labels(examples);
-    auto plurality_label = find_plurality_label(example_labels);
+  if(attributes.size() == 0) {
+    auto plurality_label = find_plurality_label(examples);
     return make_shared<TerminalNode>(plurality_label);
   }
 
   int best_attribute = select_best_attribute(examples, attributes);
-  auto node = make_shared<InternalNode>(best_attribute);
+  auto node = make_shared<InternalNode>(best_attribute);  
   auto partitions = partition_data(examples, best_attribute);
 
+  vector<int> remaining_attributes = attributes;
+  remaining_attributes.erase(find(remaining_attributes.begin(), remaining_attributes.end(), best_attribute));  
+  
   for(const auto& [attribute_value, partition] : partitions) 
   {
-    vector<int> remaining_attributes = attributes;
-    remaining_attributes.erase(find(remaining_attributes.begin(), remaining_attributes.end(), best_attribute));
-    node->add_child(attribute_value, build_tree_recursively(partition, remaining_attributes, example_labels));
+    node->add_child(attribute_value, build_tree_recursively(partition, remaining_attributes, examples));
   }
   return node;
 }
 
-vector<string>
-TreeBuilder::get_labels(const vector<vector<string>>& examples)
-{
-  vector<string> labels;
-  for(const auto& example : examples)
-    labels.push_back(example.back());
-  return labels;
-}
-
 string
-TreeBuilder::find_plurality_label(const vector<string>& labels)
+TreeBuilder::find_plurality_label(const vector<vector<string>>& examples)
 {
-  unordered_map<string, int> label_counts;
-  for(const auto& label : labels)
-    label_counts[label]++;
+
+  map<string, int> label_counts;
+  for(const auto& example : examples)
+  {
+    label_counts[example.back()]++;
+  }
   
   int max_count = 0;
+  string max_label = "";
   for (const auto& [label, count] : label_counts)
+  {
     if(count > max_count)
+    {
       max_count = count;
-  
-  vector<string> candidates;
-  for (const auto& [label, count] : label_counts)
-    if(count == max_count)
-      candidates.push_back(label);
-  
-  random_device rd;
-  mt19937 gen(rd());
-  uniform_int_distribution<int> dist(0, candidates.size() - 1);
-  return candidates[dist(gen)];
+      max_label = label;
+    }
+  }
+  return max_label;
 }
 
 bool
@@ -111,17 +100,28 @@ TreeBuilder::all_labels_are_same(const vector<vector<string>>& examples)
 {
   string first_label = examples[0].back();
   for(const auto& example : examples)
+  {
     if(example.back() != first_label)
       return false;
+  }
   return true;
 }
 
-unordered_map<string, vector<vector<string>>>
+map<string, vector<vector<string>>>
 TreeBuilder::partition_data(const vector<vector<string>>& examples, int attribute_index)
 {
-  unordered_map<string, vector<vector<string>>> partitions;
+  map<string, vector<vector<string>>> partitions;
   for(const auto& example : examples)
     partitions[example[attribute_index]].push_back(example);
+
+  for (const auto& attribute_value : attribute_values[attribute_index])
+  {
+    if (partitions.find(attribute_value) == partitions.end())
+    {
+      partitions[attribute_value] = {};
+    }
+  }
+  
   return partitions;
 }
 
@@ -151,4 +151,10 @@ TreeBuilder::calculate_accuracy(const vector<vector<string>>& test)
       correct_predictions++;
   }
   return static_cast<double>(correct_predictions * 100.0) / total_predictions;
+}
+
+ostream& operator<<(ostream& os, const TreeBuilder& tree_builder)
+{
+  tree_builder.root->print(os, 0);
+  return os;
 }
