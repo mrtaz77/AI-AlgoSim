@@ -52,7 +52,7 @@ else
 endif
 
 run: $(EXEC)
-	./$(EXEC) $(file) $(run)
+	./$(EXEC) $(file) $(run) $(split)
 
 # Include dependency files
 -include $(DEPS)

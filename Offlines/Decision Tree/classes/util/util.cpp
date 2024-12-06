@@ -1,11 +1,11 @@
 #include "util.hpp"
 
 void
-validate_args(int argc, char *argv[], string& file_path, int& runs)
+validate_args(int argc, char *argv[], string& file_path, int& runs, double& train_split_ratio)
 {
-  if (argc != 3)
+  if (argc != 4)
   {
-    throw invalid_argument("Usage: " + string(argv[0]) + " <input file> <number of runs>");
+    throw invalid_argument("Usage: " + string(argv[0]) + " <input file> <number of runs> <train_split_percent>");
   }
 
   file_path = argv[1];
@@ -20,6 +20,18 @@ validate_args(int argc, char *argv[], string& file_path, int& runs)
   catch (const invalid_argument& e) 
   {
     throw invalid_argument("Number of runs must be an integer.");
+  }
+
+  try{
+    train_split_ratio = stod(argv[3]) / 100.0;
+    if(train_split_ratio <= 0 || train_split_ratio >= 1)
+    {
+      throw invalid_argument("Train split ratio must be between 0 and 1.");
+    }
+  }
+  catch(const invalid_argument& e)
+  {
+    throw invalid_argument("Train split ratio must be a double.");
   }
 }
 
@@ -51,7 +63,7 @@ load_dataset(const string& file_path)
 }
 
 void
-train_and_test(Dataset& dataset, int runs)
+train_and_test(Dataset& dataset, int runs, double train_split_ratio)
 {
   vector<double> accuracies_best_ig, accuracies_top3_ig, accuracies_best_gini, accuracies_top3_gini;
   vector<double> training_times_best_ig, training_times_top3_ig, training_times_best_gini, training_times_top3_gini;
@@ -67,7 +79,7 @@ train_and_test(Dataset& dataset, int runs)
 
   for(int i = 0; i < runs; i++)
   {
-    auto [train, test] = dataset.split(TRAINING_SPLIT_RATIO);
+    auto [train, test] = dataset.split(train_split_ratio);
 
     auto train_set = train.get_dataset();
     auto test_set = test.get_dataset();

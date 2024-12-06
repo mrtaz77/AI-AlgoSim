@@ -1,11 +1,12 @@
 #pragma once
 
+#define MAX_TOP_ATTRIBUTES 3
+
 #include "../Dataset.hpp"
 #include "../validator/ColumnValidator.hpp"
 #include "../validator/FileExists.hpp"
 #include "../validator/RowValidator.hpp"
 #include "../validator/Validator.hpp"
-#include "../TrainTestConstants.hpp"
 #include "../TreeBuilder.hpp"
 #include "../attribute/BestAttribute.hpp"
 #include "../attribute/RandomTopAttribute.hpp"
@@ -16,10 +17,10 @@
 using namespace std;
 namespace fs = filesystem;
 
-void validate_args(int argc, char *argv[], string&, int&);
+void validate_args(int argc, char *argv[], string&, int&, double&);
 void validate_file(const string&);
 Dataset load_dataset(const string&);
-void train_and_test(Dataset&, int);
+void train_and_test(Dataset&, int, double);
 double calculate_average(vector<double>&);
 void statistics(vector<double>&,vector<double>&,vector<double>&,vector<double>&);
 double calculate_standard_deviation(vector<double>&);
