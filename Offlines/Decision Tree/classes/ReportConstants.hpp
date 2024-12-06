@@ -1,4 +1,4 @@
 #pragma once
 
-#define ACCURACY_FILE "accuracies.csv"
-#define STATISTICS_FILE "statistics.csv"
+#define METRICS_FILE "metrics.csv"
+#define TREES_FOLDER "trees"
