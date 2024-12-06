@@ -10,11 +10,11 @@ GiniImpurity::current_gini_impurity(const vector<vector<string>>& dataset)
   }
 
   double gini_impurity = 1.0;
-  int total_rows = dataset.size();
+  size_t total_rows = dataset.size();
   for (const auto& [_, count] : class_count)
   {
     double probability = static_cast<double>(count) / total_rows;
-    gini_impurity -= probability * probability;
+    gini_impurity -= (probability * probability);
   }
 
   return gini_impurity;
@@ -28,13 +28,13 @@ GiniImpurity::calculate(const vector<vector<string>>& dataset, int attribute_ind
     partitions[row[attribute_index]].push_back(row);
 
   double weighted_gini_impurity = 0.0;
-  int total_rows = dataset.size();
+  size_t total_rows = dataset.size();
 
   for (const auto& [_, subset] : partitions)
   {
     double subset_size = subset.size();
     double subset_gini_impurity = current_gini_impurity(subset);
-    weighted_gini_impurity += (subset_size / total_rows) * subset_gini_impurity;
+    weighted_gini_impurity += (static_cast<double>(subset_size) / total_rows) * subset_gini_impurity;
   }
 
   return -weighted_gini_impurity;

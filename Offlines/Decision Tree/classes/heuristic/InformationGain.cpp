@@ -10,7 +10,7 @@ InformationGain::current_entropy(const vector<vector<string>>& dataset)
   }
 
   double entropy = 0.0;
-  int total_rows = dataset.size();
+  size_t total_rows = dataset.size();
   for (const auto& [_, count] : class_count)
   {
     double probability = static_cast<double>(count) / total_rows;
@@ -32,13 +32,14 @@ InformationGain::calculate(const vector<vector<string>>& dataset, int attribute_
   }
 
   double weighted_entropy = 0.0;
-  int total_rows = dataset.size();
+  size_t total_rows = dataset.size();
 
   for (const auto& [_, subset] : partitions)
   {
     double subset_size = subset.size();
     double subset_entropy = current_entropy(subset);
-    weighted_entropy += (subset_size / total_rows) * subset_entropy;
+    double probability = static_cast<double>(subset_size) / total_rows;
+    weighted_entropy += (probability * subset_entropy);
   }
 
   return entropy_before_split - weighted_entropy;
