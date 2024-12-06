@@ -54,11 +54,16 @@ void
 train_and_test(Dataset& dataset, int runs)
 {
   vector<double> accuracies_best_ig, accuracies_top3_ig, accuracies_best_gini, accuracies_top3_gini;
+  vector<double> training_times_best_ig, training_times_top3_ig, training_times_best_gini, training_times_top3_gini;
 
   auto ig = make_shared<InformationGain>();
   auto gini = make_shared<GiniImpurity>();
   auto best = make_shared<BestAttribute>();
   auto random_top = make_shared<RandomTopAttribute>(MAX_TOP_ATTRIBUTES);
+
+  if (fs::exists(TREES_FOLDER))
+    fs::remove_all(TREES_FOLDER);
+  fs::create_directory(TREES_FOLDER);
 
   for(int i = 0; i < runs; i++)
   {
@@ -67,25 +72,51 @@ train_and_test(Dataset& dataset, int runs)
     auto train_set = train.get_dataset();
     auto test_set = test.get_dataset();
 
+    string run_folder = string(TREES_FOLDER) + "/run_" + to_string(i + 1);
+    fs::create_directory(run_folder);
+
+    auto start = chrono::high_resolution_clock::now();
     auto tree_builder = make_shared<TreeBuilder>(ig, best);
     tree_builder->build_tree(train_set);
+    auto end = chrono::high_resolution_clock::now();
+    training_times_best_ig.push_back(chrono::duration_cast<chrono::microseconds>(end - start).count());
     accuracies_best_ig.push_back(tree_builder->calculate_accuracy(test_set));
+    print_tree(tree_builder, run_folder + "/best_ig.txt");
 
+    start = chrono::high_resolution_clock::now();
     tree_builder = make_shared<TreeBuilder>(ig, random_top);
     tree_builder->build_tree(train_set);
+    end = chrono::high_resolution_clock::now();
+    training_times_top3_ig.push_back(chrono::duration_cast<chrono::microseconds>(end - start).count());
     accuracies_top3_ig.push_back(tree_builder->calculate_accuracy(test_set));
+    print_tree(tree_builder, run_folder + "/top" + to_string(MAX_TOP_ATTRIBUTES) + "_ig.txt");
 
+    start = chrono::high_resolution_clock::now();
     tree_builder = make_shared<TreeBuilder>(gini, random_top);
     tree_builder->build_tree(train_set);
+    end = chrono::high_resolution_clock::now();
+    training_times_top3_gini.push_back(chrono::duration_cast<chrono::microseconds>(end - start).count());
     accuracies_top3_gini.push_back(tree_builder->calculate_accuracy(test_set));
+    print_tree(tree_builder, run_folder + "/top" + to_string(MAX_TOP_ATTRIBUTES) + "_gini.txt");
 
+    start = chrono::high_resolution_clock::now();
     tree_builder = make_shared<TreeBuilder>(gini, best);
     tree_builder->build_tree(train_set);
+    end = chrono::high_resolution_clock::now();
+    training_times_best_gini.push_back(chrono::duration_cast<chrono::microseconds>(end - start).count());
     accuracies_best_gini.push_back(tree_builder->calculate_accuracy(test_set));
+    print_tree(tree_builder, run_folder + "/best_gini.txt");
   }
 
   statistics(accuracies_best_ig, accuracies_top3_ig, accuracies_best_gini, accuracies_top3_gini);
-  write_accuracies_to_csv(accuracies_best_ig, accuracies_top3_ig, accuracies_best_gini, accuracies_top3_gini);
+  write_accuracies_and_times_to_csv(accuracies_best_ig, 
+                                    accuracies_top3_ig, 
+                                    accuracies_best_gini, 
+                                    accuracies_top3_gini, 
+                                    training_times_best_ig, 
+                                    training_times_top3_ig, 
+                                    training_times_best_gini, 
+                                    training_times_top3_gini);
 }
 
 double
@@ -166,18 +197,48 @@ calculate_coefficient_of_variation(vector<double>& accuracies)
 }
 
 void
-write_accuracies_to_csv(vector<double>& accuracies_best_ig, vector<double>& accuracies_top3_ig, vector<double>& accuracies_best_gini, vector<double>& accuracies_top3_gini)
+write_accuracies_and_times_to_csv(
+  vector<double>& accuracies_best_ig, 
+  vector<double>& accuracies_top3_ig, 
+  vector<double>& accuracies_best_gini, 
+  vector<double>& accuracies_top3_gini,
+  vector<double>& training_times_best_ig,
+  vector<double>& training_times_top3_ig,
+  vector<double>& training_times_best_gini,
+  vector<double>& training_times_top3_gini
+)
 {
-  ofstream file(ACCURACY_FILE);
+  ofstream file(METRICS_FILE);
   if(!file.is_open())
-    throw runtime_error("Could not open file: " + string(ACCURACY_FILE));
-  file << "Run,Heuristic,Attribute,Accuracy\n";
+    throw runtime_error("Could not open file: " + string(METRICS_FILE));
+  file << "Run, Accuracy (Best IG), Accuracy (Top 3 IG), Accuracy (Best Gini), Accuracy (Top 3 Gini), "
+          << "Training Time (Best IG), Training Time (Top 3 IG), Training Time (Best Gini), Training Time (Top 3 Gini)" << endl;
   int runs = accuracies_best_ig.size();
   for(int i = 0; i < runs; ++i)
   {
-    file << i + 1 << ",Information Gain,Best," << accuracies_best_ig[i] << "\n";
-    file << i + 1 << ",Information Gain,Random Top 3," << accuracies_top3_ig[i] << "\n";
-    file << i + 1 << ",Gini Impurity,Best," << accuracies_best_gini[i] << "\n";
-    file << i + 1 << ",Gini Impurity,Random Top 3," << accuracies_top3_gini[i] << "\n";
+    file << i + 1 << ","
+        << accuracies_best_ig[i] << ","
+        << accuracies_top3_ig[i] << ","
+        << accuracies_best_gini[i] << ","
+        << accuracies_top3_gini[i] << ","
+        << training_times_best_ig[i] << ","
+        << training_times_top3_ig[i] << ","
+        << training_times_best_gini[i] << ","
+        << training_times_top3_gini[i] << endl;
+  }
+}
+
+void
+print_tree(const shared_ptr<TreeBuilder>& tree_builder, const string& file_path)
+{
+  ofstream file(file_path);
+  if(file.is_open())
+  {
+    file << *tree_builder;
+    file.close();
+  }
+  else
+  {
+    throw runtime_error("Could not open file: " + file_path);
   }
 }

@@ -14,6 +14,7 @@
 #include "../ReportConstants.hpp"
 
 using namespace std;
+namespace fs = filesystem;
 
 void validate_args(int argc, char *argv[], string&, int&);
 void validate_file(const string&);
@@ -23,4 +24,8 @@ double calculate_average(vector<double>&);
 void statistics(vector<double>&,vector<double>&,vector<double>&,vector<double>&);
 double calculate_standard_deviation(vector<double>&);
 double calculate_coefficient_of_variation(vector<double>&);
-void write_accuracies_to_csv(vector<double>&,vector<double>&,vector<double>&,vector<double>&);
+void write_accuracies_and_times_to_csv(
+  vector<double>&,vector<double>&,vector<double>&,vector<double>&,
+  vector<double>&,vector<double>&,vector<double>&,vector<double>&
+);
+void print_tree(const shared_ptr<TreeBuilder>&, const string&);
