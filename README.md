@@ -20,3 +20,10 @@ Simulations of Algorithms for AI Lab
 * [Solution](/Offlines/TSP/)
 * [Benchmark](/Offlines//TSP/benchmark/)
 * [Report](/Offlines/TSP/all_reports.csv)
+
+**Offline 4**
+* `Decision Tree`|`Information Gain`|`Gini Impurity`
+- [Spec](/Spec/Assignment-4-Decision-Tree.pdf)
+- [Solution](/Offlines/Decision%20Tree/)
+- [Dataset](/Offlines/Decision%20Tree/car%20evaluation%20dataset/)
+- [Report](/Offlines/Decision%20Tree/report.pdf)
