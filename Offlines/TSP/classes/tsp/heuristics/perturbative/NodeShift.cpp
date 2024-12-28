@@ -36,8 +36,11 @@ void NodeShift::solve() {
     auto start = chrono::high_resolution_clock::now();
     auto locally_optimal = false;
     int i, j, x0_predecessor, x0, x0_successor, y1, y2;
+    long double best_move_improvement, expected_improvement;
+    int best_move_i, best_move_j;
     while(!locally_optimal) {
         locally_optimal = true;
+        best_move_improvement = 0;
         for(int counter_1 = 0; counter_1 < g.get_number_of_vertices(); counter_1++) {
             i = counter_1;
             x0_predecessor = tour[(i - 1 + g.get_number_of_vertices()) % g.get_number_of_vertices()];
@@ -47,13 +50,17 @@ void NodeShift::solve() {
                 j = (i + counter_2) % g.get_number_of_vertices();
                 y1 = tour[j];
                 y2 = tour[(j + 1) % g.get_number_of_vertices()];
-                auto improvement = calculate_improvement(x0_predecessor, x0, x0_successor, y1, y2);
-                if(improvement > THRESHOLD) {
-                    apply_change(i, j);
+                expected_improvement = calculate_improvement(x0_predecessor, x0, x0_successor, y1, y2);
+                if(expected_improvement - best_move_improvement > THRESHOLD) {
+                    best_move_improvement = expected_improvement;
+                    best_move_i = i;
+                    best_move_j = j;
                     locally_optimal = false;
-                    break;
                 }
             }
+        }
+        if(!locally_optimal) {
+            apply_change(best_move_i, best_move_j);
         }
     }
     tour.push_back(tour[0]);

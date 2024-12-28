@@ -62,7 +62,6 @@ void TwoOpt::solve() {
     auto end = chrono::high_resolution_clock::now();
     time_taken = chrono::duration<double>(end - start).count();
     compute_tour_cost();
-
 }
 
 const string TwoOpt::get_heuristic_name() const { return "2opt"; }
