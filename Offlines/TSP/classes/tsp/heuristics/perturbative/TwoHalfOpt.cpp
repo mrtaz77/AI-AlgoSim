@@ -62,8 +62,13 @@ void TwoHalfOpt::solve() {
     auto start = chrono::high_resolution_clock::now();
     auto locally_optimal = false;
     int i, j, x1, x2, v0, y1, y2;
+    long double best_improvement;
+    int best_i, best_j;
+    bool is_two_opt;
     while (!locally_optimal) {
         locally_optimal = true;
+        best_improvement = 0;
+        is_two_opt = true;
         for (int counter_1 = 0; counter_1 < g.get_number_of_vertices() - 2; counter_1++) {
             i = counter_1;
             x1 = tour[i];
@@ -75,34 +80,46 @@ void TwoHalfOpt::solve() {
                 y2 = tour[(j + 1) % g.get_number_of_vertices()];
 
                 auto two_opt_improvement = calculate_improvement(x1, x2, y1, y2);
-                if (two_opt_improvement > THRESHOLD) {
-                    apply_change(i, j);
+                if (two_opt_improvement - best_improvement > THRESHOLD) {
+                    best_improvement = two_opt_improvement;
+                    best_i = i;
+                    best_j = j;
+                    is_two_opt = true;
                     locally_optimal = false;
-                    goto end_two_loops;
                 } else {
                     v0 = tour[(i + 2) % g.get_number_of_vertices()];
                     if (v0 != y1) {
                         auto node_shift_improvement = calculate_node_shift_improvement(x1, x2, v0, y1, y2);
-                        if (node_shift_improvement > THRESHOLD) {
-                            node_shift((i + 1) % g.get_number_of_vertices(), j);
+                        if (node_shift_improvement - best_improvement > THRESHOLD) {
+                            best_improvement = node_shift_improvement;
+                            best_i = (i + 1) % g.get_number_of_vertices();
+                            best_j = j;
+                            is_two_opt = false;
                             locally_optimal = false;
-                            goto end_two_loops;
                         }
                     } else {
                         v0 = tour[(g.get_number_of_vertices() + j - 1) % g.get_number_of_vertices()];
                         if (v0 != x2) {
                             auto node_shift_improvement = calculate_node_shift_improvement(v0, y1, y2, x1, x2);
-                            if (node_shift_improvement > THRESHOLD) {
-                                node_shift(j, i);
+                            if (node_shift_improvement - best_improvement > THRESHOLD) {
+                                best_improvement = node_shift_improvement;
+                                best_i = j;
+                                best_j = i;
+                                is_two_opt = false;
                                 locally_optimal = false;
-                                goto end_two_loops;
                             }
                         }
                     }
                 }
             }
         }
-        end_two_loops:;
+        if (!locally_optimal) {
+            if (is_two_opt) {
+                apply_change(best_i, best_j); // Apply 2-opt move
+            } else {
+                node_shift(best_i, best_j);  // Apply node-shift move
+            }
+        }
     }
     tour.push_back(tour[0]);
     auto end = chrono::high_resolution_clock::now();
