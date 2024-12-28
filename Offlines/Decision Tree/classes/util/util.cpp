@@ -26,7 +26,7 @@ validate_args(int argc, char *argv[], string& file_path, int& runs, double& trai
     train_split_ratio = stod(argv[3]) / 100.0;
     if(train_split_ratio <= 0 || train_split_ratio >= 1)
     {
-      throw invalid_argument("Train split ratio must be between 0 and 1.");
+      throw invalid_argument("Train split ratio must be between 0 and 100.");
     }
   }
   catch(const invalid_argument& e)
