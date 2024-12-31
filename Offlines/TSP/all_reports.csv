@@ -1,757 +1,757 @@
 Graph File,Graph Name,Version,Heuristic,Best Cost,Avg Cost,Worst Cost,Best Time (µs),Avg Time (µs),Worst Time (µs)
-a280,drilling problem (Ludwig),Greedy,NN,3070.549,3340.311,3657.824,1482.474,1678.279,3686.920
-a280,drilling problem (Ludwig),Greedy,NN+NSh,2776.420,3004.179,3288.353,5824.450,14285.629,42133.216
-a280,drilling problem (Ludwig),Greedy,NN+2opt,2654.794,2764.080,2886.714,13247.971,21923.913,61273.057
-a280,drilling problem (Ludwig),Greedy,NN+2.5opt,2639.866,2763.158,2937.232,33733.960,77732.353,369608.978
-a280,drilling problem (Ludwig),Greedy,FI,3003.223,3003.223,3003.223,4582.504,4582.504,4582.504
-a280,drilling problem (Ludwig),Greedy,FI+NSh,2901.708,2901.708,2901.708,9386.589,9386.589,9386.589
-a280,drilling problem (Ludwig),Greedy,FI+2opt,2858.258,2858.258,2858.258,18481.686,18481.686,18481.686
-a280,drilling problem (Ludwig),Greedy,FI+2.5opt,2854.979,2854.979,2854.979,41101.691,41101.691,41101.691
-a280,drilling problem (Ludwig),Greedy,MST,3396.692,3518.212,3611.210,1249.260,1596.625,6475.755
-a280,drilling problem (Ludwig),Greedy,MST+NSh,2885.708,3006.380,3154.010,8690.763,17908.596,59141.645
-a280,drilling problem (Ludwig),Greedy,MST+2opt,2707.563,2783.675,2866.662,17427.872,26453.522,57976.734
-a280,drilling problem (Ludwig),Greedy,MST+2.5opt,2642.366,2775.335,2969.164,48853.497,106196.900,227379.647
-a280,drilling problem (Ludwig),Semi-Greedy 3,NN,4868.174,5456.763,6042.529,2432.749,2734.936,5294.135
-a280,drilling problem (Ludwig),Semi-Greedy 3,NN+NSh,2951.585,3331.177,3759.841,10662.311,21951.612,47626.934
-a280,drilling problem (Ludwig),Semi-Greedy 3,NN+2opt,2740.480,2902.434,3082.792,55276.492,70502.776,86631.185
-a280,drilling problem (Ludwig),Semi-Greedy 3,NN+2.5opt,2642.349,2820.646,2968.471,115422.920,216675.614,325398.604
-a280,drilling problem (Ludwig),Semi-Greedy 3,FI,2992.918,2992.918,2992.918,7445.949,7445.949,7445.949
-a280,drilling problem (Ludwig),Semi-Greedy 3,FI+NSh,2868.422,2868.422,2868.422,9499.857,9499.857,9499.857
-a280,drilling problem (Ludwig),Semi-Greedy 3,FI+2opt,2878.965,2878.965,2878.965,3402.659,3402.659,3402.659
-a280,drilling problem (Ludwig),Semi-Greedy 3,FI+2.5opt,2834.067,2834.067,2834.067,15216.089,15216.089,15216.089
-a280,drilling problem (Ludwig),Semi-Greedy 3,MST,3396.692,3518.212,3611.210,1126.590,1440.307,10865.593
-a280,drilling problem (Ludwig),Semi-Greedy 3,MST+NSh,2885.708,3006.380,3154.010,8465.972,15473.275,30314.527
-a280,drilling problem (Ludwig),Semi-Greedy 3,MST+2opt,2707.563,2783.675,2866.662,17450.085,25426.086,34544.059
-a280,drilling problem (Ludwig),Semi-Greedy 3,MST+2.5opt,2642.366,2775.335,2969.164,48990.245,95513.922,233942.396
-a280,drilling problem (Ludwig),Semi-Greedy 5,NN,6252.056,6947.176,7707.174,2418.771,2730.683,9619.849
-a280,drilling problem (Ludwig),Semi-Greedy 5,NN+NSh,3102.062,3476.296,4122.873,13010.794,25583.092,59237.135
-a280,drilling problem (Ludwig),Semi-Greedy 5,NN+2opt,2744.766,2903.158,3053.517,78280.017,96046.702,248420.910
-a280,drilling problem (Ludwig),Semi-Greedy 5,NN+2.5opt,2656.312,2820.557,2952.944,152612.252,314594.374,701304.649
-a280,drilling problem (Ludwig),Semi-Greedy 5,FI,3009.139,3009.139,3009.139,4808.182,4808.182,4808.182
-a280,drilling problem (Ludwig),Semi-Greedy 5,FI+NSh,2851.312,2851.312,2851.312,14414.110,14414.110,14414.110
-a280,drilling problem (Ludwig),Semi-Greedy 5,FI+2opt,2845.241,2845.241,2845.241,7910.043,7910.043,7910.043
-a280,drilling problem (Ludwig),Semi-Greedy 5,FI+2.5opt,2875.317,2875.317,2875.317,17296.988,17296.988,17296.988
-a280,drilling problem (Ludwig),Semi-Greedy 5,MST,3396.692,3518.212,3611.210,1122.465,1373.091,3156.702
-a280,drilling problem (Ludwig),Semi-Greedy 5,MST+NSh,2885.708,3006.380,3154.010,8223.681,15503.077,33605.144
-a280,drilling problem (Ludwig),Semi-Greedy 5,MST+2opt,2707.563,2783.675,2866.662,18206.497,25441.246,51923.050
-a280,drilling problem (Ludwig),Semi-Greedy 5,MST+2.5opt,2642.366,2775.335,2969.164,53896.811,95792.181,243166.211
-berlin52,52 locations in Berlin (Groetschel),Greedy,NN,8182.192,9373.434,10299.371,46.203,70.416,174.437
-berlin52,52 locations in Berlin (Groetschel),Greedy,NN+NSh,7895.578,8361.447,8904.382,139.744,339.427,665.858
-berlin52,52 locations in Berlin (Groetschel),Greedy,NN+2opt,7658.958,7877.045,8076.416,98.238,199.180,302.583
-berlin52,52 locations in Berlin (Groetschel),Greedy,NN+2.5opt,7669.620,7994.977,8533.539,222.900,469.275,951.472
-berlin52,52 locations in Berlin (Groetschel),Greedy,FI,8120.634,8120.634,8120.634,79.306,79.306,79.306
-berlin52,52 locations in Berlin (Groetschel),Greedy,FI+NSh,7905.874,7905.874,7905.874,94.936,94.936,94.936
-berlin52,52 locations in Berlin (Groetschel),Greedy,FI+2opt,7701.456,7701.456,7701.456,105.904,105.904,105.904
-berlin52,52 locations in Berlin (Groetschel),Greedy,FI+2.5opt,7658.958,7658.958,7658.958,225.904,225.904,225.904
-berlin52,52 locations in Berlin (Groetschel),Greedy,MST,9193.879,10252.081,10597.251,24.714,31.848,59.049
-berlin52,52 locations in Berlin (Groetschel),Greedy,MST+NSh,7993.722,8217.540,8482.513,303.471,480.249,833.604
-berlin52,52 locations in Berlin (Groetschel),Greedy,MST+2opt,7625.395,7756.234,8231.933,201.942,252.397,321.269
-berlin52,52 locations in Berlin (Groetschel),Greedy,MST+2.5opt,7544.366,8077.070,8583.862,278.301,652.959,1543.901
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,NN,11617.093,14307.489,17721.023,209.948,224.428,405.976
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,NN+NSh,7826.443,8745.905,10267.476,257.883,469.134,945.423
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,NN+2opt,7544.366,8109.536,8650.490,342.367,464.953,605.778
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,NN+2.5opt,7544.366,8047.584,8448.144,577.108,1289.922,2389.103
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,FI,8189.105,8189.105,8189.105,329.096,329.096,329.096
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,FI+NSh,7990.988,7990.988,7990.988,143.436,143.436,143.436
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,FI+2opt,7829.883,7829.883,7829.883,62.076,62.076,62.076
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,FI+2.5opt,8020.769,8020.769,8020.769,279.343,279.343,279.343
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,MST,9193.879,10252.081,10597.251,24.994,31.252,81.786
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,MST+NSh,7993.722,8217.540,8482.513,300.544,477.913,1211.905
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,MST+2opt,7625.395,7756.234,8231.933,231.384,300.942,430.531
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,MST+2.5opt,7544.366,8077.070,8583.862,322.564,623.854,1259.596
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,NN,13129.957,17178.899,20959.376,209.424,232.341,278.323
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,NN+NSh,8023.375,8824.525,9563.129,283.176,537.287,1006.889
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,NN+2opt,7544.366,8133.550,8713.159,475.159,595.461,810.201
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,NN+2.5opt,7729.501,8114.971,8551.040,816.859,1485.636,3407.754
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,FI,8022.747,8022.747,8022.747,331.517,331.517,331.517
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,FI+NSh,7809.874,7809.874,7809.874,330.027,330.027,330.027
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,FI+2opt,8318.493,8318.493,8318.493,46.866,46.866,46.866
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,FI+2.5opt,8028.609,8028.609,8028.609,131.117,131.117,131.117
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,MST,9193.879,10252.081,10597.251,32.730,36.213,86.607
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,MST+NSh,7993.722,8217.540,8482.513,301.560,407.761,670.573
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,MST+2opt,7625.395,7756.234,8231.933,207.184,280.104,475.642
-berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,MST+2.5opt,7544.366,8077.070,8583.862,334.976,595.726,1002.845
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,NN,132999.906,145555.301,163246.681,295.814,333.862,482.843
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,NN+NSh,122782.631,131454.880,141451.420,922.130,2279.288,5136.400
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,NN+2opt,119658.124,122593.987,127097.130,1551.683,2618.939,5010.019
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,NN+2.5opt,119040.424,124174.343,129788.500,2574.442,7388.983,13932.406
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,FI,127273.688,127273.688,127273.688,1069.223,1069.223,1069.223
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,FI+NSh,122866.711,122866.711,122866.711,2249.713,2249.713,2249.713
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,FI+2opt,126218.317,126218.317,126218.317,543.098,543.098,543.098
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,FI+2.5opt,126197.087,126197.087,126197.087,1246.400,1246.400,1246.400
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,MST,145830.135,154993.395,158047.935,169.034,194.043,273.687
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,MST+NSh,132424.695,138198.076,140863.286,1052.641,1970.063,4334.081
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,MST+2opt,123445.321,123967.264,128244.578,3210.788,4005.628,6270.647
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,MST+2.5opt,121765.711,125251.022,130972.246,4576.819,11817.717,17916.521
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,NN,198952.434,225647.604,267396.077,716.445,789.585,1152.124
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,NN+NSh,132579.136,143438.033,160070.855,1734.599,3762.742,7899.559
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,NN+2opt,119871.477,126970.201,133771.446,5798.419,7415.899,9938.086
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,NN+2.5opt,120106.704,125449.632,133643.541,12015.983,20729.651,33817.370
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,FI,127891.931,127891.931,127891.931,1001.315,1001.315,1001.315
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,FI+NSh,125997.762,125997.762,125997.762,948.633,948.633,948.633
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,FI+2opt,123795.129,123795.129,123795.129,347.751,347.751,347.751
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,FI+2.5opt,124196.692,124196.692,124196.692,1496.627,1496.627,1496.627
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,MST,145830.135,154993.395,158047.935,171.190,228.755,612.339
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,MST+NSh,132424.695,138198.076,140863.286,1031.206,1994.686,4524.000
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,MST+2opt,123445.321,123967.264,128244.578,3292.354,4224.469,6173.766
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,MST+2.5opt,121765.711,125251.022,130972.246,4991.627,11985.960,30695.176
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,NN,244336.853,275658.236,315418.334,716.421,777.774,2037.182
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,NN+NSh,135559.554,146334.659,157381.879,2511.431,4315.919,7043.978
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,NN+2opt,120552.879,126872.519,133537.669,7065.765,9064.295,13501.105
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,NN+2.5opt,120257.071,125726.398,133925.028,11993.089,24463.199,41407.743
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,FI,132163.717,132163.717,132163.717,889.698,889.698,889.698
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,FI+NSh,123364.684,123364.684,123364.684,1785.192,1785.192,1785.192
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,FI+2opt,124003.585,124003.585,124003.585,494.114,494.114,494.114
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,FI+2.5opt,123919.721,123919.721,123919.721,1071.031,1071.031,1071.031
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,MST,145830.135,154993.395,158047.935,170.303,214.163,572.367
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,MST+NSh,132424.695,138198.076,140863.286,1033.194,2025.213,5458.402
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,MST+2opt,123445.321,123967.264,128244.578,3153.745,3859.900,6101.003
-bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,MST+2.5opt,121765.711,125251.022,130972.246,4419.161,11446.177,16448.273
-ch130,130 city problem (Churritz),Greedy,NN,7198.741,7720.398,8644.386,329.312,370.884,912.706
-ch130,130 city problem (Churritz),Greedy,NN+NSh,6672.522,7049.789,7830.797,1402.899,2293.846,5101.545
-ch130,130 city problem (Churritz),Greedy,NN+2opt,6251.072,6422.023,6730.223,1826.783,2777.546,4557.488
-ch130,130 city problem (Churritz),Greedy,NN+2.5opt,6291.330,6510.747,6889.959,2684.756,7030.224,13600.182
-ch130,130 city problem (Churritz),Greedy,FI,6654.734,6654.734,6654.734,710.159,710.159,710.159
-ch130,130 city problem (Churritz),Greedy,FI+NSh,6529.822,6529.822,6529.822,2001.691,2001.691,2001.691
-ch130,130 city problem (Churritz),Greedy,FI+2opt,6634.223,6634.223,6634.223,1266.022,1266.022,1266.022
-ch130,130 city problem (Churritz),Greedy,FI+2.5opt,6629.514,6629.514,6629.514,1190.457,1190.457,1190.457
-ch130,130 city problem (Churritz),Greedy,MST,7926.438,8267.115,8484.356,192.410,218.222,434.891
-ch130,130 city problem (Churritz),Greedy,MST+NSh,6442.811,6905.382,7200.103,1647.308,2190.215,4086.617
-ch130,130 city problem (Churritz),Greedy,MST+2opt,6207.535,6314.761,6452.263,2518.627,3564.296,6154.455
-ch130,130 city problem (Churritz),Greedy,MST+2.5opt,6193.193,6453.446,6759.188,4148.064,9910.910,20745.595
-ch130,130 city problem (Churritz),Semi-Greedy 3,NN,10690.795,12765.861,14438.965,753.085,840.372,1613.370
-ch130,130 city problem (Churritz),Semi-Greedy 3,NN+NSh,6746.854,7714.388,9462.625,2134.946,4282.823,16260.323
-ch130,130 city problem (Churritz),Semi-Greedy 3,NN+2opt,6307.823,6616.798,7173.135,6458.499,8118.121,12868.879
-ch130,130 city problem (Churritz),Semi-Greedy 3,NN+2.5opt,6237.311,6472.099,6854.800,11500.665,22645.366,62739.924
-ch130,130 city problem (Churritz),Semi-Greedy 3,FI,6679.336,6679.336,6679.336,1255.316,1255.316,1255.316
-ch130,130 city problem (Churritz),Semi-Greedy 3,FI+NSh,6493.141,6493.141,6493.141,1936.451,1936.451,1936.451
-ch130,130 city problem (Churritz),Semi-Greedy 3,FI+2opt,6450.898,6450.898,6450.898,123.289,123.289,123.289
-ch130,130 city problem (Churritz),Semi-Greedy 3,FI+2.5opt,6492.835,6492.835,6492.835,2526.844,2526.844,2526.844
-ch130,130 city problem (Churritz),Semi-Greedy 3,MST,7926.438,8267.115,8484.356,190.397,228.698,308.747
-ch130,130 city problem (Churritz),Semi-Greedy 3,MST+NSh,6442.811,6905.382,7200.103,1653.873,2216.206,6564.374
-ch130,130 city problem (Churritz),Semi-Greedy 3,MST+2opt,6207.535,6314.761,6452.263,2505.338,3543.788,6542.949
-ch130,130 city problem (Churritz),Semi-Greedy 3,MST+2.5opt,6193.193,6453.446,6759.188,4055.578,9435.173,20831.220
-ch130,130 city problem (Churritz),Semi-Greedy 5,NN,14151.277,16058.659,18957.858,749.247,827.631,1096.996
-ch130,130 city problem (Churritz),Semi-Greedy 5,NN+NSh,7117.575,7945.143,8964.555,2400.214,4564.744,9586.683
-ch130,130 city problem (Churritz),Semi-Greedy 5,NN+2opt,6287.336,6622.399,7071.718,8097.825,9944.009,14821.162
-ch130,130 city problem (Churritz),Semi-Greedy 5,NN+2.5opt,6233.809,6482.304,6905.239,12201.082,28469.981,47054.025
-ch130,130 city problem (Churritz),Semi-Greedy 5,FI,6315.967,6315.967,6315.967,967.420,967.420,967.420
-ch130,130 city problem (Churritz),Semi-Greedy 5,FI+NSh,6294.555,6294.555,6294.555,942.818,942.818,942.818
-ch130,130 city problem (Churritz),Semi-Greedy 5,FI+2opt,6671.993,6671.993,6671.993,103.167,103.167,103.167
-ch130,130 city problem (Churritz),Semi-Greedy 5,FI+2.5opt,6365.504,6365.504,6365.504,701.658,701.658,701.658
-ch130,130 city problem (Churritz),Semi-Greedy 5,MST,7926.438,8267.115,8484.356,192.800,216.961,463.891
-ch130,130 city problem (Churritz),Semi-Greedy 5,MST+NSh,6442.811,6905.382,7200.103,1663.682,2159.162,4052.532
-ch130,130 city problem (Churritz),Semi-Greedy 5,MST+2opt,6207.535,6314.761,6452.263,2525.373,3614.820,6328.776
-ch130,130 city problem (Churritz),Semi-Greedy 5,MST+2.5opt,6193.193,6453.446,6759.188,4790.375,9405.101,15556.162
-ch150,150 city Problem (churritz),Greedy,NN,7078.445,7697.119,8451.159,461.658,496.201,968.108
-ch150,150 city Problem (churritz),Greedy,NN+NSh,6835.581,7177.731,7610.255,1558.592,2646.271,6294.819
-ch150,150 city Problem (churritz),Greedy,NN+2opt,6560.940,6695.940,6879.640,2293.278,4278.352,16817.901
-ch150,150 city Problem (churritz),Greedy,NN+2.5opt,6585.737,6839.000,7209.009,2588.895,7728.324,15432.087
-ch150,150 city Problem (churritz),Greedy,FI,6865.949,6865.949,6865.949,1368.222,1368.222,1368.222
-ch150,150 city Problem (churritz),Greedy,FI+NSh,6688.326,6688.326,6688.326,4582.055,4582.055,4582.055
-ch150,150 city Problem (churritz),Greedy,FI+2opt,6812.406,6812.406,6812.406,909.725,909.725,909.725
-ch150,150 city Problem (churritz),Greedy,FI+2.5opt,6710.616,6710.616,6710.616,3305.510,3305.510,3305.510
-ch150,150 city Problem (churritz),Greedy,MST,8842.803,9253.515,9580.985,366.948,391.388,901.403
-ch150,150 city Problem (churritz),Greedy,MST+NSh,7211.422,7529.109,8021.607,1951.937,4098.789,7086.021
-ch150,150 city Problem (churritz),Greedy,MST+2opt,6636.804,6835.897,7035.841,4317.755,5367.484,8061.621
-ch150,150 city Problem (churritz),Greedy,MST+2.5opt,6566.271,6836.500,7189.493,7797.066,16388.503,25457.778
-ch150,150 city Problem (churritz),Semi-Greedy 3,NN,11418.748,13280.665,15055.227,942.142,1075.326,2049.743
-ch150,150 city Problem (churritz),Semi-Greedy 3,NN+NSh,7414.185,8192.294,9022.674,2228.866,5421.460,13301.747
-ch150,150 city Problem (churritz),Semi-Greedy 3,NN+2opt,6675.590,7151.954,7518.013,9321.932,11916.281,16181.568
-ch150,150 city Problem (churritz),Semi-Greedy 3,NN+2.5opt,6697.024,6977.118,7358.298,17113.696,32965.809,73046.884
-ch150,150 city Problem (churritz),Semi-Greedy 3,FI,7141.139,7141.139,7141.139,1506.131,1506.131,1506.131
-ch150,150 city Problem (churritz),Semi-Greedy 3,FI+NSh,7012.380,7012.380,7012.380,1705.982,1705.982,1705.982
-ch150,150 city Problem (churritz),Semi-Greedy 3,FI+2opt,7250.689,7250.689,7250.689,472.241,472.241,472.241
-ch150,150 city Problem (churritz),Semi-Greedy 3,FI+2.5opt,7036.458,7036.458,7036.458,5580.233,5580.233,5580.233
-ch150,150 city Problem (churritz),Semi-Greedy 3,MST,8842.803,9253.515,9580.985,374.483,442.993,1144.008
-ch150,150 city Problem (churritz),Semi-Greedy 3,MST+NSh,7211.422,7529.109,8021.607,1907.429,4505.223,11822.527
-ch150,150 city Problem (churritz),Semi-Greedy 3,MST+2opt,6636.804,6835.897,7035.841,4294.165,6477.988,18685.382
-ch150,150 city Problem (churritz),Semi-Greedy 3,MST+2.5opt,6566.271,6836.500,7189.493,8468.968,17581.320,28511.084
-ch150,150 city Problem (churritz),Semi-Greedy 5,NN,14842.042,16665.714,18605.723,947.898,1108.971,1696.010
-ch150,150 city Problem (churritz),Semi-Greedy 5,NN+NSh,7368.723,8457.011,9908.539,3578.889,6876.469,17184.568
-ch150,150 city Problem (churritz),Semi-Greedy 5,NN+2opt,6836.774,7155.085,7623.133,11883.180,15985.646,33914.031
-ch150,150 city Problem (churritz),Semi-Greedy 5,NN+2.5opt,6627.921,6985.879,7424.278,23172.897,45724.223,99897.386
-ch150,150 city Problem (churritz),Semi-Greedy 5,FI,6932.527,6932.527,6932.527,2244.424,2244.424,2244.424
-ch150,150 city Problem (churritz),Semi-Greedy 5,FI+NSh,6871.521,6871.521,6871.521,1849.728,1849.728,1849.728
-ch150,150 city Problem (churritz),Semi-Greedy 5,FI+2opt,6782.045,6782.045,6782.045,422.487,422.487,422.487
-ch150,150 city Problem (churritz),Semi-Greedy 5,FI+2.5opt,7024.046,7024.046,7024.046,2708.037,2708.037,2708.037
-ch150,150 city Problem (churritz),Semi-Greedy 5,MST,8842.803,9253.515,9580.985,371.929,387.433,659.292
-ch150,150 city Problem (churritz),Semi-Greedy 5,MST+NSh,7211.422,7529.109,8021.607,2308.426,4364.890,14448.425
-ch150,150 city Problem (churritz),Semi-Greedy 5,MST+2opt,6636.804,6835.897,7035.841,4272.975,5507.253,9003.439
-ch150,150 city Problem (churritz),Semi-Greedy 5,MST+2.5opt,6566.271,6836.500,7189.493,8063.622,16944.414,33722.328
-eil101,101-city problem (Christofides/Eilon),Greedy,NN,753.463,844.889,906.845,186.883,209.685,987.775
-eil101,101-city problem (Christofides/Eilon),Greedy,NN+NSh,679.666,717.529,759.494,813.537,1322.520,3672.249
-eil101,101-city problem (Christofides/Eilon),Greedy,NN+2opt,653.447,671.317,692.965,936.751,1572.127,2981.144
-eil101,101-city problem (Christofides/Eilon),Greedy,NN+2.5opt,642.556,671.411,700.216,1413.641,4210.537,9598.766
-eil101,101-city problem (Christofides/Eilon),Greedy,FI,690.573,690.573,690.573,295.715,295.715,295.715
-eil101,101-city problem (Christofides/Eilon),Greedy,FI+NSh,663.131,663.131,663.131,716.112,716.112,716.112
-eil101,101-city problem (Christofides/Eilon),Greedy,FI+2opt,678.551,678.551,678.551,510.659,510.659,510.659
-eil101,101-city problem (Christofides/Eilon),Greedy,FI+2.5opt,670.996,670.996,670.996,1337.610,1337.610,1337.610
-eil101,101-city problem (Christofides/Eilon),Greedy,MST,834.240,858.204,877.509,92.058,107.776,198.198
-eil101,101-city problem (Christofides/Eilon),Greedy,MST+NSh,677.611,701.586,725.441,808.389,1073.490,2397.648
-eil101,101-city problem (Christofides/Eilon),Greedy,MST+2opt,669.684,677.160,694.356,1141.851,1733.245,2554.150
-eil101,101-city problem (Christofides/Eilon),Greedy,MST+2.5opt,662.772,675.957,693.229,2432.470,4684.541,7924.603
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,NN,982.267,1156.506,1350.837,518.394,591.998,1974.732
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,NN+NSh,692.103,747.903,810.360,980.478,1910.370,3519.752
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2opt,673.056,694.554,729.946,2344.379,3057.637,6371.146
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2.5opt,661.502,678.064,697.972,4204.878,8233.803,16310.929
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,FI,691.866,691.866,691.866,966.670,966.670,966.670
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,FI+NSh,664.358,664.358,664.358,1472.036,1472.036,1472.036
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2opt,674.000,674.000,674.000,482.715,482.715,482.715
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2.5opt,658.002,658.002,658.002,917.759,917.759,917.759
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,MST,834.240,858.204,877.509,96.704,131.480,182.620
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,MST+NSh,677.611,701.586,725.441,817.264,1191.177,2643.799
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2opt,669.684,677.160,694.356,1121.029,1758.966,3360.425
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2.5opt,662.772,675.957,693.229,2633.280,4530.692,7634.062
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,NN,1135.520,1378.530,1581.174,513.666,556.252,836.474
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,NN+NSh,691.927,755.671,835.387,1273.907,2133.860,4078.107
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2opt,665.325,695.608,726.682,3096.345,4392.565,15244.099
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2.5opt,654.331,676.428,701.349,4672.069,11979.293,19811.983
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,FI,691.226,691.226,691.226,845.454,845.454,845.454
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,FI+NSh,672.670,672.670,672.670,391.248,391.248,391.248
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2opt,675.342,675.342,675.342,355.253,355.253,355.253
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2.5opt,678.489,678.489,678.489,613.793,613.793,613.793
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,MST,834.240,858.204,877.509,91.169,108.333,200.288
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,MST+NSh,677.611,701.586,725.441,811.874,1103.394,2618.443
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2opt,669.684,677.160,694.356,1124.308,1838.131,4603.262
-eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2.5opt,662.772,675.957,693.229,2549.390,4646.011,7272.120
-eil51,51-city problem (Christofides/Eilon),Greedy,NN,505.298,561.223,626.442,48.968,66.654,282.945
-eil51,51-city problem (Christofides/Eilon),Greedy,NN+NSh,449.262,472.151,507.062,133.599,353.878,863.506
-eil51,51-city problem (Christofides/Eilon),Greedy,NN+2opt,431.874,441.137,456.843,141.192,235.866,322.865
-eil51,51-city problem (Christofides/Eilon),Greedy,NN+2.5opt,433.079,444.335,457.851,238.308,577.681,1068.090
-eil51,51-city problem (Christofides/Eilon),Greedy,FI,447.543,447.543,447.543,116.313,116.313,116.313
-eil51,51-city problem (Christofides/Eilon),Greedy,FI+NSh,440.856,440.856,440.856,126.012,126.012,126.012
-eil51,51-city problem (Christofides/Eilon),Greedy,FI+2opt,447.543,447.543,447.543,17.816,17.816,17.816
-eil51,51-city problem (Christofides/Eilon),Greedy,FI+2.5opt,442.729,442.729,442.729,106.132,106.132,106.132
-eil51,51-city problem (Christofides/Eilon),Greedy,MST,566.524,601.652,621.215,19.351,21.361,44.366
-eil51,51-city problem (Christofides/Eilon),Greedy,MST+NSh,456.358,478.365,507.037,164.403,305.067,482.867
-eil51,51-city problem (Christofides/Eilon),Greedy,MST+2opt,432.414,444.346,462.915,156.496,269.720,570.292
-eil51,51-city problem (Christofides/Eilon),Greedy,MST+2.5opt,435.161,446.184,465.816,365.180,728.038,1153.089
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,NN,664.248,774.153,908.526,203.588,242.545,428.527
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,NN+NSh,444.369,477.482,530.829,161.412,387.199,723.854
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2opt,437.067,453.792,473.337,297.143,435.086,828.568
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2.5opt,432.162,444.678,462.022,393.716,995.588,1976.673
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,FI,455.628,455.628,455.628,237.841,237.841,237.841
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,FI+NSh,453.156,453.156,453.156,97.296,97.296,97.296
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2opt,448.015,448.015,448.015,19.354,19.354,19.354
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2.5opt,436.448,436.448,436.448,78.371,78.371,78.371
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,MST,566.524,601.652,621.215,19.425,22.460,52.878
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,MST+NSh,456.358,478.365,507.037,162.840,299.474,431.713
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2opt,432.414,444.346,462.915,155.274,229.879,315.409
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2.5opt,435.161,446.184,465.816,398.730,731.085,1348.489
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,NN,753.675,917.052,1052.705,205.090,248.898,425.312
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,NN+NSh,445.430,483.562,528.720,236.775,403.893,689.483
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2opt,430.692,456.251,479.284,314.279,510.703,805.229
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2.5opt,435.358,444.548,467.246,617.015,1254.830,2197.060
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,FI,442.361,442.361,442.361,355.722,355.722,355.722
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,FI+NSh,441.578,441.578,441.578,200.169,200.169,200.169
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2opt,446.955,446.955,446.955,22.447,22.447,22.447
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2.5opt,438.685,438.685,438.685,156.998,156.998,156.998
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,MST,566.524,601.652,621.215,19.183,20.817,44.789
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,MST+NSh,456.358,478.365,507.037,162.347,325.452,552.460
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2opt,432.414,444.346,462.915,168.237,272.677,452.052
-eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2.5opt,435.161,446.184,465.816,364.798,867.155,1452.621
-eil76,76-city problem (Christofides/Eilon),Greedy,NN,614.996,665.207,730.285,98.557,129.676,562.813
-eil76,76-city problem (Christofides/Eilon),Greedy,NN+NSh,574.243,595.211,627.494,301.944,635.619,1334.357
-eil76,76-city problem (Christofides/Eilon),Greedy,NN+2opt,552.205,569.638,584.455,244.882,422.624,635.073
-eil76,76-city problem (Christofides/Eilon),Greedy,NN+2.5opt,556.592,570.972,597.845,504.392,1186.995,2663.658
-eil76,76-city problem (Christofides/Eilon),Greedy,FI,586.977,586.977,586.977,236.079,236.079,236.079
-eil76,76-city problem (Christofides/Eilon),Greedy,FI+NSh,568.133,568.133,568.133,286.655,286.655,286.655
-eil76,76-city problem (Christofides/Eilon),Greedy,FI+2opt,578.580,578.580,578.580,199.575,199.575,199.575
-eil76,76-city problem (Christofides/Eilon),Greedy,FI+2.5opt,569.617,569.617,569.617,429.578,429.578,429.578
-eil76,76-city problem (Christofides/Eilon),Greedy,MST,683.904,721.021,754.865,50.196,55.706,123.401
-eil76,76-city problem (Christofides/Eilon),Greedy,MST+NSh,581.047,596.123,611.779,365.090,564.335,991.272
-eil76,76-city problem (Christofides/Eilon),Greedy,MST+2opt,559.402,573.371,589.044,599.359,771.599,1181.863
-eil76,76-city problem (Christofides/Eilon),Greedy,MST+2.5opt,554.436,574.650,589.729,857.168,1879.317,3281.569
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,NN,836.829,981.553,1108.225,346.205,375.585,492.545
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,NN+NSh,583.436,627.057,668.294,458.051,972.874,2660.678
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2opt,562.324,590.250,618.587,839.298,1268.582,2097.721
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2.5opt,557.184,575.085,597.614,2027.647,3681.393,6946.960
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,FI,593.442,593.442,593.442,412.005,412.005,412.005
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,FI+NSh,580.804,580.804,580.804,201.093,201.093,201.093
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2opt,566.306,566.306,566.306,185.867,185.867,185.867
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2.5opt,585.472,585.472,585.472,469.385,469.385,469.385
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,MST,683.904,721.021,754.865,45.052,51.563,103.533
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,MST+NSh,581.047,596.123,611.779,363.571,476.784,718.268
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2opt,559.402,573.371,589.044,605.940,803.483,1808.087
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2.5opt,554.436,574.650,589.729,880.233,2000.378,3556.108
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,NN,1002.214,1162.405,1322.958,344.561,402.055,630.224
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,NN+NSh,585.863,631.611,696.511,598.865,1023.614,2111.736
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2opt,567.978,589.514,615.971,1163.462,1646.708,3038.342
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2.5opt,558.416,574.042,603.120,2104.668,4818.017,9768.324
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,FI,571.196,571.196,571.196,524.090,524.090,524.090
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,FI+NSh,557.921,557.921,557.921,485.583,485.583,485.583
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2opt,571.686,571.686,571.686,422.036,422.036,422.036
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2.5opt,572.647,572.647,572.647,652.470,652.470,652.470
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,MST,683.904,721.021,754.865,51.846,76.257,159.148
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,MST+NSh,581.047,596.123,611.779,369.970,654.421,1168.411
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2opt,559.402,573.371,589.044,616.145,807.971,1706.812
-eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2.5opt,554.436,574.650,589.729,839.737,1938.739,3146.874
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,NN,24698.497,27045.213,28694.684,186.897,236.852,1159.986
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,NN+NSh,23141.867,24324.867,25511.508,498.106,1220.146,5449.438
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,NN+2opt,21362.979,21784.372,23178.780,1099.901,1665.894,3859.271
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,NN+2.5opt,21358.399,22160.870,23782.423,970.302,3614.219,7446.900
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,FI,23374.357,23374.357,23374.357,299.949,299.949,299.949
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,FI+NSh,23009.552,23009.552,23009.552,1056.411,1056.411,1056.411
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,FI+2opt,23009.552,23009.552,23009.552,701.773,701.773,701.773
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,FI+2.5opt,23009.552,23009.552,23009.552,1231.175,1231.175,1231.175
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,MST,27357.370,29124.918,31430.218,116.777,192.512,632.192
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,MST+NSh,24234.614,25754.771,26682.021,701.329,1525.776,4077.546
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,MST+2opt,21841.666,22086.649,22537.594,1693.535,2348.065,4620.103
-kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,MST+2.5opt,21443.109,22564.127,23592.195,2301.976,4890.939,12100.173
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,NN,37757.564,45263.853,52895.250,508.182,567.646,976.721
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,22793.722,26690.310,31944.519,1085.532,2194.495,4523.050
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,21681.069,23063.221,24416.316,2801.048,3942.861,6145.477
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,21358.399,22442.831,23996.125,5115.670,10314.077,26371.542
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,FI,23296.730,23296.730,23296.730,883.469,883.469,883.469
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,22818.044,22818.044,22818.044,1265.696,1265.696,1265.696
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,21884.415,21884.415,21884.415,802.489,802.489,802.489
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,21593.575,21593.575,21593.575,1053.275,1053.275,1053.275
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,MST,27357.370,29124.918,31430.218,113.969,143.071,297.297
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,24234.614,25754.771,26682.021,645.075,1650.674,3742.648
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,21841.666,22086.649,22537.594,1629.987,2200.011,3739.597
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,21443.109,22564.127,23592.195,2380.610,4571.713,7551.786
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,NN,48448.636,58046.046,67520.254,507.067,543.928,652.636
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,23313.469,27776.829,33513.607,1347.330,2454.958,4578.635
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,21469.152,22886.435,24523.059,3678.565,4855.518,8385.547
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,21380.916,22452.030,24227.049,5673.173,13159.760,22952.981
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,FI,23484.283,23484.283,23484.283,923.565,923.565,923.565
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,23131.698,23131.698,23131.698,1387.972,1387.972,1387.972
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,22128.074,22128.074,22128.074,444.696,444.696,444.696
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,22167.878,22167.878,22167.878,1210.218,1210.218,1210.218
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,MST,27357.370,29124.918,31430.218,112.569,140.598,1009.154
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,24234.614,25754.771,26682.021,646.384,1671.112,5015.411
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,21841.666,22086.649,22537.594,1769.233,2623.920,4211.498
-kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,21443.109,22564.127,23592.195,2454.762,4711.088,9316.940
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,NN,25882.973,27906.934,30371.786,187.231,226.152,1331.484
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,NN+NSh,23796.734,25083.930,27544.378,707.387,1563.449,10557.528
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,NN+2opt,22346.609,22820.232,23958.842,862.560,1209.167,2094.766
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,NN+2.5opt,22326.019,22998.358,24310.485,1343.361,3135.677,5565.841
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,FI,24034.635,24034.635,24034.635,542.006,542.006,542.006
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,FI+NSh,23655.264,23655.264,23655.264,857.067,857.067,857.067
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,FI+2opt,23201.508,23201.508,23201.508,713.358,713.358,713.358
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,FI+2.5opt,23189.207,23189.207,23189.207,1735.498,1735.498,1735.498
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,MST,27838.088,28782.685,30097.439,113.310,144.088,253.988
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,MST+NSh,24305.863,24922.771,25789.463,1153.373,1396.002,3711.843
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,MST+2opt,22780.382,22963.243,23395.054,1029.363,1263.655,1763.393
-kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,MST+2.5opt,22736.423,23335.842,24410.225,1925.612,4061.307,8415.659
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,NN,39777.547,46132.585,55228.420,509.832,545.342,748.244
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,24339.670,27501.555,31479.523,1123.539,2122.796,3791.589
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,22505.500,23824.376,26662.259,2686.789,3942.262,6786.877
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,22323.333,23304.574,24418.262,5403.043,9343.316,14502.023
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,FI,23134.303,23134.303,23134.303,1065.596,1065.596,1065.596
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,23002.888,23002.888,23002.888,760.806,760.806,760.806
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,23013.888,23013.888,23013.888,547.464,547.464,547.464
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,23344.434,23344.434,23344.434,210.333,210.333,210.333
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,MST,27838.088,28782.685,30097.439,110.600,122.394,182.727
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,24305.863,24922.771,25789.463,1076.449,1298.852,2220.849
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,22780.382,22963.243,23395.054,1032.695,1324.066,2479.711
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,22736.423,23335.842,24410.225,1739.726,3727.593,8075.762
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,NN,48633.293,57205.715,65254.171,509.408,628.508,1372.510
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,24896.882,28187.195,32413.336,1429.139,2518.655,5358.201
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,22655.471,23791.661,25384.539,3568.337,4692.854,6691.250
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,22422.611,23426.839,24245.236,5770.153,12406.374,21841.652
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,FI,24359.346,24359.346,24359.346,691.508,691.508,691.508
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,23662.854,23662.854,23662.854,695.188,695.188,695.188
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,23285.772,23285.772,23285.772,124.041,124.041,124.041
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,23461.990,23461.990,23461.990,755.332,755.332,755.332
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,MST,27838.088,28782.685,30097.439,111.756,123.563,239.915
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,24305.863,24922.771,25789.463,1065.270,1691.950,13507.419
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,22780.382,22963.243,23395.054,1053.674,1653.040,3056.426
-kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,22736.423,23335.842,24410.225,1846.439,3684.748,7740.937
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,NN,23566.403,26227.273,29393.726,190.408,257.727,1119.711
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,NN+NSh,21813.025,23602.755,25894.714,671.405,1213.071,2249.424
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,NN+2opt,20996.576,21721.108,22816.341,913.619,1330.161,1758.974
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,NN+2.5opt,20929.788,21768.487,22865.712,1293.558,3219.974,7788.063
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,FI,21817.790,21817.790,21817.790,517.698,517.698,517.698
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,FI+NSh,21087.652,21087.652,21087.652,796.296,796.296,796.296
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,FI+2opt,21154.583,21154.583,21154.583,395.949,395.949,395.949
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,FI+2.5opt,21154.583,21154.583,21154.583,701.654,701.654,701.654
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,MST,27400.382,28252.733,28872.616,130.258,146.911,259.831
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,MST+NSh,23285.876,23791.700,24542.358,820.602,1218.093,3099.004
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,MST+2opt,21662.331,21913.572,22673.974,1492.263,2292.469,9707.644
-kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,MST+2.5opt,20954.205,22267.202,23593.502,2199.401,4615.466,7753.545
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,NN,37543.631,44835.577,53793.581,511.583,608.325,967.437
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,22826.416,26251.632,30956.281,1243.406,2994.782,6265.015
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,21003.659,22481.422,24023.465,2982.655,4141.165,6975.483
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,20813.270,21915.216,23113.739,4666.123,10411.590,19028.077
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,FI,21395.030,21395.030,21395.030,854.784,854.784,854.784
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,21395.030,21395.030,21395.030,255.517,255.517,255.517
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,21694.336,21694.336,21694.336,183.163,183.163,183.163
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,22033.785,22033.785,22033.785,1599.291,1599.291,1599.291
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,MST,27400.382,28252.733,28872.616,129.456,176.624,237.949
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,23285.876,23791.700,24542.358,807.300,1313.969,2677.715
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,21662.331,21913.572,22673.974,1377.990,1826.575,3183.665
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,20954.205,22267.202,23593.502,2240.444,4153.419,8653.016
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,NN,49518.661,57472.359,66789.434,505.265,571.404,875.054
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,22316.389,27499.392,33803.202,1495.321,2823.061,5874.406
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,20813.270,22414.139,24320.734,3403.087,5075.318,16555.843
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,20946.730,21907.708,23724.656,6158.379,12845.542,19320.649
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,FI,21904.110,21904.110,21904.110,667.295,667.295,667.295
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,21634.643,21634.643,21634.643,542.430,542.430,542.430
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,21657.308,21657.308,21657.308,122.448,122.448,122.448
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,20888.412,20888.412,20888.412,146.606,146.606,146.606
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,MST,27400.382,28252.733,28872.616,129.022,139.147,177.338
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,23285.876,23791.700,24542.358,803.171,1206.430,5326.888
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,21662.331,21913.572,22673.974,1338.685,1657.009,2680.459
-kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,20954.205,22267.202,23593.502,1922.464,3941.870,7842.888
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,NN,24855.799,27482.280,29998.135,191.453,227.459,1027.829
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,NN+NSh,23942.096,25387.164,27160.316,696.790,1312.875,2943.188
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,NN+2opt,21551.933,22276.791,23199.614,793.728,1599.612,2916.031
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,NN+2.5opt,21575.062,22518.433,23611.264,1549.109,3357.148,5545.567
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,FI,22361.485,22361.485,22361.485,476.086,476.086,476.086
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,FI+NSh,22229.293,22229.293,22229.293,843.647,843.647,843.647
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,FI+2opt,22331.485,22331.485,22331.485,198.564,198.564,198.564
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,FI+2.5opt,22331.485,22331.485,22331.485,270.569,270.569,270.569
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,MST,27737.232,28492.896,29577.699,153.053,195.680,386.411
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,MST+NSh,22985.708,23612.780,24278.636,695.642,1514.047,11367.469
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,MST+2opt,22411.589,22889.354,23216.403,1284.816,1649.248,2665.459
-kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,MST+2.5opt,21536.159,22423.061,23842.806,2052.304,4755.861,10373.930
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,NN,39631.675,44789.228,51652.886,510.641,560.333,1223.724
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,23738.593,26893.554,30915.385,1104.075,2052.390,4493.017
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,21798.837,22905.605,25208.551,2774.139,3914.914,5778.496
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,21500.139,22505.433,24165.712,4336.123,10620.594,16197.344
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,FI,22011.226,22011.226,22011.226,655.369,655.369,655.369
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,21856.229,21856.229,21856.229,363.071,363.071,363.071
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,21980.673,21980.673,21980.673,244.271,244.271,244.271
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,22830.173,22830.173,22830.173,564.872,564.872,564.872
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,MST,27737.232,28492.896,29577.699,149.273,185.853,495.257
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,22985.708,23612.780,24278.636,673.574,1160.017,1878.158
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,22411.589,22889.354,23216.403,1273.240,1592.973,2159.054
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,21536.159,22423.061,23842.806,1882.101,4718.025,10084.147
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,NN,49745.549,56732.483,70491.812,510.183,557.409,779.599
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,24525.788,28002.936,34398.239,1222.917,2467.521,4694.537
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,21894.796,22983.541,24761.343,3351.504,4805.142,7366.297
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,21441.646,22572.704,23888.436,5187.277,13238.172,34153.698
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,FI,22432.724,22432.724,22432.724,819.136,819.136,819.136
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,22164.137,22164.137,22164.137,882.759,882.759,882.759
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,22252.153,22252.153,22252.153,315.478,315.478,315.478
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,22825.574,22825.574,22825.574,1145.619,1145.619,1145.619
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,MST,27737.232,28492.896,29577.699,147.399,161.848,365.826
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,22985.708,23612.780,24278.636,677.954,1164.128,2083.377
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,22411.589,22889.354,23216.403,1278.098,1674.769,2841.706
-kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,21536.159,22423.061,23842.806,2039.635,4846.976,9218.070
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,NN,24907.022,27496.973,30696.613,185.149,228.463,1293.890
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,NN+NSh,23354.156,24726.234,26694.044,506.950,1288.086,2916.836
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,NN+2opt,22407.486,22957.951,23556.195,1102.704,1836.257,4689.943
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,NN+2.5opt,22430.822,23064.165,24236.847,1380.307,3418.449,7323.407
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,FI,23603.608,23603.608,23603.608,294.620,294.620,294.620
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,FI+NSh,23071.423,23071.423,23071.423,352.276,352.276,352.276
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,FI+2opt,23113.779,23113.779,23113.779,581.543,581.543,581.543
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,FI+2.5opt,23071.423,23071.423,23071.423,1283.385,1283.385,1283.385
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,MST,29752.881,31054.184,32272.236,153.995,166.913,265.939
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,MST+NSh,24993.232,26983.152,27882.576,814.743,1324.634,2953.435
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,MST+2opt,22234.125,22558.162,23769.302,1524.598,1954.948,3444.300
-kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,MST+2.5opt,22162.309,23514.068,25113.107,1829.750,4384.814,9467.717
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,NN,38135.633,46494.489,55509.770,510.236,577.522,782.492
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,24039.281,27023.440,33074.652,1087.868,2288.394,4860.500
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,22504.479,23607.335,25460.534,2320.718,3785.032,6199.096
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,22311.823,23172.956,24421.247,5192.097,9546.920,14401.762
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,FI,23213.415,23213.415,23213.415,618.356,618.356,618.356
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,22967.915,22967.915,22967.915,519.692,519.692,519.692
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,23006.679,23006.679,23006.679,86.364,86.364,86.364
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,22787.649,22787.649,22787.649,338.612,338.612,338.612
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,MST,29752.881,31054.184,32272.236,154.944,173.726,236.372
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,24993.232,26983.152,27882.576,638.184,1277.285,2598.224
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,22234.125,22558.162,23769.302,1550.328,2346.648,7429.884
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,22162.309,23514.068,25113.107,2188.949,4742.661,9657.274
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,NN,48906.535,57898.755,70020.729,507.903,570.293,716.572
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,24098.807,27423.676,34279.465,1401.537,2639.465,4944.308
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,22506.963,23643.942,24930.902,3659.246,4726.870,7067.533
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,22360.152,23264.028,24521.792,7055.392,13136.574,23677.759
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,FI,23997.466,23997.466,23997.466,863.066,863.066,863.066
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,23112.741,23112.741,23112.741,1110.764,1110.764,1110.764
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,22623.716,22623.716,22623.716,451.386,451.386,451.386
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,23173.973,23173.973,23173.973,1054.736,1054.736,1054.736
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,MST,29752.881,31054.184,32272.236,156.547,172.400,206.978
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,24993.232,26983.152,27882.576,702.752,1287.058,2072.800
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,22234.125,22558.162,23769.302,1662.493,2011.804,3036.674
-kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,22162.309,23514.068,25113.107,1840.678,4354.079,8425.978
-lin105,105-city problem (Subproblem of lin318),Greedy,NN,16939.441,18710.885,20590.263,148.381,200.241,2561.087
-lin105,105-city problem (Subproblem of lin318),Greedy,NN+NSh,15026.924,16475.870,18098.085,953.413,1693.619,4443.042
-lin105,105-city problem (Subproblem of lin318),Greedy,NN+2opt,14501.770,14881.512,15589.487,1018.297,1786.302,3918.556
-lin105,105-city problem (Subproblem of lin318),Greedy,NN+2.5opt,14382.996,15018.334,16042.040,1792.702,4989.446,11556.569
-lin105,105-city problem (Subproblem of lin318),Greedy,FI,15411.964,15411.964,15411.964,448.684,448.684,448.684
-lin105,105-city problem (Subproblem of lin318),Greedy,FI+NSh,15157.168,15157.168,15157.168,1584.509,1584.509,1584.509
-lin105,105-city problem (Subproblem of lin318),Greedy,FI+2opt,15272.369,15272.369,15272.369,440.643,440.643,440.643
-lin105,105-city problem (Subproblem of lin318),Greedy,FI+2.5opt,15157.168,15157.168,15157.168,802.762,802.762,802.762
-lin105,105-city problem (Subproblem of lin318),Greedy,MST,19241.547,20028.797,21170.848,263.277,284.262,405.076
-lin105,105-city problem (Subproblem of lin318),Greedy,MST+NSh,16071.050,16736.007,17643.593,1091.143,1521.887,2810.282
-lin105,105-city problem (Subproblem of lin318),Greedy,MST+2opt,14746.656,15249.896,16069.321,1422.534,2299.753,14139.734
-lin105,105-city problem (Subproblem of lin318),Greedy,MST+2.5opt,14509.962,15267.145,16228.762,2505.390,5386.456,12049.033
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,NN,27469.205,32200.074,37638.594,511.182,578.534,972.760
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,NN+NSh,15781.595,18172.664,20757.998,1224.141,2558.378,5428.114
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,NN+2opt,14539.867,15317.621,16965.072,3632.759,4850.793,7838.201
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,NN+2.5opt,14484.107,15123.168,16423.675,5736.091,12308.816,19696.245
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,FI,15249.893,15249.893,15249.893,710.239,710.239,710.239
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,FI+NSh,14756.306,14756.306,14756.306,961.797,961.797,961.797
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,FI+2opt,14896.550,14896.550,14896.550,267.787,267.787,267.787
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,FI+2.5opt,14690.975,14690.975,14690.975,751.324,751.324,751.324
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,MST,19241.547,20028.797,21170.848,263.868,274.437,347.120
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,MST+NSh,16071.050,16736.007,17643.593,1073.055,1533.429,2561.755
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,MST+2opt,14746.656,15249.896,16069.321,1396.029,1941.545,3119.835
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,MST+2.5opt,14509.962,15267.145,16228.762,2386.298,5370.347,13390.616
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,NN,34450.825,42427.087,49586.139,510.882,591.716,1128.630
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,NN+NSh,16154.506,19132.184,22525.078,1519.308,3600.046,14158.555
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,NN+2opt,14558.641,15321.202,16277.238,4273.065,5642.105,10932.317
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,NN+2.5opt,14469.400,15156.386,16097.325,6260.487,15424.336,22572.178
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,FI,15880.273,15880.273,15880.273,711.276,711.276,711.276
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,FI+NSh,15495.187,15495.187,15495.187,790.016,790.016,790.016
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,FI+2opt,15443.233,15443.233,15443.233,360.738,360.738,360.738
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,FI+2.5opt,15012.978,15012.978,15012.978,369.919,369.919,369.919
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,MST,19241.547,20028.797,21170.848,266.444,287.128,390.399
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,MST+NSh,16071.050,16736.007,17643.593,1103.974,1558.320,2659.859
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,MST+2opt,14746.656,15249.896,16069.321,1437.100,1947.162,3436.165
-lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,MST+2.5opt,14509.962,15267.145,16228.762,2229.923,5777.408,13340.204
-lin318,318-city problem (Lin/Kernighan),Greedy,NN,49215.613,52567.330,58862.763,2063.141,2418.734,12623.374
-lin318,318-city problem (Lin/Kernighan),Greedy,NN+NSh,46061.046,47953.163,51686.612,10477.016,15728.188,65151.276
-lin318,318-city problem (Lin/Kernighan),Greedy,NN+2opt,42686.038,44167.456,45134.647,27615.313,38469.461,59204.115
-lin318,318-city problem (Lin/Kernighan),Greedy,NN+2.5opt,43142.789,44543.505,46440.612,46139.428,103393.591,198977.509
-lin318,318-city problem (Lin/Kernighan),Greedy,FI,45875.349,45875.349,45875.349,6759.515,6759.515,6759.515
-lin318,318-city problem (Lin/Kernighan),Greedy,FI+NSh,44603.489,44603.489,44603.489,7042.831,7042.831,7042.831
-lin318,318-city problem (Lin/Kernighan),Greedy,FI+2opt,44815.932,44815.932,44815.932,12426.276,12426.276,12426.276
-lin318,318-city problem (Lin/Kernighan),Greedy,FI+2.5opt,44234.816,44234.816,44234.816,32558.102,32558.102,32558.102
-lin318,318-city problem (Lin/Kernighan),Greedy,MST,57824.242,59739.123,60989.051,1906.398,2134.871,4321.519
-lin318,318-city problem (Lin/Kernighan),Greedy,MST+NSh,47160.420,49617.423,50923.809,12277.891,19282.093,42563.193
-lin318,318-city problem (Lin/Kernighan),Greedy,MST+2opt,44474.339,45061.234,45755.304,46290.218,53342.649,91564.504
-lin318,318-city problem (Lin/Kernighan),Greedy,MST+2.5opt,42846.031,44780.233,45941.568,102404.927,177765.522,337188.354
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,NN,79956.536,91604.093,103591.205,3096.770,3794.282,14690.720
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,NN+NSh,51352.756,56209.846,62090.676,17311.232,31200.581,205237.571
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,NN+2opt,43929.330,45420.667,47689.152,106023.280,128238.513,237329.774
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,NN+2.5opt,43587.265,44936.890,46673.319,202399.912,412651.700,1347991.360
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,FI,45496.604,45496.604,45496.604,6550.157,6550.157,6550.157
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,FI+NSh,45036.703,45036.703,45036.703,10424.764,10424.764,10424.764
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,FI+2opt,45682.144,45682.144,45682.144,8886.640,8886.640,8886.640
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,FI+2.5opt,46001.039,46001.039,46001.039,26810.986,26810.986,26810.986
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,MST,57824.242,59739.123,60989.051,1904.340,2078.289,6000.354
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,MST+NSh,47160.420,49617.423,50923.809,10779.191,21902.211,57306.185
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,MST+2opt,44474.339,45061.234,45755.304,48071.914,71246.125,219423.835
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,MST+2.5opt,42846.031,44780.233,45941.568,101179.896,181187.072,277316.600
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,NN,102409.172,117289.997,135459.471,3119.083,3380.714,7177.074
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,NN+NSh,54070.170,60019.263,66785.426,18056.053,34043.170,80433.132
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,NN+2opt,43790.268,45543.689,48011.455,132273.270,158981.517,277906.738
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,NN+2.5opt,43371.741,44845.628,46879.598,263996.845,508176.171,815334.765
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,FI,45819.533,45819.533,45819.533,4774.099,4774.099,4774.099
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,FI+NSh,44914.484,44914.484,44914.484,9032.381,9032.381,9032.381
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,FI+2opt,44630.513,44630.513,44630.513,7275.749,7275.749,7275.749
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,FI+2.5opt,44713.144,44713.144,44713.144,38551.370,38551.370,38551.370
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,MST,57824.242,59739.123,60989.051,1912.569,2212.415,3825.831
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,MST+NSh,47160.420,49617.423,50923.809,11378.012,19439.893,82986.213
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,MST+2opt,44474.339,45061.234,45755.304,45712.630,55381.518,130784.015
-lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,MST+2.5opt,42846.031,44780.233,45941.568,104862.293,182965.725,341762.925
-pr124,124-city problem (Padberg/Rinaldi),Greedy,NN,66877.983,71970.685,78689.075,218.069,287.332,3704.347
-pr124,124-city problem (Padberg/Rinaldi),Greedy,NN+NSh,60134.761,64896.708,72998.498,811.150,2785.921,13579.880
-pr124,124-city problem (Padberg/Rinaldi),Greedy,NN+2opt,59086.810,60517.854,63295.666,1139.438,2356.998,7990.440
-pr124,124-city problem (Padberg/Rinaldi),Greedy,NN+2.5opt,59245.929,60971.304,64367.795,1619.438,4947.544,16771.048
-pr124,124-city problem (Padberg/Rinaldi),Greedy,FI,61645.070,61645.070,61645.070,617.006,617.006,617.006
-pr124,124-city problem (Padberg/Rinaldi),Greedy,FI+NSh,61645.070,61645.070,61645.070,389.127,389.127,389.127
-pr124,124-city problem (Padberg/Rinaldi),Greedy,FI+2opt,61645.070,61645.070,61645.070,149.373,149.373,149.373
-pr124,124-city problem (Padberg/Rinaldi),Greedy,FI+2.5opt,61645.070,61645.070,61645.070,240.481,240.481,240.481
-pr124,124-city problem (Padberg/Rinaldi),Greedy,MST,78379.929,80650.380,82969.262,290.197,320.898,555.529
-pr124,124-city problem (Padberg/Rinaldi),Greedy,MST+NSh,61118.848,63613.846,66159.128,1319.717,2466.899,7211.388
-pr124,124-city problem (Padberg/Rinaldi),Greedy,MST+2opt,59968.310,60918.602,62778.643,1889.175,2916.082,4590.829
-pr124,124-city problem (Padberg/Rinaldi),Greedy,MST+2.5opt,59396.847,61225.999,65095.661,2620.483,5338.740,11013.566
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN,112379.839,135250.182,157115.506,636.140,698.595,1134.300
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+NSh,62957.278,73703.125,86503.627,1924.965,4538.101,14413.479
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2opt,59309.920,61485.209,66839.862,6471.216,8031.262,10486.790
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2.5opt,59245.929,61432.788,65535.740,8475.161,19497.996,36637.139
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI,61473.371,61473.371,61473.371,878.784,878.784,878.784
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+NSh,60505.475,60505.475,60505.475,656.200,656.200,656.200
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2opt,59961.454,59961.454,59961.454,1319.982,1319.982,1319.982
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2.5opt,61838.992,61838.992,61838.992,224.141,224.141,224.141
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST,78379.929,80650.380,82969.262,289.376,331.750,554.393
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+NSh,61118.848,63613.846,66159.128,1271.090,2377.063,5127.057
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2opt,59968.310,60918.602,62778.643,1965.301,3077.073,7252.642
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2.5opt,59396.847,61225.999,65095.661,2607.313,5382.228,10622.773
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN,153139.544,182773.683,211858.237,645.514,705.318,998.266
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+NSh,64776.816,77455.289,100241.706,2457.369,5190.373,11259.122
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2opt,59074.800,61685.727,68059.105,7957.657,9817.976,15228.377
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2.5opt,59381.012,61312.002,65005.045,12618.441,24139.507,36242.425
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI,60391.690,60391.690,60391.690,1122.624,1122.624,1122.624
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+NSh,59555.077,59555.077,59555.077,1062.040,1062.040,1062.040
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2opt,60879.408,60879.408,60879.408,94.369,94.369,94.369
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2.5opt,61078.430,61078.430,61078.430,1719.528,1719.528,1719.528
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST,78379.929,80650.380,82969.262,290.542,307.063,459.285
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+NSh,61118.848,63613.846,66159.128,1313.629,2350.091,5435.591
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2opt,59968.310,60918.602,62778.643,1813.720,2882.576,4143.734
-pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2.5opt,59396.847,61225.999,65095.661,2945.201,6545.514,18030.403
-pr144,144-city problem (Padberg/Rinaldi),Greedy,NN,60963.265,65688.601,78701.260,293.524,390.107,5342.804
-pr144,144-city problem (Padberg/Rinaldi),Greedy,NN+NSh,60363.761,63453.092,74864.108,1480.953,2856.449,8126.736
-pr144,144-city problem (Padberg/Rinaldi),Greedy,NN+2opt,58669.427,59782.987,61243.805,898.867,2353.946,5772.527
-pr144,144-city problem (Padberg/Rinaldi),Greedy,NN+2.5opt,58535.222,60546.557,65442.985,1610.347,5012.925,19204.536
-pr144,144-city problem (Padberg/Rinaldi),Greedy,FI,62521.615,62521.615,62521.615,652.642,652.642,652.642
-pr144,144-city problem (Padberg/Rinaldi),Greedy,FI+NSh,62488.064,62488.064,62488.064,1255.218,1255.218,1255.218
-pr144,144-city problem (Padberg/Rinaldi),Greedy,FI+2opt,62521.615,62521.615,62521.615,208.390,208.390,208.390
-pr144,144-city problem (Padberg/Rinaldi),Greedy,FI+2.5opt,62521.615,62521.615,62521.615,336.233,336.233,336.233
-pr144,144-city problem (Padberg/Rinaldi),Greedy,MST,76263.016,80535.209,83998.361,438.044,534.440,873.202
-pr144,144-city problem (Padberg/Rinaldi),Greedy,MST+NSh,67511.088,75703.943,80259.178,1429.628,3691.496,14971.275
-pr144,144-city problem (Padberg/Rinaldi),Greedy,MST+2opt,58687.796,59124.273,60537.860,2423.951,3413.398,5225.706
-pr144,144-city problem (Padberg/Rinaldi),Greedy,MST+2.5opt,58587.142,60883.704,68309.717,2220.313,6812.106,13905.982
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN,112718.217,146480.681,174776.932,779.521,874.708,1640.544
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+NSh,66088.707,81883.090,112791.225,3286.919,6291.792,14826.101
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2opt,58552.985,60605.578,66411.223,10649.258,13503.585,21020.958
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2.5opt,58535.222,61034.856,66710.717,15690.266,30274.453,62662.034
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI,59419.716,59419.716,59419.716,1336.585,1336.585,1336.585
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+NSh,59171.128,59171.128,59171.128,1859.191,1859.191,1859.191
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2opt,59464.442,59464.442,59464.442,824.155,824.155,824.155
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2.5opt,61420.812,61420.812,61420.812,1434.826,1434.826,1434.826
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST,76263.016,80535.209,83998.361,432.247,453.965,846.042
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+NSh,67511.088,75703.943,80259.178,1471.735,3276.036,7779.789
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2opt,58687.796,59124.273,60537.860,2425.254,3309.080,4993.236
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2.5opt,58587.142,60883.704,68309.717,2227.317,6660.555,13728.535
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN,173946.364,205943.708,244543.166,788.122,882.383,1789.547
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+NSh,70638.267,87793.929,107972.499,4525.418,8413.816,20579.723
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2opt,58535.222,60516.317,65892.876,12878.581,16264.319,23215.183
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2.5opt,58635.876,60892.580,66658.868,20185.530,39627.547,68469.038
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI,59587.543,59587.543,59587.543,1072.879,1072.879,1072.879
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+NSh,59553.991,59553.991,59553.991,1156.961,1156.961,1156.961
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2opt,59334.830,59334.830,59334.830,928.072,928.072,928.072
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2.5opt,61637.141,61637.141,61637.141,1467.336,1467.336,1467.336
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST,76263.016,80535.209,83998.361,434.777,487.597,1260.928
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+NSh,67511.088,75703.943,80259.178,1461.469,3500.263,10975.066
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2opt,58687.796,59124.273,60537.860,2696.621,4005.483,9035.994
-pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2.5opt,58587.142,60883.704,68309.717,2401.335,7437.421,14879.825
-pr76,76-city problem (Padberg/Rinaldi),Greedy,NN,130921.005,147162.785,157075.977,79.376,153.660,3167.138
-pr76,76-city problem (Padberg/Rinaldi),Greedy,NN+NSh,114850.390,127585.430,137701.647,395.583,835.619,1613.299
-pr76,76-city problem (Padberg/Rinaldi),Greedy,NN+2opt,108879.744,113244.265,118976.572,553.171,1077.904,3055.342
-pr76,76-city problem (Padberg/Rinaldi),Greedy,NN+2.5opt,108879.744,113124.160,118961.249,812.093,1784.359,3230.847
-pr76,76-city problem (Padberg/Rinaldi),Greedy,FI,119648.865,119648.865,119648.865,231.626,231.626,231.626
-pr76,76-city problem (Padberg/Rinaldi),Greedy,FI+NSh,117638.942,117638.942,117638.942,277.246,277.246,277.246
-pr76,76-city problem (Padberg/Rinaldi),Greedy,FI+2opt,114571.908,114571.908,114571.908,270.932,270.932,270.932
-pr76,76-city problem (Padberg/Rinaldi),Greedy,FI+2.5opt,113156.639,113156.639,113156.639,517.845,517.845,517.845
-pr76,76-city problem (Padberg/Rinaldi),Greedy,MST,142681.374,146013.498,148681.681,76.095,93.831,208.788
-pr76,76-city problem (Padberg/Rinaldi),Greedy,MST+NSh,121746.716,128202.461,130684.014,393.591,660.033,1260.736
-pr76,76-city problem (Padberg/Rinaldi),Greedy,MST+2opt,111037.388,114490.946,116714.583,350.656,585.186,972.903
-pr76,76-city problem (Padberg/Rinaldi),Greedy,MST+2.5opt,109356.797,112946.754,119721.761,636.288,1744.938,3746.684
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN,186135.810,221604.649,276738.486,334.920,422.371,1118.907
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+NSh,117435.505,129382.115,145377.957,628.662,1247.872,2261.215
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2opt,109755.435,114327.066,129452.833,1294.045,1730.982,2857.425
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2.5opt,108159.438,113423.433,119357.004,1780.168,4370.078,9730.851
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI,115671.278,115671.278,115671.278,922.781,922.781,922.781
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+NSh,114592.379,114592.379,114592.379,338.753,338.753,338.753
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2opt,113572.241,113572.241,113572.241,91.190,91.190,91.190
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2.5opt,111312.675,111312.675,111312.675,244.486,244.486,244.486
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST,142681.374,146013.498,148681.681,78.926,104.844,244.036
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+NSh,121746.716,128202.461,130684.014,379.996,784.192,1486.886
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2opt,111037.388,114490.946,116714.583,378.822,581.557,919.988
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2.5opt,109356.797,112946.754,119721.761,796.399,2035.762,10307.322
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN,231746.581,275017.298,317261.926,336.328,365.658,718.873
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+NSh,117952.322,130795.584,152569.208,735.345,1664.880,4163.888
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2opt,109201.242,114850.348,127907.858,1456.643,2006.851,3110.570
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2.5opt,108645.935,112537.261,120465.160,2281.783,5160.274,8988.350
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI,114491.810,114491.810,114491.810,549.473,549.473,549.473
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+NSh,109362.712,109362.712,109362.712,501.282,501.282,501.282
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2opt,109767.719,109767.719,109767.719,116.329,116.329,116.329
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2.5opt,109535.865,109535.865,109535.865,383.566,383.566,383.566
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST,142681.374,146013.498,148681.681,76.156,93.474,191.912
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+NSh,121746.716,128202.461,130684.014,389.148,638.949,1375.648
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2opt,111037.388,114490.946,116714.583,359.943,561.253,831.637
-pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2.5opt,109356.797,112946.754,119721.761,580.999,1693.966,2819.915
-rat195,Rattled grid (Pulleyblank),Greedy,NN,2582.497,2770.396,3015.891,638.991,791.129,8050.305
-rat195,Rattled grid (Pulleyblank),Greedy,NN+NSh,2483.252,2580.271,2759.461,3241.911,5282.910,10825.888
-rat195,Rattled grid (Pulleyblank),Greedy,NN+2opt,2353.550,2402.663,2486.380,4008.314,5958.601,11776.386
-rat195,Rattled grid (Pulleyblank),Greedy,NN+2.5opt,2369.747,2435.115,2551.859,5958.405,16531.161,32786.948
-rat195,Rattled grid (Pulleyblank),Greedy,FI,2599.675,2599.675,2599.675,1443.347,1443.347,1443.347
-rat195,Rattled grid (Pulleyblank),Greedy,FI+NSh,2514.522,2514.522,2514.522,4544.986,4544.986,4544.986
-rat195,Rattled grid (Pulleyblank),Greedy,FI+2opt,2572.780,2572.780,2572.780,1167.702,1167.702,1167.702
-rat195,Rattled grid (Pulleyblank),Greedy,FI+2.5opt,2550.014,2550.014,2550.014,5644.576,5644.576,5644.576
-rat195,Rattled grid (Pulleyblank),Greedy,MST,2942.156,3130.141,3328.548,707.380,790.156,1636.584
-rat195,Rattled grid (Pulleyblank),Greedy,MST+NSh,2533.593,2610.471,2683.559,5223.887,7648.530,13742.568
-rat195,Rattled grid (Pulleyblank),Greedy,MST+2opt,2405.083,2469.276,2521.438,7378.741,9378.578,17943.056
-rat195,Rattled grid (Pulleyblank),Greedy,MST+2.5opt,2402.971,2479.648,2538.098,14067.923,27330.557,59225.709
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,NN,4175.477,4693.441,5224.427,1286.861,1443.232,2130.397
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+NSh,2664.694,2911.874,3402.429,4937.420,8958.480,21553.960
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+2opt,2465.458,2605.108,2738.690,19299.341,23469.739,32727.750
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+2.5opt,2407.520,2504.626,2605.638,40567.796,72636.486,128158.486
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,FI,2602.165,2602.165,2602.165,2218.649,2218.649,2218.649
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+NSh,2522.138,2522.138,2522.138,3343.768,3343.768,3343.768
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+2opt,2569.700,2569.700,2569.700,2076.907,2076.907,2076.907
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+2.5opt,2572.966,2572.966,2572.966,8075.310,8075.310,8075.310
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,MST,2942.156,3130.141,3328.548,701.846,871.982,1532.772
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+NSh,2533.593,2610.471,2683.559,5321.427,7432.262,14940.879
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+2opt,2405.083,2469.276,2521.438,7344.421,9238.861,34385.194
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+2.5opt,2402.971,2479.648,2538.098,13377.789,29167.734,50098.173
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,NN,5075.156,5832.980,6659.027,1297.360,1405.588,2269.135
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+NSh,2742.401,2997.132,3305.544,5322.746,11155.216,27509.190
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+2opt,2479.285,2617.470,2760.836,24370.101,30912.915,48989.579
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+2.5opt,2393.706,2507.927,2632.303,49449.479,96623.466,197189.819
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,FI,2601.660,2601.660,2601.660,1866.011,1866.011,1866.011
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+NSh,2514.845,2514.845,2514.845,3650.911,3650.911,3650.911
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+2opt,2572.383,2572.383,2572.383,2400.363,2400.363,2400.363
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+2.5opt,2480.890,2480.890,2480.890,11734.406,11734.406,11734.406
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,MST,2942.156,3130.141,3328.548,702.847,768.138,1989.221
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+NSh,2533.593,2610.471,2683.559,5334.191,7377.417,14231.018
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+2opt,2405.083,2469.276,2521.438,7560.901,9280.877,15086.805
-rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+2.5opt,2402.971,2479.648,2538.098,14559.002,26992.946,49523.228
-rat99,Rattled grid (Pulleyblank),Greedy,NN,1369.535,1478.013,1629.009,144.541,210.904,3607.889
-rat99,Rattled grid (Pulleyblank),Greedy,NN+NSh,1285.281,1332.472,1432.306,546.224,1115.732,2795.593
-rat99,Rattled grid (Pulleyblank),Greedy,NN+2opt,1221.007,1266.337,1318.228,731.310,1076.214,1801.170
-rat99,Rattled grid (Pulleyblank),Greedy,NN+2.5opt,1238.597,1279.190,1343.931,1213.048,2432.053,4423.573
-rat99,Rattled grid (Pulleyblank),Greedy,FI,1318.699,1318.699,1318.699,709.034,709.034,709.034
-rat99,Rattled grid (Pulleyblank),Greedy,FI+NSh,1278.952,1278.952,1278.952,994.170,994.170,994.170
-rat99,Rattled grid (Pulleyblank),Greedy,FI+2opt,1299.066,1299.066,1299.066,420.121,420.121,420.121
-rat99,Rattled grid (Pulleyblank),Greedy,FI+2.5opt,1274.707,1274.707,1274.707,1281.268,1281.268,1281.268
-rat99,Rattled grid (Pulleyblank),Greedy,MST,1551.311,1636.000,1704.220,183.141,303.803,1294.684
-rat99,Rattled grid (Pulleyblank),Greedy,MST+NSh,1324.568,1374.983,1454.149,852.207,1194.075,2663.484
-rat99,Rattled grid (Pulleyblank),Greedy,MST+2opt,1221.384,1280.059,1333.606,840.985,1369.858,2459.947
-rat99,Rattled grid (Pulleyblank),Greedy,MST+2.5opt,1238.472,1287.819,1339.967,1646.010,4184.703,12209.412
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,NN,2096.049,2428.659,2800.263,469.521,508.144,729.144
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+NSh,1362.361,1471.125,1585.320,1132.505,2017.155,4786.580
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+2opt,1252.548,1329.697,1404.961,2417.060,3275.968,5399.944
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+2.5opt,1248.068,1303.124,1369.267,4692.711,9732.517,27253.419
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,FI,1337.983,1337.983,1337.983,1112.978,1112.978,1112.978
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+NSh,1296.753,1296.753,1296.753,712.547,712.547,712.547
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+2opt,1278.894,1278.894,1278.894,240.487,240.487,240.487
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+2.5opt,1281.270,1281.270,1281.270,1449.761,1449.761,1449.761
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,MST,1551.311,1636.000,1704.220,187.546,218.864,453.832
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+NSh,1324.568,1374.983,1454.149,789.556,975.471,1876.174
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+2opt,1221.384,1280.059,1333.606,843.062,1357.265,3004.459
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+2.5opt,1238.472,1287.819,1339.967,1652.376,4225.527,8083.050
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,NN,2723.094,3056.616,3609.946,467.481,508.628,881.273
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+NSh,1367.732,1499.698,1728.667,1392.644,2363.406,5538.461
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+2opt,1274.259,1341.943,1397.641,3031.804,4504.675,7149.184
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+2.5opt,1237.651,1303.432,1369.355,7067.456,12459.536,20556.097
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,FI,1339.773,1339.773,1339.773,711.817,711.817,711.817
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+NSh,1307.502,1307.502,1307.502,810.148,810.148,810.148
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+2opt,1303.628,1303.628,1303.628,132.332,132.332,132.332
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+2.5opt,1324.056,1324.056,1324.056,1370.616,1370.616,1370.616
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,MST,1551.311,1636.000,1704.220,197.069,219.097,371.871
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+NSh,1324.568,1374.983,1454.149,825.892,1122.125,2042.534
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+2opt,1221.384,1280.059,1333.606,901.501,1347.744,2354.023
-rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+2.5opt,1238.472,1287.819,1339.967,2057.223,4354.173,8416.963
-st70,70-city problem (Smith/Thompson),Greedy,NN,761.689,826.523,901.271,91.350,118.860,1217.639
-st70,70-city problem (Smith/Thompson),Greedy,NN+NSh,707.124,758.309,821.747,261.916,494.154,1115.518
-st70,70-city problem (Smith/Thompson),Greedy,NN+2opt,684.176,711.712,751.173,252.005,458.573,698.055
-st70,70-city problem (Smith/Thompson),Greedy,NN+2.5opt,685.988,706.761,758.106,519.755,1109.059,2162.397
-st70,70-city problem (Smith/Thompson),Greedy,FI,742.747,742.747,742.747,428.202,428.202,428.202
-st70,70-city problem (Smith/Thompson),Greedy,FI+NSh,734.837,734.837,734.837,429.547,429.547,429.547
-st70,70-city problem (Smith/Thompson),Greedy,FI+2opt,742.747,742.747,742.747,34.412,34.412,34.412
-st70,70-city problem (Smith/Thompson),Greedy,FI+2.5opt,735.550,735.550,735.550,163.128,163.128,163.128
-st70,70-city problem (Smith/Thompson),Greedy,MST,846.099,873.244,897.007,56.172,70.110,185.189
-st70,70-city problem (Smith/Thompson),Greedy,MST+NSh,723.556,757.181,786.379,310.870,507.463,1051.392
-st70,70-city problem (Smith/Thompson),Greedy,MST+2opt,693.472,714.008,725.337,505.037,679.670,1284.006
-st70,70-city problem (Smith/Thompson),Greedy,MST+2.5opt,688.838,706.356,732.257,727.916,1272.363,2014.968
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,NN,1121.742,1326.696,1518.467,309.303,347.077,738.770
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,NN+NSh,731.766,821.482,1009.191,456.247,985.989,1894.843
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,NN+2opt,677.196,718.336,784.768,921.731,1280.639,2151.369
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,NN+2.5opt,680.500,707.467,751.508,1541.230,3193.762,6815.080
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,FI,705.213,705.213,705.213,421.277,421.277,421.277
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,FI+NSh,699.855,699.855,699.855,205.885,205.885,205.885
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,FI+2opt,712.961,712.961,712.961,48.445,48.445,48.445
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,FI+2.5opt,711.317,711.317,711.317,78.330,78.330,78.330
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,MST,846.099,873.244,897.007,55.664,74.834,125.445
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,MST+NSh,723.556,757.181,786.379,326.928,595.851,1018.976
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,MST+2opt,693.472,714.008,725.337,508.891,770.365,1474.939
-st70,70-city problem (Smith/Thompson),Semi-Greedy 3,MST+2.5opt,688.838,706.356,732.257,815.415,1592.407,2865.919
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,NN,1440.303,1627.668,1817.179,311.778,352.214,430.090
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,NN+NSh,734.631,833.723,950.878,629.358,1074.677,2048.225
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,NN+2opt,678.510,722.449,767.480,1117.397,1592.057,2536.980
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,NN+2.5opt,677.111,709.155,737.335,2134.675,3984.938,7052.850
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,FI,709.021,709.021,709.021,484.595,484.595,484.595
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,FI+NSh,684.215,684.215,684.215,418.761,418.761,418.761
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,FI+2opt,702.124,702.124,702.124,179.785,179.785,179.785
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,FI+2.5opt,700.479,700.479,700.479,147.722,147.722,147.722
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,MST,846.099,873.244,897.007,58.646,72.837,132.761
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,MST+NSh,723.556,757.181,786.379,310.935,500.499,1075.888
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,MST+2opt,693.472,714.008,725.337,532.376,737.993,1203.340
-st70,70-city problem (Smith/Thompson),Semi-Greedy 5,MST+2.5opt,688.838,706.356,732.257,750.239,1282.590,2095.402
+a280,drilling problem (Ludwig),Greedy,NN,3070.549,3340.311,3657.824,1533.797,2296.964,11305.134
+a280,drilling problem (Ludwig),Greedy,NN+NSh,2726.981,2968.892,3268.005,62148.324,110595.546,211393.227
+a280,drilling problem (Ludwig),Greedy,NN+2opt,2654.794,2764.080,2886.714,14354.013,23690.834,48307.775
+a280,drilling problem (Ludwig),Greedy,NN+2.5opt,2627.317,2728.461,2851.450,44290.187,69570.764,100174.036
+a280,drilling problem (Ludwig),Greedy,FI,3003.223,3003.223,3003.223,3261.434,3261.434,3261.434
+a280,drilling problem (Ludwig),Greedy,FI+NSh,2869.368,2869.368,2869.368,58506.175,58506.175,58506.175
+a280,drilling problem (Ludwig),Greedy,FI+2opt,2858.258,2858.258,2858.258,12594.086,12594.086,12594.086
+a280,drilling problem (Ludwig),Greedy,FI+2.5opt,2810.643,2810.643,2810.643,47537.526,47537.526,47537.526
+a280,drilling problem (Ludwig),Greedy,MST,3396.692,3518.212,3611.210,1132.513,1281.142,3884.507
+a280,drilling problem (Ludwig),Greedy,MST+NSh,2940.923,3039.130,3199.463,86539.405,124813.927,243002.500
+a280,drilling problem (Ludwig),Greedy,MST+2opt,2707.563,2783.675,2866.662,17915.327,27053.375,39667.497
+a280,drilling problem (Ludwig),Greedy,MST+2.5opt,2692.913,2769.829,2847.576,60991.409,80658.733,121323.770
+a280,drilling problem (Ludwig),Semi-Greedy 3,NN,4752.450,5457.599,6283.414,2435.874,3061.503,5610.510
+a280,drilling problem (Ludwig),Semi-Greedy 3,NN+NSh,2860.389,3097.569,3410.549,190207.680,284969.686,543349.514
+a280,drilling problem (Ludwig),Semi-Greedy 3,NN+2opt,2715.385,2899.865,3064.967,61837.972,84587.331,200709.112
+a280,drilling problem (Ludwig),Semi-Greedy 3,NN+2.5opt,2695.673,2837.575,3025.249,146761.274,209421.554,606162.581
+a280,drilling problem (Ludwig),Semi-Greedy 3,FI,2977.561,2977.561,2977.561,3438.358,3438.358,3438.358
+a280,drilling problem (Ludwig),Semi-Greedy 3,FI+NSh,2854.915,2854.915,2854.915,49353.522,49353.522,49353.522
+a280,drilling problem (Ludwig),Semi-Greedy 3,FI+2opt,2981.026,2981.026,2981.026,3000.404,3000.404,3000.404
+a280,drilling problem (Ludwig),Semi-Greedy 3,FI+2.5opt,2752.467,2752.467,2752.467,44857.610,44857.610,44857.610
+a280,drilling problem (Ludwig),Semi-Greedy 3,MST,3396.692,3518.212,3611.210,1126.021,1404.488,2933.409
+a280,drilling problem (Ludwig),Semi-Greedy 3,MST+NSh,2940.923,3039.130,3199.463,91311.122,134338.170,272372.373
+a280,drilling problem (Ludwig),Semi-Greedy 3,MST+2opt,2707.563,2783.675,2866.662,17784.068,26864.173,50998.874
+a280,drilling problem (Ludwig),Semi-Greedy 3,MST+2.5opt,2692.913,2769.829,2847.576,62787.566,87662.822,193973.712
+a280,drilling problem (Ludwig),Semi-Greedy 5,NN,6250.453,6901.864,7976.979,2466.288,3006.415,5528.948
+a280,drilling problem (Ludwig),Semi-Greedy 5,NN+NSh,2926.884,3220.753,3573.134,252124.745,367139.525,1686293.208
+a280,drilling problem (Ludwig),Semi-Greedy 5,NN+2opt,2754.473,2904.840,3081.313,78405.460,103303.878,218033.452
+a280,drilling problem (Ludwig),Semi-Greedy 5,NN+2.5opt,2716.272,2844.024,2981.223,201011.011,243311.378,469660.869
+a280,drilling problem (Ludwig),Semi-Greedy 5,FI,2964.940,2964.940,2964.940,4825.957,4825.957,4825.957
+a280,drilling problem (Ludwig),Semi-Greedy 5,FI+NSh,2882.051,2882.051,2882.051,24923.453,24923.453,24923.453
+a280,drilling problem (Ludwig),Semi-Greedy 5,FI+2opt,2843.596,2843.596,2843.596,9369.755,9369.755,9369.755
+a280,drilling problem (Ludwig),Semi-Greedy 5,FI+2.5opt,2832.283,2832.283,2832.283,19037.919,19037.919,19037.919
+a280,drilling problem (Ludwig),Semi-Greedy 5,MST,3396.692,3518.212,3611.210,1137.053,1399.970,3706.342
+a280,drilling problem (Ludwig),Semi-Greedy 5,MST+NSh,2940.923,3039.130,3199.463,85288.196,122042.184,217592.233
+a280,drilling problem (Ludwig),Semi-Greedy 5,MST+2opt,2707.563,2783.675,2866.662,19185.910,27035.125,38113.590
+a280,drilling problem (Ludwig),Semi-Greedy 5,MST+2.5opt,2692.913,2769.829,2847.576,61365.342,82998.094,194942.319
+berlin52,52 locations in Berlin (Groetschel),Greedy,NN,8182.192,9373.434,10299.371,40.428,52.540,92.069
+berlin52,52 locations in Berlin (Groetschel),Greedy,NN+NSh,7895.578,8310.424,9087.168,420.769,840.206,2421.311
+berlin52,52 locations in Berlin (Groetschel),Greedy,NN+2opt,7658.958,7877.045,8076.416,98.085,226.258,570.446
+berlin52,52 locations in Berlin (Groetschel),Greedy,NN+2.5opt,7544.366,7832.572,8076.416,389.411,746.885,1659.762
+berlin52,52 locations in Berlin (Groetschel),Greedy,FI,8120.634,8120.634,8120.634,159.884,159.884,159.884
+berlin52,52 locations in Berlin (Groetschel),Greedy,FI+NSh,7905.874,7905.874,7905.874,334.592,334.592,334.592
+berlin52,52 locations in Berlin (Groetschel),Greedy,FI+2opt,7701.456,7701.456,7701.456,77.072,77.072,77.072
+berlin52,52 locations in Berlin (Groetschel),Greedy,FI+2.5opt,7658.958,7658.958,7658.958,242.059,242.059,242.059
+berlin52,52 locations in Berlin (Groetschel),Greedy,MST,9193.879,10252.081,10597.251,36.411,59.760,194.298
+berlin52,52 locations in Berlin (Groetschel),Greedy,MST+NSh,7993.722,8181.380,8502.110,921.812,1369.453,2989.261
+berlin52,52 locations in Berlin (Groetschel),Greedy,MST+2opt,7625.395,7756.234,8231.933,211.614,271.909,349.262
+berlin52,52 locations in Berlin (Groetschel),Greedy,MST+2.5opt,7544.366,7631.271,8051.216,591.178,784.857,1320.293
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,NN,12494.411,14423.090,17786.815,209.987,260.588,385.466
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,NN+NSh,7642.580,8453.916,9732.821,1088.509,2025.384,3679.226
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,NN+2opt,7544.366,8141.451,8674.561,432.643,810.785,2277.892
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,NN+2.5opt,7544.366,7985.279,8506.010,945.034,1264.790,1719.120
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,FI,8016.889,8016.889,8016.889,310.136,310.136,310.136
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,FI+NSh,7982.097,7982.097,7982.097,207.512,207.512,207.512
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,FI+2opt,7900.665,7900.665,7900.665,43.704,43.704,43.704
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,FI+2.5opt,7883.758,7883.758,7883.758,242.929,242.929,242.929
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,MST,9193.879,10252.081,10597.251,25.265,38.653,80.830
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,MST+NSh,7993.722,8181.380,8502.110,751.043,1266.921,2113.102
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,MST+2opt,7625.395,7756.234,8231.933,231.168,348.893,708.978
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 3,MST+2.5opt,7544.366,7631.271,8051.216,564.489,769.206,1235.645
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,NN,14645.887,17685.869,21055.962,227.219,251.096,356.867
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,NN+NSh,7930.795,8545.110,9443.327,1409.119,2118.708,3343.954
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,NN+2opt,7659.413,8188.347,8671.791,496.309,805.301,1407.919
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,NN+2.5opt,7544.366,7997.033,8856.081,1006.631,1641.966,3033.136
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,FI,8390.911,8390.911,8390.911,304.287,304.287,304.287
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,FI+NSh,8361.693,8361.693,8361.693,228.482,228.482,228.482
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,FI+2opt,7999.904,7999.904,7999.904,226.036,226.036,226.036
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,FI+2.5opt,7544.366,7544.366,7544.366,537.631,537.631,537.631
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,MST,9193.879,10252.081,10597.251,25.132,28.050,58.214
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,MST+NSh,7993.722,8181.380,8502.110,742.875,1265.857,2216.848
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,MST+2opt,7625.395,7756.234,8231.933,212.559,286.981,472.998
+berlin52,52 locations in Berlin (Groetschel),Semi-Greedy 5,MST+2.5opt,7544.366,7631.271,8051.216,599.274,846.764,1332.551
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,NN,132999.906,145555.301,163246.681,315.933,465.727,2043.982
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,NN+NSh,122899.026,128384.960,138659.568,3469.216,10390.997,22435.408
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,NN+2opt,119658.124,122593.987,127097.130,1557.209,2923.801,5694.237
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,NN+2.5opt,119546.669,122464.546,126806.336,4889.860,7559.993,16821.050
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,FI,127273.688,127273.688,127273.688,529.311,529.311,529.311
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,FI+NSh,122866.711,122866.711,122866.711,2339.049,2339.049,2339.049
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,FI+2opt,126218.317,126218.317,126218.317,753.503,753.503,753.503
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,FI+2.5opt,126197.087,126197.087,126197.087,1587.311,1587.311,1587.311
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,MST,145830.135,154993.395,158047.935,172.563,223.115,598.600
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,MST+NSh,132518.634,137382.359,140154.304,12070.593,15502.074,30546.398
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,MST+2opt,123445.321,123967.264,128244.578,3436.410,4746.046,8364.063
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Greedy,MST+2.5opt,122005.496,123085.653,126719.215,8531.096,11395.018,18769.021
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,NN,184019.071,225970.144,262879.664,720.808,898.637,4911.476
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,NN+NSh,125343.526,136969.400,149082.744,16941.465,27860.192,59036.479
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,NN+2opt,120727.490,127549.895,135471.983,5915.029,8513.213,15961.016
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,NN+2.5opt,120949.644,125931.276,132920.174,13555.102,19221.616,31893.994
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,FI,126292.634,126292.634,126292.634,1319.031,1319.031,1319.031
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,FI+NSh,124769.627,124769.627,124769.627,3344.433,3344.433,3344.433
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,FI+2opt,122298.125,122298.125,122298.125,604.572,604.572,604.572
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,FI+2.5opt,128878.217,128878.217,128878.217,2196.560,2196.560,2196.560
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,MST,145830.135,154993.395,158047.935,173.480,220.536,636.772
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,MST+NSh,132518.634,137382.359,140154.304,11403.684,15223.233,36785.087
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,MST+2opt,123445.321,123967.264,128244.578,3322.205,4593.384,9500.031
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 3,MST+2.5opt,122005.496,123085.653,126719.215,7288.356,10065.517,14531.889
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,NN,244858.164,275291.535,308360.024,731.790,837.296,1413.819
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,NN+NSh,128748.284,140953.729,158026.819,23646.786,34809.578,69091.334
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,NN+2opt,120421.805,126895.901,133313.773,7255.724,9527.464,15265.737
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,NN+2.5opt,119336.366,125766.455,135131.246,17997.413,23522.848,36115.403
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,FI,124744.233,124744.233,124744.233,1389.820,1389.820,1389.820
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,FI+NSh,123450.507,123450.507,123450.507,2661.467,2661.467,2661.467
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,FI+2opt,133482.177,133482.177,133482.177,339.034,339.034,339.034
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,FI+2.5opt,125222.438,125222.438,125222.438,1907.150,1907.150,1907.150
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,MST,145830.135,154993.395,158047.935,200.200,266.037,372.270
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,MST+NSh,132518.634,137382.359,140154.304,11876.342,15900.329,23238.719
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,MST+2opt,123445.321,123967.264,128244.578,3407.300,4652.792,9238.401
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),Semi-Greedy 5,MST+2.5opt,122005.496,123085.653,126719.215,8025.778,10759.952,24622.642
+ch130,130 city problem (Churritz),Greedy,NN,7198.741,7720.398,8644.386,338.548,437.338,1778.448
+ch130,130 city problem (Churritz),Greedy,NN+NSh,6613.905,6987.917,7709.798,6505.637,13368.738,25223.142
+ch130,130 city problem (Churritz),Greedy,NN+2opt,6251.072,6422.023,6730.223,1818.586,3117.334,6321.736
+ch130,130 city problem (Churritz),Greedy,NN+2.5opt,6231.831,6410.081,6716.362,5036.357,8240.661,13398.204
+ch130,130 city problem (Churritz),Greedy,FI,6654.734,6654.734,6654.734,1063.647,1063.647,1063.647
+ch130,130 city problem (Churritz),Greedy,FI+NSh,6449.183,6449.183,6449.183,5181.448,5181.448,5181.448
+ch130,130 city problem (Churritz),Greedy,FI+2opt,6634.223,6634.223,6634.223,1143.956,1143.956,1143.956
+ch130,130 city problem (Churritz),Greedy,FI+2.5opt,6629.514,6629.514,6629.514,2335.720,2335.720,2335.720
+ch130,130 city problem (Churritz),Greedy,MST,7926.438,8267.115,8484.356,195.335,272.076,765.698
+ch130,130 city problem (Churritz),Greedy,MST+NSh,6455.485,6882.952,7166.068,13375.078,19501.948,37767.931
+ch130,130 city problem (Churritz),Greedy,MST+2opt,6207.535,6314.761,6452.263,2512.878,4217.778,7016.565
+ch130,130 city problem (Churritz),Greedy,MST+2.5opt,6188.740,6297.075,6452.141,7526.085,10341.785,17019.545
+ch130,130 city problem (Churritz),Semi-Greedy 3,NN,10752.849,12667.863,14543.821,765.224,853.381,1345.702
+ch130,130 city problem (Churritz),Semi-Greedy 3,NN+NSh,6558.012,7195.999,8070.512,18629.052,27053.703,50763.162
+ch130,130 city problem (Churritz),Semi-Greedy 3,NN+2opt,6188.874,6618.462,6993.856,6705.918,8593.672,12452.694
+ch130,130 city problem (Churritz),Semi-Greedy 3,NN+2.5opt,6203.239,6509.361,6894.664,15810.508,21847.912,34990.209
+ch130,130 city problem (Churritz),Semi-Greedy 3,FI,6661.503,6661.503,6661.503,1457.825,1457.825,1457.825
+ch130,130 city problem (Churritz),Semi-Greedy 3,FI+NSh,6479.193,6479.193,6479.193,3648.892,3648.892,3648.892
+ch130,130 city problem (Churritz),Semi-Greedy 3,FI+2opt,6560.982,6560.982,6560.982,235.410,235.410,235.410
+ch130,130 city problem (Churritz),Semi-Greedy 3,FI+2.5opt,6391.207,6391.207,6391.207,2959.069,2959.069,2959.069
+ch130,130 city problem (Churritz),Semi-Greedy 3,MST,7926.438,8267.115,8484.356,194.154,239.402,346.541
+ch130,130 city problem (Churritz),Semi-Greedy 3,MST+NSh,6455.485,6882.952,7166.068,13392.152,19080.965,40098.632
+ch130,130 city problem (Churritz),Semi-Greedy 3,MST+2opt,6207.535,6314.761,6452.263,2614.293,4154.196,15289.630
+ch130,130 city problem (Churritz),Semi-Greedy 3,MST+2.5opt,6188.740,6297.075,6452.141,7297.875,10847.611,22807.692
+ch130,130 city problem (Churritz),Semi-Greedy 5,NN,13219.360,15977.406,17918.059,761.175,867.732,1438.424
+ch130,130 city problem (Churritz),Semi-Greedy 5,NN+NSh,6854.518,7469.407,8461.023,24944.653,38888.952,78876.840
+ch130,130 city problem (Churritz),Semi-Greedy 5,NN+2opt,6271.576,6594.062,7067.904,8370.040,12166.528,21382.873
+ch130,130 city problem (Churritz),Semi-Greedy 5,NN+2.5opt,6236.020,6533.551,6927.128,20976.588,29151.206,67046.178
+ch130,130 city problem (Churritz),Semi-Greedy 5,FI,6478.169,6478.169,6478.169,1430.043,1430.043,1430.043
+ch130,130 city problem (Churritz),Semi-Greedy 5,FI+NSh,6371.926,6371.926,6371.926,2854.738,2854.738,2854.738
+ch130,130 city problem (Churritz),Semi-Greedy 5,FI+2opt,6622.420,6622.420,6622.420,669.626,669.626,669.626
+ch130,130 city problem (Churritz),Semi-Greedy 5,FI+2.5opt,6472.741,6472.741,6472.741,3248.912,3248.912,3248.912
+ch130,130 city problem (Churritz),Semi-Greedy 5,MST,7926.438,8267.115,8484.356,191.910,248.772,662.401
+ch130,130 city problem (Churritz),Semi-Greedy 5,MST+NSh,6455.485,6882.952,7166.068,13025.385,18748.515,39927.201
+ch130,130 city problem (Churritz),Semi-Greedy 5,MST+2opt,6207.535,6314.761,6452.263,2520.621,3894.555,7118.539
+ch130,130 city problem (Churritz),Semi-Greedy 5,MST+2.5opt,6188.740,6297.075,6452.141,7454.580,9808.636,15117.078
+ch150,150 city Problem (churritz),Greedy,NN,7078.445,7697.119,8451.159,467.469,560.331,1356.016
+ch150,150 city Problem (churritz),Greedy,NN+NSh,6725.664,7114.845,7512.638,6799.403,14953.715,51061.655
+ch150,150 city Problem (churritz),Greedy,NN+2opt,6560.940,6695.940,6879.640,2290.880,3844.049,9185.085
+ch150,150 city Problem (churritz),Greedy,NN+2.5opt,6552.297,6681.994,6862.994,5665.033,9176.853,14647.124
+ch150,150 city Problem (churritz),Greedy,FI,6865.949,6865.949,6865.949,1111.519,1111.519,1111.519
+ch150,150 city Problem (churritz),Greedy,FI+NSh,6688.326,6688.326,6688.326,8325.962,8325.962,8325.962
+ch150,150 city Problem (churritz),Greedy,FI+2opt,6812.406,6812.406,6812.406,1395.629,1395.629,1395.629
+ch150,150 city Problem (churritz),Greedy,FI+2.5opt,6710.616,6710.616,6710.616,4290.257,4290.257,4290.257
+ch150,150 city Problem (churritz),Greedy,MST,8842.803,9253.515,9580.985,373.228,466.622,1902.181
+ch150,150 city Problem (churritz),Greedy,MST+NSh,6904.348,7448.176,7670.166,18938.647,28077.874,72896.361
+ch150,150 city Problem (churritz),Greedy,MST+2opt,6636.804,6835.897,7035.841,4473.094,6443.637,15145.208
+ch150,150 city Problem (churritz),Greedy,MST+2.5opt,6578.756,6715.925,6994.139,10935.720,15321.096,29677.878
+ch150,150 city Problem (churritz),Semi-Greedy 3,NN,11685.218,13274.434,15124.162,947.967,1066.963,1751.813
+ch150,150 city Problem (churritz),Semi-Greedy 3,NN+NSh,7048.486,7674.332,8439.083,27337.531,38578.245,59978.573
+ch150,150 city Problem (churritz),Semi-Greedy 3,NN+2opt,6709.968,7144.989,7756.390,9441.034,12735.453,18677.563
+ch150,150 city Problem (churritz),Semi-Greedy 3,NN+2.5opt,6705.065,7022.705,7539.372,23437.591,31914.540,48410.851
+ch150,150 city Problem (churritz),Semi-Greedy 3,FI,7032.828,7032.828,7032.828,1324.921,1324.921,1324.921
+ch150,150 city Problem (churritz),Semi-Greedy 3,FI+NSh,6792.291,6792.291,6792.291,7746.717,7746.717,7746.717
+ch150,150 city Problem (churritz),Semi-Greedy 3,FI+2opt,7013.680,7013.680,7013.680,800.160,800.160,800.160
+ch150,150 city Problem (churritz),Semi-Greedy 3,FI+2.5opt,6991.504,6991.504,6991.504,2639.054,2639.054,2639.054
+ch150,150 city Problem (churritz),Semi-Greedy 3,MST,8842.803,9253.515,9580.985,369.855,428.343,908.035
+ch150,150 city Problem (churritz),Semi-Greedy 3,MST+NSh,6904.348,7448.176,7670.166,18303.868,25292.018,43651.721
+ch150,150 city Problem (churritz),Semi-Greedy 3,MST+2opt,6636.804,6835.897,7035.841,4421.806,5651.010,10609.345
+ch150,150 city Problem (churritz),Semi-Greedy 3,MST+2.5opt,6578.756,6715.925,6994.139,10813.142,15041.313,38357.944
+ch150,150 city Problem (churritz),Semi-Greedy 5,NN,14743.746,16701.588,19033.345,986.220,1163.163,2024.809
+ch150,150 city Problem (churritz),Semi-Greedy 5,NN+NSh,7239.795,8017.000,9102.911,38342.889,50891.200,84734.211
+ch150,150 city Problem (churritz),Semi-Greedy 5,NN+2opt,6748.024,7175.154,7714.622,12146.834,15987.792,29769.903
+ch150,150 city Problem (churritz),Semi-Greedy 5,NN+2.5opt,6757.075,7052.998,7425.124,29797.792,37869.948,74529.178
+ch150,150 city Problem (churritz),Semi-Greedy 5,FI,7099.416,7099.416,7099.416,1852.035,1852.035,1852.035
+ch150,150 city Problem (churritz),Semi-Greedy 5,FI+NSh,7016.569,7016.569,7016.569,2829.246,2829.246,2829.246
+ch150,150 city Problem (churritz),Semi-Greedy 5,FI+2opt,7014.802,7014.802,7014.802,934.839,934.839,934.839
+ch150,150 city Problem (churritz),Semi-Greedy 5,FI+2.5opt,6827.458,6827.458,6827.458,5434.136,5434.136,5434.136
+ch150,150 city Problem (churritz),Semi-Greedy 5,MST,8842.803,9253.515,9580.985,376.464,450.794,734.602
+ch150,150 city Problem (churritz),Semi-Greedy 5,MST+NSh,6904.348,7448.176,7670.166,18885.450,26016.037,42762.657
+ch150,150 city Problem (churritz),Semi-Greedy 5,MST+2opt,6636.804,6835.897,7035.841,4555.673,6947.448,14892.842
+ch150,150 city Problem (churritz),Semi-Greedy 5,MST+2.5opt,6578.756,6715.925,6994.139,10689.632,14715.031,39584.767
+eil101,101-city problem (Christofides/Eilon),Greedy,NN,753.463,844.889,906.845,192.683,236.697,442.323
+eil101,101-city problem (Christofides/Eilon),Greedy,NN+NSh,668.894,704.384,759.983,2945.681,6131.822,10905.598
+eil101,101-city problem (Christofides/Eilon),Greedy,NN+2opt,653.447,671.317,692.965,994.476,1613.828,4106.266
+eil101,101-city problem (Christofides/Eilon),Greedy,NN+2.5opt,648.230,666.781,686.160,2120.950,4275.443,6223.675
+eil101,101-city problem (Christofides/Eilon),Greedy,FI,690.573,690.573,690.573,369.857,369.857,369.857
+eil101,101-city problem (Christofides/Eilon),Greedy,FI+NSh,668.861,668.861,668.861,3487.211,3487.211,3487.211
+eil101,101-city problem (Christofides/Eilon),Greedy,FI+2opt,678.551,678.551,678.551,326.536,326.536,326.536
+eil101,101-city problem (Christofides/Eilon),Greedy,FI+2.5opt,670.503,670.503,670.503,2660.567,2660.567,2660.567
+eil101,101-city problem (Christofides/Eilon),Greedy,MST,834.240,858.204,877.509,95.220,144.419,208.690
+eil101,101-city problem (Christofides/Eilon),Greedy,MST+NSh,683.198,706.855,734.363,5338.323,8295.255,14975.578
+eil101,101-city problem (Christofides/Eilon),Greedy,MST+2opt,669.684,677.160,694.356,1214.966,1721.672,3965.988
+eil101,101-city problem (Christofides/Eilon),Greedy,MST+2.5opt,652.732,668.194,688.992,3532.626,5381.120,9202.342
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,NN,998.612,1138.806,1310.549,518.141,580.650,1467.095
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,NN+NSh,674.979,722.054,760.779,6519.683,11250.131,17285.493
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2opt,659.254,692.916,721.177,2191.966,3141.399,5086.944
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2.5opt,654.633,682.754,706.771,5804.579,7822.039,10725.433
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,FI,678.161,678.161,678.161,1404.638,1404.638,1404.638
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,FI+NSh,661.845,661.845,661.845,3495.498,3495.498,3495.498
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2opt,677.968,677.968,677.968,62.513,62.513,62.513
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2.5opt,682.951,682.951,682.951,1006.315,1006.315,1006.315
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,MST,834.240,858.204,877.509,94.316,120.777,226.570
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,MST+NSh,683.198,706.855,734.363,6107.383,8342.663,13689.834
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2opt,669.684,677.160,694.356,1237.134,2018.356,3428.722
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2.5opt,652.732,668.194,688.992,3315.459,7161.687,15173.048
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,NN,1189.497,1387.931,1557.666,595.259,800.623,1577.278
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,NN+NSh,683.182,730.544,774.709,10218.711,15644.381,28672.183
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2opt,670.976,693.822,719.385,3199.033,5019.634,13346.548
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2.5opt,657.583,680.565,706.066,7704.919,10535.610,16172.600
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,FI,671.831,671.831,671.831,881.366,881.366,881.366
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,FI+NSh,669.362,669.362,669.362,1540.147,1540.147,1540.147
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2opt,681.784,681.784,681.784,228.407,228.407,228.407
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2.5opt,672.845,672.845,672.845,1854.626,1854.626,1854.626
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,MST,834.240,858.204,877.509,93.392,125.863,221.836
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,MST+NSh,683.198,706.855,734.363,5347.059,7759.805,12203.093
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2opt,669.684,677.160,694.356,1194.637,1826.069,4346.014
+eil101,101-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2.5opt,652.732,668.194,688.992,3263.746,6295.793,12021.800
+eil51,51-city problem (Christofides/Eilon),Greedy,NN,505.298,561.223,626.442,60.223,68.753,102.929
+eil51,51-city problem (Christofides/Eilon),Greedy,NN+NSh,437.164,460.717,486.030,429.517,1364.538,5699.207
+eil51,51-city problem (Christofides/Eilon),Greedy,NN+2opt,431.874,441.137,456.843,167.562,361.153,720.358
+eil51,51-city problem (Christofides/Eilon),Greedy,NN+2.5opt,430.244,438.608,456.213,383.036,771.614,1452.513
+eil51,51-city problem (Christofides/Eilon),Greedy,FI,447.543,447.543,447.543,84.356,84.356,84.356
+eil51,51-city problem (Christofides/Eilon),Greedy,FI+NSh,440.856,440.856,440.856,245.010,245.010,245.010
+eil51,51-city problem (Christofides/Eilon),Greedy,FI+2opt,447.543,447.543,447.543,17.400,17.400,17.400
+eil51,51-city problem (Christofides/Eilon),Greedy,FI+2.5opt,442.729,442.729,442.729,140.709,140.709,140.709
+eil51,51-city problem (Christofides/Eilon),Greedy,MST,566.524,601.652,621.215,21.499,25.023,53.473
+eil51,51-city problem (Christofides/Eilon),Greedy,MST+NSh,453.708,473.721,484.632,1240.523,1640.213,4690.900
+eil51,51-city problem (Christofides/Eilon),Greedy,MST+2opt,432.414,444.346,462.915,229.811,362.492,580.724
+eil51,51-city problem (Christofides/Eilon),Greedy,MST+2.5opt,431.673,441.392,450.156,454.695,980.818,1821.250
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,NN,647.130,753.352,896.964,222.146,281.218,610.962
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,NN+NSh,436.414,469.465,499.413,1010.527,1714.214,2685.721
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2opt,432.414,454.582,475.874,344.924,451.214,660.742
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2.5opt,433.839,446.568,460.888,832.180,1167.889,2035.553
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,FI,450.057,450.057,450.057,256.329,256.329,256.329
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,FI+NSh,441.014,441.014,441.014,255.703,255.703,255.703
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2opt,446.774,446.774,446.774,160.520,160.520,160.520
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2.5opt,443.207,443.207,443.207,286.275,286.275,286.275
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,MST,566.524,601.652,621.215,28.064,35.640,72.703
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,MST+NSh,453.708,473.721,484.632,1151.927,1501.073,2903.577
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2opt,432.414,444.346,462.915,161.666,256.054,639.532
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2.5opt,431.673,441.392,450.156,472.213,804.208,1962.220
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,NN,732.617,922.746,1056.840,206.358,289.034,485.971
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,NN+NSh,442.358,471.993,522.251,1211.011,1857.781,3265.455
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2opt,439.092,456.840,484.035,394.512,616.492,1984.130
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2.5opt,435.397,447.895,463.922,998.954,1355.290,2080.804
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,FI,444.153,444.153,444.153,255.975,255.975,255.975
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,FI+NSh,440.068,440.068,440.068,100.713,100.713,100.713
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2opt,451.266,451.266,451.266,31.738,31.738,31.738
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2.5opt,445.565,445.565,445.565,186.178,186.178,186.178
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,MST,566.524,601.652,621.215,19.545,22.062,50.317
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,MST+NSh,453.708,473.721,484.632,1154.107,1719.540,2632.287
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2opt,432.414,444.346,462.915,160.607,311.833,532.146
+eil51,51-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2.5opt,431.673,441.392,450.156,457.891,733.514,1088.069
+eil76,76-city problem (Christofides/Eilon),Greedy,NN,614.996,665.207,730.285,108.906,126.655,165.353
+eil76,76-city problem (Christofides/Eilon),Greedy,NN+NSh,565.649,586.660,637.806,947.528,1871.984,3480.380
+eil76,76-city problem (Christofides/Eilon),Greedy,NN+2opt,552.205,569.638,584.455,252.471,485.052,971.381
+eil76,76-city problem (Christofides/Eilon),Greedy,NN+2.5opt,555.020,567.315,580.914,747.217,1387.006,2294.683
+eil76,76-city problem (Christofides/Eilon),Greedy,FI,586.977,586.977,586.977,181.467,181.467,181.467
+eil76,76-city problem (Christofides/Eilon),Greedy,FI+NSh,572.012,572.012,572.012,797.735,797.735,797.735
+eil76,76-city problem (Christofides/Eilon),Greedy,FI+2opt,578.580,578.580,578.580,233.376,233.376,233.376
+eil76,76-city problem (Christofides/Eilon),Greedy,FI+2.5opt,572.940,572.940,572.940,732.930,732.930,732.930
+eil76,76-city problem (Christofides/Eilon),Greedy,MST,683.904,721.021,754.865,46.231,55.553,112.320
+eil76,76-city problem (Christofides/Eilon),Greedy,MST+NSh,574.044,596.597,619.890,1795.799,2689.756,5745.927
+eil76,76-city problem (Christofides/Eilon),Greedy,MST+2opt,559.402,573.371,589.044,704.395,1021.239,1972.602
+eil76,76-city problem (Christofides/Eilon),Greedy,MST+2.5opt,562.078,572.441,586.011,1312.851,2082.245,3338.885
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,NN,817.614,967.098,1150.069,347.932,424.737,1033.202
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,NN+NSh,573.146,606.294,675.146,2939.382,4874.718,10677.417
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2opt,566.219,591.456,619.713,992.296,1489.591,2438.338
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,NN+2.5opt,560.114,577.209,597.570,2613.662,3676.634,5885.190
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,FI,585.271,585.271,585.271,728.654,728.654,728.654
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,FI+NSh,565.758,565.758,565.758,1363.362,1363.362,1363.362
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2opt,578.121,578.121,578.121,71.155,71.155,71.155
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,FI+2.5opt,561.417,561.417,561.417,450.061,450.061,450.061
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,MST,683.904,721.021,754.865,46.834,57.210,98.948
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,MST+NSh,574.044,596.597,619.890,1976.444,2885.876,5095.414
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2opt,559.402,573.371,589.044,604.828,779.787,1251.200
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 3,MST+2.5opt,562.078,572.441,586.011,1442.161,2200.948,4058.922
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,NN,1034.828,1196.865,1387.769,352.111,388.073,587.027
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,NN+NSh,567.702,611.684,671.095,4679.702,7063.157,14247.254
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2opt,562.098,588.440,618.353,1157.609,1778.203,3846.329
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,NN+2.5opt,559.080,578.455,600.088,3373.161,4520.756,7381.514
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,FI,573.605,573.605,573.605,508.637,508.637,508.637
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,FI+NSh,565.425,565.425,565.425,1140.047,1140.047,1140.047
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2opt,580.379,580.379,580.379,122.973,122.973,122.973
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,FI+2.5opt,580.154,580.154,580.154,649.983,649.983,649.983
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,MST,683.904,721.021,754.865,45.435,57.820,115.278
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,MST+NSh,574.044,596.597,619.890,1885.524,2812.879,6581.305
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2opt,559.402,573.371,589.044,601.651,809.897,1350.475
+eil76,76-city problem (Christofides/Eilon),Semi-Greedy 5,MST+2.5opt,562.078,572.441,586.011,1333.629,2274.851,4196.341
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,NN,24698.497,27045.213,28694.684,189.861,222.390,397.603
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,NN+NSh,21906.467,23156.635,24821.880,2685.657,4150.290,7824.700
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,NN+2opt,21362.979,21784.372,23178.780,1144.723,1731.307,2919.083
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,NN+2.5opt,21285.443,21714.148,22946.250,1678.684,3219.463,5198.621
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,FI,23374.357,23374.357,23374.357,442.094,442.094,442.094
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,FI+NSh,23009.552,23009.552,23009.552,1021.085,1021.085,1021.085
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,FI+2opt,23009.552,23009.552,23009.552,734.561,734.561,734.561
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,FI+2.5opt,23009.552,23009.552,23009.552,1432.397,1432.397,1432.397
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,MST,27357.370,29124.918,31430.218,117.607,180.998,446.370
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,MST+NSh,23414.174,24383.933,25333.120,5339.544,7600.420,11689.638
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,MST+2opt,21841.666,22086.649,22537.594,1601.118,2358.216,6322.059
+kroA100,100-city problem A (Krolak/Felts/Nelson),Greedy,MST+2.5opt,21294.397,21930.082,22374.976,4071.887,5702.214,9237.353
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,NN,38448.426,45273.345,53682.183,510.656,568.777,888.853
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,22360.783,24766.343,28469.860,8066.222,12810.916,36642.561
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,21635.678,22927.906,24582.951,3016.850,4452.058,8574.143
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,21383.729,22628.651,24646.342,7239.906,9823.347,15580.003
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,FI,22197.631,22197.631,22197.631,932.887,932.887,932.887
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,21865.868,21865.868,21865.868,1253.411,1253.411,1253.411
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,21874.036,21874.036,21874.036,961.554,961.554,961.554
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,21456.643,21456.643,21456.643,2731.992,2731.992,2731.992
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,MST,27357.370,29124.918,31430.218,116.356,142.082,239.260
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,23414.174,24383.933,25333.120,5398.799,7056.680,11188.338
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,21841.666,22086.649,22537.594,1574.030,2339.287,4100.103
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,21294.397,21930.082,22374.976,3931.141,5647.085,9445.702
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,NN,48243.771,57685.389,67659.328,513.380,589.978,992.864
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,22123.720,25995.862,29671.786,10708.926,15478.134,44425.998
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,21390.256,22824.268,24607.427,3691.645,5659.398,11290.783
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,21307.422,22688.577,24464.617,8965.796,11720.695,16587.573
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,FI,21620.638,21620.638,21620.638,877.917,877.917,877.917
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,21344.716,21344.716,21344.716,1823.354,1823.354,1823.354
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,22096.602,22096.602,22096.602,424.845,424.845,424.845
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,21782.844,21782.844,21782.844,823.214,823.214,823.214
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,MST,27357.370,29124.918,31430.218,114.412,147.164,208.764
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,23414.174,24383.933,25333.120,5345.315,7429.606,11942.218
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,21841.666,22086.649,22537.594,1589.503,2290.742,4139.382
+kroA100,100-city problem A (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,21294.397,21930.082,22374.976,3872.838,5753.402,9178.221
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,NN,25882.973,27906.934,30371.786,184.585,266.423,559.367
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,NN+NSh,24011.584,24949.718,27130.053,2924.125,6405.174,19394.085
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,NN+2opt,22346.609,22820.232,23958.842,910.504,1510.900,3424.593
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,NN+2.5opt,22268.685,22780.445,23923.608,2493.612,3756.386,6881.522
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,FI,24034.635,24034.635,24034.635,609.747,609.747,609.747
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,FI+NSh,23655.264,23655.264,23655.264,2307.654,2307.654,2307.654
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,FI+2opt,23201.508,23201.508,23201.508,1163.457,1163.457,1163.457
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,FI+2.5opt,23694.932,23694.932,23694.932,974.778,974.778,974.778
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,MST,27838.088,28782.685,30097.439,129.714,215.075,313.219
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,MST+NSh,23700.103,24620.395,25403.854,5171.495,8448.792,14298.833
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,MST+2opt,22780.382,22963.243,23395.054,1038.622,1372.096,2471.646
+kroB100,100-city problem B (Krolak/Felts/Nelson),Greedy,MST+2.5opt,22601.608,22846.597,23359.551,2785.667,3908.594,7051.309
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,NN,38756.569,46123.867,58124.527,517.348,662.181,1110.697
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,23063.661,25696.096,29131.422,7334.581,11939.184,19851.828
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,22354.083,23713.285,25173.329,2814.745,3998.398,6566.503
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,22409.751,23507.071,24895.020,6905.472,10205.505,38107.643
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,FI,23693.002,23693.002,23693.002,699.240,699.240,699.240
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,23587.180,23587.180,23587.180,574.116,574.116,574.116
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,23620.144,23620.144,23620.144,837.892,837.892,837.892
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,23115.544,23115.544,23115.544,1019.194,1019.194,1019.194
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,MST,27838.088,28782.685,30097.439,113.732,141.638,233.629
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,23700.103,24620.395,25403.854,5393.141,7942.839,12066.056
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,22780.382,22963.243,23395.054,1080.372,1429.114,2335.818
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,22601.608,22846.597,23359.551,2868.412,3847.864,7264.369
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,NN,50305.480,57688.173,66819.339,591.149,833.766,3516.112
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,24159.692,26906.853,30505.217,11109.252,15832.313,28790.801
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,22773.357,23699.381,25066.841,3550.556,4949.153,9183.754
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,22208.495,23429.144,24649.626,9238.698,12313.023,20357.083
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,FI,23570.016,23570.016,23570.016,812.262,812.262,812.262
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,23259.022,23259.022,23259.022,659.300,659.300,659.300
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,23006.897,23006.897,23006.897,134.636,134.636,134.636
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,23055.684,23055.684,23055.684,929.797,929.797,929.797
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,MST,27838.088,28782.685,30097.439,110.961,143.951,327.772
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,23700.103,24620.395,25403.854,5356.765,8285.053,12690.095
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,22780.382,22963.243,23395.054,1104.007,1534.013,4461.231
+kroB100,100-city problem B (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,22601.608,22846.597,23359.551,2809.646,3954.006,7069.094
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,NN,23566.403,26227.273,29393.726,207.861,306.993,805.712
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,NN+NSh,21939.664,23504.545,25909.026,4273.365,6691.331,11090.389
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,NN+2opt,20996.576,21721.108,22816.341,938.040,1539.270,3231.195
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,NN+2.5opt,20898.619,21544.788,22596.667,2395.590,4542.165,17302.836
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,FI,21817.790,21817.790,21817.790,532.497,532.497,532.497
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,FI+NSh,21087.652,21087.652,21087.652,1161.384,1161.384,1161.384
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,FI+2opt,21154.583,21154.583,21154.583,469.804,469.804,469.804
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,FI+2.5opt,21239.032,21239.032,21239.032,1231.583,1231.583,1231.583
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,MST,27400.382,28252.733,28872.616,146.111,188.404,394.199
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,MST+NSh,22826.779,23433.449,24073.417,5146.310,6999.275,11270.874
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,MST+2opt,21662.331,21913.572,22673.974,1402.937,2003.553,3339.976
+kroC100,100-city problem C (Krolak/Felts/Nelson),Greedy,MST+2.5opt,21503.008,21953.754,22649.918,3449.403,5059.887,8809.807
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,NN,36790.894,44303.562,52908.264,520.158,589.994,1082.446
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,21493.510,24183.929,26593.325,7097.547,11673.174,19995.048
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,21196.692,22389.794,24644.021,3123.352,4385.977,7542.017
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,21080.676,22088.805,23505.126,7589.212,11038.102,33863.105
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,FI,21441.068,21441.068,21441.068,725.526,725.526,725.526
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,20914.786,20914.786,20914.786,991.455,991.455,991.455
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,21122.329,21122.329,21122.329,217.720,217.720,217.720
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,22026.065,22026.065,22026.065,964.215,964.215,964.215
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,MST,27400.382,28252.733,28872.616,133.236,184.043,641.958
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,22826.779,23433.449,24073.417,5132.772,6845.407,10640.084
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,21662.331,21913.572,22673.974,1419.347,1888.717,2907.177
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,21503.008,21953.754,22649.918,3322.897,5207.286,8768.040
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,NN,48641.352,57068.705,65415.276,513.320,623.191,965.110
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,22679.666,25487.353,30279.676,10449.882,15019.745,23980.383
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,21017.870,22600.864,24291.393,3837.552,5227.761,7950.081
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,21033.908,22113.890,23495.107,9202.861,12553.528,38637.127
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,FI,21653.095,21653.095,21653.095,1125.943,1125.943,1125.943
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,21348.662,21348.662,21348.662,1419.944,1419.944,1419.944
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,22555.853,22555.853,22555.853,67.263,67.263,67.263
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,21137.032,21137.032,21137.032,920.296,920.296,920.296
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,MST,27400.382,28252.733,28872.616,140.524,203.891,670.235
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,22826.779,23433.449,24073.417,5358.364,7040.145,13680.254
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,21662.331,21913.572,22673.974,1395.974,1790.201,2949.237
+kroC100,100-city problem C (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,21503.008,21953.754,22649.918,3407.939,4786.636,8279.226
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,NN,24855.799,27482.280,29998.135,200.048,279.105,668.817
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,NN+NSh,23927.470,25353.075,27003.496,2842.548,6220.928,10769.325
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,NN+2opt,21551.933,22276.791,23199.614,802.931,1728.437,3667.106
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,NN+2.5opt,21535.751,22247.827,23199.614,2351.262,4795.384,7989.288
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,FI,22361.485,22361.485,22361.485,531.284,531.284,531.284
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,FI+NSh,22211.239,22211.239,22211.239,1143.158,1143.158,1143.158
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,FI+2opt,22331.485,22331.485,22331.485,136.155,136.155,136.155
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,FI+2.5opt,22331.485,22331.485,22331.485,352.053,352.053,352.053
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,MST,27737.232,28492.896,29577.699,150.655,223.422,595.781
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,MST+NSh,22846.169,23841.974,24523.048,5043.562,7251.282,24633.747
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,MST+2opt,22411.589,22889.354,23216.403,1325.947,1749.191,3888.249
+kroD100,100-city problem D (Krolak/Felts/Nelson),Greedy,MST+2.5opt,22107.704,22841.917,23150.946,3734.027,5314.336,11229.329
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,NN,36873.681,44412.018,52699.211,512.447,580.861,898.790
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,22178.766,24765.995,27950.736,7535.394,12116.882,18614.627
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,21875.339,22942.743,24851.004,3059.398,4110.885,6925.498
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,21411.380,22615.401,23893.643,6387.856,9905.602,20449.849
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,FI,23262.827,23262.827,23262.827,780.903,780.903,780.903
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,22790.739,22790.739,22790.739,1703.477,1703.477,1703.477
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,22172.162,22172.162,22172.162,248.492,248.492,248.492
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,21568.824,21568.824,21568.824,865.074,865.074,865.074
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,MST,27737.232,28492.896,29577.699,147.650,196.966,316.063
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,22846.169,23841.974,24523.048,4881.115,6808.663,12088.378
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,22411.589,22889.354,23216.403,1314.502,1840.294,3779.841
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,22107.704,22841.917,23150.946,3526.778,5279.489,9194.438
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,NN,44536.184,56132.406,66084.297,513.243,595.012,1395.115
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,23235.461,25912.209,29712.153,10262.166,14628.634,20017.276
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,21571.718,22791.319,24220.814,3483.981,5430.521,11207.454
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,21521.544,22733.869,24279.931,8483.777,11882.894,36125.154
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,FI,22761.215,22761.215,22761.215,657.811,657.811,657.811
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,22127.773,22127.773,22127.773,1414.330,1414.330,1414.330
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,22550.003,22550.003,22550.003,171.685,171.685,171.685
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,22010.528,22010.528,22010.528,470.754,470.754,470.754
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,MST,27737.232,28492.896,29577.699,147.812,200.620,347.965
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,22846.169,23841.974,24523.048,5146.971,6969.839,14017.864
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,22411.589,22889.354,23216.403,1324.395,1762.869,3189.186
+kroD100,100-city problem D (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,22107.704,22841.917,23150.946,3749.029,5164.789,8266.918
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,NN,24907.022,27496.973,30696.613,189.854,231.845,677.351
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,NN+NSh,23081.773,24330.746,26806.326,3774.448,5656.738,12047.724
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,NN+2opt,22407.486,22957.951,23556.195,1064.090,1592.392,3059.746
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,NN+2.5opt,22294.394,22829.240,23429.550,2718.535,4085.697,8744.587
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,FI,23603.608,23603.608,23603.608,373.114,373.114,373.114
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,FI+NSh,23071.423,23071.423,23071.423,2117.050,2117.050,2117.050
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,FI+2opt,23113.779,23113.779,23113.779,1024.098,1024.098,1024.098
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,FI+2.5opt,23071.423,23071.423,23071.423,2273.448,2273.448,2273.448
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,MST,29752.881,31054.184,32272.236,175.611,218.558,492.040
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,MST+NSh,25484.809,26904.894,28049.841,5936.675,8671.376,30715.929
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,MST+2opt,22234.125,22558.162,23769.302,1591.551,2313.264,4523.356
+kroE100,100-city problem E (Krolak/Felts/Nelson),Greedy,MST+2.5opt,22121.931,22470.908,23693.814,4133.219,6213.126,11378.289
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,NN,39036.198,46161.330,54442.067,509.311,562.782,928.615
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,NN+NSh,22914.664,25438.285,28960.710,7694.263,11850.242,18534.241
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2opt,22709.576,23654.438,24988.590,2725.971,4238.133,7889.030
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,NN+2.5opt,22260.819,23289.535,24677.277,7619.599,10583.084,33087.480
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,FI,23997.156,23997.156,23997.156,713.688,713.688,713.688
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,FI+NSh,23032.847,23032.847,23032.847,2446.613,2446.613,2446.613
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2opt,23168.071,23168.071,23168.071,202.005,202.005,202.005
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,FI+2.5opt,22524.158,22524.158,22524.158,1485.732,1485.732,1485.732
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,MST,29752.881,31054.184,32272.236,158.303,203.946,1186.938
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,MST+NSh,25484.809,26904.894,28049.841,5848.249,7856.268,16060.515
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2opt,22234.125,22558.162,23769.302,1602.367,2121.861,3232.966
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 3,MST+2.5opt,22121.931,22470.908,23693.814,4107.574,6507.095,13628.877
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,NN,49985.366,57603.830,65608.840,513.682,579.701,907.809
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,NN+NSh,23653.096,25848.754,30311.584,10124.434,14552.929,24575.280
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2opt,22422.269,23604.904,25566.738,3910.431,4978.069,7743.325
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,NN+2.5opt,22278.672,23320.107,25022.059,8660.726,11917.776,32209.719
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,FI,23218.117,23218.117,23218.117,1096.126,1096.126,1096.126
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,FI+NSh,22573.239,22573.239,22573.239,2266.814,2266.814,2266.814
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2opt,22625.134,22625.134,22625.134,61.042,61.042,61.042
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,FI+2.5opt,23089.306,23089.306,23089.306,677.433,677.433,677.433
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,MST,29752.881,31054.184,32272.236,154.812,173.775,250.844
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,MST+NSh,25484.809,26904.894,28049.841,5978.953,8274.307,15845.019
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2opt,22234.125,22558.162,23769.302,1589.361,2039.060,3215.939
+kroE100,100-city problem E (Krolak/Felts/Nelson),Semi-Greedy 5,MST+2.5opt,22121.931,22470.908,23693.814,4154.239,6469.889,11204.951
+lin105,105-city problem (Subproblem of lin318),Greedy,NN,16939.441,18710.885,20590.263,161.019,202.776,276.891
+lin105,105-city problem (Subproblem of lin318),Greedy,NN+NSh,14959.250,16282.223,17970.305,2934.126,8302.595,17128.293
+lin105,105-city problem (Subproblem of lin318),Greedy,NN+2opt,14501.770,14881.512,15589.487,1083.777,1952.075,3349.781
+lin105,105-city problem (Subproblem of lin318),Greedy,NN+2.5opt,14443.223,14792.382,15442.677,2710.782,5493.526,18289.144
+lin105,105-city problem (Subproblem of lin318),Greedy,FI,15411.964,15411.964,15411.964,427.040,427.040,427.040
+lin105,105-city problem (Subproblem of lin318),Greedy,FI+NSh,15157.168,15157.168,15157.168,2103.312,2103.312,2103.312
+lin105,105-city problem (Subproblem of lin318),Greedy,FI+2opt,15272.369,15272.369,15272.369,399.573,399.573,399.573
+lin105,105-city problem (Subproblem of lin318),Greedy,FI+2.5opt,15157.168,15157.168,15157.168,1679.890,1679.890,1679.890
+lin105,105-city problem (Subproblem of lin318),Greedy,MST,19241.547,20028.797,21170.848,264.309,307.484,676.116
+lin105,105-city problem (Subproblem of lin318),Greedy,MST+NSh,15588.986,16260.075,17180.179,6023.332,10183.065,14409.131
+lin105,105-city problem (Subproblem of lin318),Greedy,MST+2opt,14746.656,15249.896,16069.321,1497.311,1954.404,4030.061
+lin105,105-city problem (Subproblem of lin318),Greedy,MST+2.5opt,14638.941,15122.320,16093.797,3905.921,5841.528,10660.148
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,NN,26973.809,31938.584,37554.633,506.985,577.548,898.248
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,NN+NSh,14931.429,16627.790,18841.999,9972.963,15191.169,24506.383
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,NN+2opt,14547.347,15287.392,16579.775,3536.711,5032.916,7234.101
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,NN+2.5opt,14429.075,15165.750,16237.017,9117.185,11861.124,36144.038
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,FI,14822.984,14822.984,14822.984,1209.714,1209.714,1209.714
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,FI+NSh,14536.852,14536.852,14536.852,1819.137,1819.137,1819.137
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,FI+2opt,15225.868,15225.868,15225.868,268.968,268.968,268.968
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,FI+2.5opt,15611.266,15611.266,15611.266,416.374,416.374,416.374
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,MST,19241.547,20028.797,21170.848,268.745,330.649,531.628
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,MST+NSh,15588.986,16260.075,17180.179,6081.196,10308.918,16654.880
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,MST+2opt,14746.656,15249.896,16069.321,1484.330,1892.798,2827.432
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 3,MST+2.5opt,14638.941,15122.320,16093.797,3813.963,5648.307,9948.917
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,NN,32119.031,41575.555,48554.158,515.087,587.112,1343.021
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,NN+NSh,15205.782,17452.518,20117.884,13201.309,18661.103,34773.200
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,NN+2opt,14500.889,15309.150,16437.845,4614.271,6701.335,17815.500
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,NN+2.5opt,14406.118,15194.243,16274.048,11054.441,14177.554,21544.712
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,FI,16188.740,16188.740,16188.740,765.615,765.615,765.615
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,FI+NSh,15627.455,15627.455,15627.455,2411.522,2411.522,2411.522
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,FI+2opt,14529.563,14529.563,14529.563,354.160,354.160,354.160
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,FI+2.5opt,15724.961,15724.961,15724.961,542.936,542.936,542.936
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,MST,19241.547,20028.797,21170.848,266.434,305.351,476.385
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,MST+NSh,15588.986,16260.075,17180.179,6455.940,10524.553,17176.181
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,MST+2opt,14746.656,15249.896,16069.321,1458.334,1940.071,5123.394
+lin105,105-city problem (Subproblem of lin318),Semi-Greedy 5,MST+2.5opt,14638.941,15122.320,16093.797,4046.721,6203.176,10229.437
+lin318,318-city problem (Lin/Kernighan),Greedy,NN,49215.613,52567.330,58862.763,2051.811,2594.245,12341.600
+lin318,318-city problem (Lin/Kernighan),Greedy,NN+NSh,45322.046,47419.388,51186.136,128778.311,185224.263,385288.857
+lin318,318-city problem (Lin/Kernighan),Greedy,NN+2opt,42686.038,44167.456,45134.647,27852.371,41165.625,61169.072
+lin318,318-city problem (Lin/Kernighan),Greedy,NN+2.5opt,42630.394,43916.852,45060.830,76998.915,108302.741,145279.799
+lin318,318-city problem (Lin/Kernighan),Greedy,FI,45875.349,45875.349,45875.349,4972.390,4972.390,4972.390
+lin318,318-city problem (Lin/Kernighan),Greedy,FI+NSh,44603.489,44603.489,44603.489,42143.560,42143.560,42143.560
+lin318,318-city problem (Lin/Kernighan),Greedy,FI+2opt,44815.932,44815.932,44815.932,14213.662,14213.662,14213.662
+lin318,318-city problem (Lin/Kernighan),Greedy,FI+2.5opt,44542.886,44542.886,44542.886,57889.969,57889.969,57889.969
+lin318,318-city problem (Lin/Kernighan),Greedy,MST,57824.242,59739.123,60989.051,1920.612,2442.666,7185.142
+lin318,318-city problem (Lin/Kernighan),Greedy,MST+NSh,46708.766,48982.345,50501.484,249647.603,289687.542,457193.398
+lin318,318-city problem (Lin/Kernighan),Greedy,MST+2opt,44474.339,45061.234,45755.304,46594.370,61789.679,120910.142
+lin318,318-city problem (Lin/Kernighan),Greedy,MST+2.5opt,43837.133,44586.266,45456.219,135518.563,172246.719,350984.564
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,NN,79575.139,91428.740,103153.068,3153.124,3596.807,7384.858
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,NN+NSh,46349.485,50517.032,57787.128,306195.711,390896.179,583589.266
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,NN+2opt,43726.150,45493.110,47781.910,108983.404,130576.252,154375.157
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,NN+2.5opt,43506.220,44897.929,47208.547,258708.838,308418.332,424086.592
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,FI,45823.608,45823.608,45823.608,5013.865,5013.865,5013.865
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,FI+NSh,44162.017,44162.017,44162.017,43319.653,43319.653,43319.653
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,FI+2opt,45682.190,45682.190,45682.190,8938.642,8938.642,8938.642
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,FI+2.5opt,45523.573,45523.573,45523.573,34305.615,34305.615,34305.615
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,MST,57824.242,59739.123,60989.051,1925.206,2551.451,6532.638
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,MST+NSh,46708.766,48982.345,50501.484,249800.563,284018.136,380394.861
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,MST+2opt,44474.339,45061.234,45755.304,47564.075,55271.307,77911.966
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 3,MST+2.5opt,43837.133,44586.266,45456.219,133318.606,166486.637,366516.935
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,NN,102620.736,117599.578,136623.089,3136.950,4109.227,8012.821
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,NN+NSh,48793.702,53561.570,59037.379,409119.892,501832.649,659702.122
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,NN+2opt,43711.723,45462.033,47350.608,133961.920,159315.819,203486.892
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,NN+2.5opt,43322.332,44963.805,47255.783,327263.151,376745.596,508933.684
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,FI,46205.747,46205.747,46205.747,4486.263,4486.263,4486.263
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,FI+NSh,44896.366,44896.366,44896.366,43837.656,43837.656,43837.656
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,FI+2opt,45678.077,45678.077,45678.077,9848.888,9848.888,9848.888
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,FI+2.5opt,45080.049,45080.049,45080.049,48390.918,48390.918,48390.918
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,MST,57824.242,59739.123,60989.051,1950.262,2545.375,4919.903
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,MST+NSh,46708.766,48982.345,50501.484,250834.453,286622.242,386004.095
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,MST+2opt,44474.339,45061.234,45755.304,46718.231,56258.303,94204.022
+lin318,318-city problem (Lin/Kernighan),Semi-Greedy 5,MST+2.5opt,43837.133,44586.266,45456.219,132923.324,153697.314,241821.962
+pr124,124-city problem (Padberg/Rinaldi),Greedy,NN,66877.983,71970.685,78689.075,224.940,325.333,1921.108
+pr124,124-city problem (Padberg/Rinaldi),Greedy,NN+NSh,60134.761,64353.268,72710.846,3438.914,6917.850,12274.246
+pr124,124-city problem (Padberg/Rinaldi),Greedy,NN+2opt,59086.810,60517.854,63295.666,1234.555,2071.516,5759.566
+pr124,124-city problem (Padberg/Rinaldi),Greedy,NN+2.5opt,59086.810,60359.833,63294.790,3135.937,6118.907,12793.260
+pr124,124-city problem (Padberg/Rinaldi),Greedy,FI,61645.070,61645.070,61645.070,762.169,762.169,762.169
+pr124,124-city problem (Padberg/Rinaldi),Greedy,FI+NSh,61645.070,61645.070,61645.070,357.550,357.550,357.550
+pr124,124-city problem (Padberg/Rinaldi),Greedy,FI+2opt,61645.070,61645.070,61645.070,135.512,135.512,135.512
+pr124,124-city problem (Padberg/Rinaldi),Greedy,FI+2.5opt,61645.070,61645.070,61645.070,355.027,355.027,355.027
+pr124,124-city problem (Padberg/Rinaldi),Greedy,MST,78379.929,80650.380,82969.262,301.136,378.807,938.413
+pr124,124-city problem (Padberg/Rinaldi),Greedy,MST+NSh,60015.349,62728.471,65752.301,8826.588,13949.702,37424.486
+pr124,124-city problem (Padberg/Rinaldi),Greedy,MST+2opt,59968.310,60918.602,62778.643,2000.810,3341.185,5154.484
+pr124,124-city problem (Padberg/Rinaldi),Greedy,MST+2.5opt,59707.718,60387.858,61691.710,5239.879,7629.486,13983.768
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN,109106.190,135293.223,158172.349,638.448,742.994,1137.058
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+NSh,60226.104,66839.008,78008.700,16444.409,22612.979,36718.159
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2opt,59030.736,61274.476,66185.414,6793.092,9603.906,31990.863
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2.5opt,59181.653,61113.441,64717.090,14096.202,19681.576,28024.914
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI,63702.353,63702.353,63702.353,1945.060,1945.060,1945.060
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+NSh,62951.693,62951.693,62951.693,1590.030,1590.030,1590.030
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2opt,62630.282,62630.282,62630.282,292.875,292.875,292.875
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2.5opt,61349.578,61349.578,61349.578,1058.046,1058.046,1058.046
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST,78379.929,80650.380,82969.262,292.582,342.491,913.503
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+NSh,60015.349,62728.471,65752.301,8890.308,13527.589,23148.523
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2opt,59968.310,60918.602,62778.643,2114.382,3113.900,5464.474
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2.5opt,59707.718,60387.858,61691.710,5001.477,7740.647,12876.949
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN,156858.304,182252.991,212324.726,676.049,800.412,1277.476
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+NSh,60640.303,69689.210,81883.677,22947.850,31162.914,57429.434
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2opt,59245.929,61678.040,66115.494,8322.141,12263.506,20065.228
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2.5opt,59492.524,61280.177,70256.721,19062.964,25836.501,38762.735
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI,62683.336,62683.336,62683.336,967.456,967.456,967.456
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+NSh,61313.071,61313.071,61313.071,1919.097,1919.097,1919.097
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2opt,63145.752,63145.752,63145.752,414.793,414.793,414.793
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2.5opt,61684.675,61684.675,61684.675,1174.933,1174.933,1174.933
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST,78379.929,80650.380,82969.262,297.458,352.070,690.494
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+NSh,60015.349,62728.471,65752.301,8960.604,13036.301,21335.151
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2opt,59968.310,60918.602,62778.643,2060.226,3294.366,5388.770
+pr124,124-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2.5opt,59707.718,60387.858,61691.710,4863.629,7554.269,14670.121
+pr144,144-city problem (Padberg/Rinaldi),Greedy,NN,60963.265,65688.601,78701.260,302.238,395.989,2040.911
+pr144,144-city problem (Padberg/Rinaldi),Greedy,NN+NSh,58607.855,63334.456,74873.049,4583.624,10055.187,20895.670
+pr144,144-city problem (Padberg/Rinaldi),Greedy,NN+2opt,58669.427,59782.987,61243.805,902.063,2428.660,8363.909
+pr144,144-city problem (Padberg/Rinaldi),Greedy,NN+2.5opt,58535.222,59690.557,61243.805,2804.157,6611.708,11996.468
+pr144,144-city problem (Padberg/Rinaldi),Greedy,FI,62521.615,62521.615,62521.615,614.613,614.613,614.613
+pr144,144-city problem (Padberg/Rinaldi),Greedy,FI+NSh,62488.064,62488.064,62488.064,1287.330,1287.330,1287.330
+pr144,144-city problem (Padberg/Rinaldi),Greedy,FI+2opt,62521.615,62521.615,62521.615,140.788,140.788,140.788
+pr144,144-city problem (Padberg/Rinaldi),Greedy,FI+2.5opt,62521.615,62521.615,62521.615,378.315,378.315,378.315
+pr144,144-city problem (Padberg/Rinaldi),Greedy,MST,76263.016,80535.209,83998.361,438.911,545.293,1068.844
+pr144,144-city problem (Padberg/Rinaldi),Greedy,MST+NSh,69411.834,75446.581,78976.417,7178.918,16327.857,35347.058
+pr144,144-city problem (Padberg/Rinaldi),Greedy,MST+2opt,58687.796,59124.273,60537.860,2547.151,3712.656,6033.099
+pr144,144-city problem (Padberg/Rinaldi),Greedy,MST+2.5opt,58587.142,59044.415,59876.364,6866.360,11176.378,46511.688
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN,117588.601,147235.685,182317.956,793.525,998.864,2060.638
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+NSh,59531.034,70837.816,87798.624,25634.827,36324.630,61918.656
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2opt,58586.536,60865.163,66763.873,10723.179,14033.060,20901.592
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2.5opt,58535.222,60710.172,67315.778,23198.577,31000.984,54856.444
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI,60489.166,60489.166,60489.166,1250.855,1250.855,1250.855
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+NSh,59948.300,59948.300,59948.300,4211.843,4211.843,4211.843
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2opt,64463.881,64463.881,64463.881,1148.896,1148.896,1148.896
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2.5opt,61752.944,61752.944,61752.944,1410.614,1410.614,1410.614
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST,76263.016,80535.209,83998.361,436.320,487.046,952.582
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+NSh,69411.834,75446.581,78976.417,7103.343,17091.389,34977.016
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2opt,58687.796,59124.273,60537.860,2686.938,4074.656,15310.408
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2.5opt,58587.142,59044.415,59876.364,7179.984,10570.118,15101.471
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN,170342.684,204972.259,244573.726,795.324,961.874,1942.476
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+NSh,61345.144,77561.679,94125.788,38206.394,55393.464,91812.521
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2opt,58535.222,60727.202,68183.299,13139.509,17326.163,37667.989
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2.5opt,58535.222,60956.910,66359.624,31683.213,39173.934,73516.899
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI,61588.189,61588.189,61588.189,2256.683,2256.683,2256.683
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+NSh,61370.080,61370.080,61370.080,3956.831,3956.831,3956.831
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2opt,59668.354,59668.354,59668.354,200.759,200.759,200.759
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2.5opt,61674.188,61674.188,61674.188,618.739,618.739,618.739
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST,76263.016,80535.209,83998.361,440.018,507.001,1600.252
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+NSh,69411.834,75446.581,78976.417,6937.093,15872.525,32871.332
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2opt,58687.796,59124.273,60537.860,2714.859,3660.462,8121.560
+pr144,144-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2.5opt,58587.142,59044.415,59876.364,6804.757,9971.242,15030.738
+pr76,76-city problem (Padberg/Rinaldi),Greedy,NN,130921.005,147162.785,157075.977,80.108,102.299,718.629
+pr76,76-city problem (Padberg/Rinaldi),Greedy,NN+NSh,111859.831,121186.156,133417.112,962.662,3231.020,15442.186
+pr76,76-city problem (Padberg/Rinaldi),Greedy,NN+2opt,108879.744,113244.265,118976.572,443.497,758.292,1399.866
+pr76,76-city problem (Padberg/Rinaldi),Greedy,NN+2.5opt,108879.744,112953.873,118836.251,1133.472,2201.874,7473.822
+pr76,76-city problem (Padberg/Rinaldi),Greedy,FI,119648.865,119648.865,119648.865,265.567,265.567,265.567
+pr76,76-city problem (Padberg/Rinaldi),Greedy,FI+NSh,117633.700,117633.700,117633.700,945.833,945.833,945.833
+pr76,76-city problem (Padberg/Rinaldi),Greedy,FI+2opt,114571.908,114571.908,114571.908,303.474,303.474,303.474
+pr76,76-city problem (Padberg/Rinaldi),Greedy,FI+2.5opt,113156.639,113156.639,113156.639,1352.514,1352.514,1352.514
+pr76,76-city problem (Padberg/Rinaldi),Greedy,MST,142681.374,146013.498,148681.681,69.751,84.542,189.892
+pr76,76-city problem (Padberg/Rinaldi),Greedy,MST+NSh,117130.969,125867.221,128196.324,2801.397,3927.443,7107.732
+pr76,76-city problem (Padberg/Rinaldi),Greedy,MST+2opt,111037.388,114490.946,116714.583,395.792,630.519,1346.236
+pr76,76-city problem (Padberg/Rinaldi),Greedy,MST+2.5opt,111908.511,114244.268,116714.583,1208.028,2081.315,4168.583
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN,181750.321,221232.632,264707.075,396.050,557.015,1876.587
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+NSh,113331.550,123356.769,135389.115,3475.907,5945.156,12060.885
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2opt,109708.499,114990.130,123408.871,1308.101,1981.293,4055.284
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,NN+2.5opt,108601.660,114199.943,123913.019,2775.214,4992.359,15031.772
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI,113228.002,113228.002,113228.002,652.440,652.440,652.440
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+NSh,110871.315,110871.315,110871.315,1295.587,1295.587,1295.587
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2opt,112227.096,112227.096,112227.096,312.993,312.993,312.993
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,FI+2.5opt,113285.791,113285.791,113285.791,677.442,677.442,677.442
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST,142681.374,146013.498,148681.681,87.409,134.946,277.743
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+NSh,117130.969,125867.221,128196.324,2756.208,4256.147,7551.180
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2opt,111037.388,114490.946,116714.583,377.569,618.559,1225.488
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 3,MST+2.5opt,111908.511,114244.268,116714.583,1274.562,2062.523,4919.736
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN,231494.407,275384.454,315058.461,423.791,519.892,664.571
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+NSh,115164.235,126582.169,141809.700,5073.590,7650.519,16397.314
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2opt,108645.770,114165.785,124196.394,1566.765,2410.212,5581.905
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,NN+2.5opt,109068.292,114270.196,123313.678,3894.367,5923.572,9155.991
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI,115420.804,115420.804,115420.804,535.755,535.755,535.755
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+NSh,112920.267,112920.267,112920.267,1207.176,1207.176,1207.176
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2opt,111342.299,111342.299,111342.299,129.077,129.077,129.077
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,FI+2.5opt,110511.578,110511.578,110511.578,1895.938,1895.938,1895.938
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST,142681.374,146013.498,148681.681,106.461,135.899,302.612
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+NSh,117130.969,125867.221,128196.324,2725.592,3833.497,8553.770
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2opt,111037.388,114490.946,116714.583,399.628,627.401,1693.483
+pr76,76-city problem (Padberg/Rinaldi),Semi-Greedy 5,MST+2.5opt,111908.511,114244.268,116714.583,1182.418,2035.802,3866.088
+rat195,Rattled grid (Pulleyblank),Greedy,NN,2582.497,2770.396,3015.891,684.474,892.930,6360.194
+rat195,Rattled grid (Pulleyblank),Greedy,NN+NSh,2471.991,2571.567,2729.898,10154.017,27980.557,45433.269
+rat195,Rattled grid (Pulleyblank),Greedy,NN+2opt,2353.550,2402.663,2486.380,4109.401,6276.515,11876.279
+rat195,Rattled grid (Pulleyblank),Greedy,NN+2.5opt,2348.445,2395.530,2488.377,10885.056,16979.909,47184.450
+rat195,Rattled grid (Pulleyblank),Greedy,FI,2599.675,2599.675,2599.675,1421.479,1421.479,1421.479
+rat195,Rattled grid (Pulleyblank),Greedy,FI+NSh,2518.478,2518.478,2518.478,19454.319,19454.319,19454.319
+rat195,Rattled grid (Pulleyblank),Greedy,FI+2opt,2572.780,2572.780,2572.780,2345.956,2345.956,2345.956
+rat195,Rattled grid (Pulleyblank),Greedy,FI+2.5opt,2541.086,2541.086,2541.086,12154.666,12154.666,12154.666
+rat195,Rattled grid (Pulleyblank),Greedy,MST,2942.156,3130.141,3328.548,708.874,856.114,1870.415
+rat195,Rattled grid (Pulleyblank),Greedy,MST+NSh,2480.085,2550.051,2672.205,44045.056,53693.212,86500.832
+rat195,Rattled grid (Pulleyblank),Greedy,MST+2opt,2405.083,2469.276,2521.438,7648.025,9643.316,18954.842
+rat195,Rattled grid (Pulleyblank),Greedy,MST+2.5opt,2390.623,2440.744,2498.322,21577.448,27483.107,46705.738
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,NN,4047.933,4702.993,5360.113,1305.538,1509.779,2866.304
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+NSh,2579.347,2764.085,3008.335,58129.224,80603.355,128410.141
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+2opt,2491.559,2607.140,2732.729,17034.950,24747.296,39523.910
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+2.5opt,2460.480,2542.599,2635.384,46568.898,61033.225,95708.543
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,FI,2634.585,2634.585,2634.585,2562.873,2562.873,2562.873
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+NSh,2545.313,2545.313,2545.313,17170.360,17170.360,17170.360
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+2opt,2583.383,2583.383,2583.383,2843.733,2843.733,2843.733
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+2.5opt,2503.321,2503.321,2503.321,12614.772,12614.772,12614.772
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,MST,2942.156,3130.141,3328.548,716.746,849.200,1939.256
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+NSh,2480.085,2550.051,2672.205,43964.224,53311.591,101848.461
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+2opt,2405.083,2469.276,2521.438,7550.416,9568.671,17226.570
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+2.5opt,2390.623,2440.744,2498.322,21188.059,27442.731,44705.767
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,NN,5234.486,5855.094,6895.923,1312.005,1505.657,3360.779
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+NSh,2651.082,2825.726,3077.226,82904.276,103546.860,167807.513
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+2opt,2502.988,2620.610,2767.102,25850.522,33736.536,67034.602
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+2.5opt,2469.411,2547.316,2663.308,64472.465,84074.467,143421.193
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,FI,2585.286,2585.286,2585.286,2738.112,2738.112,2738.112
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+NSh,2467.811,2467.811,2467.811,19591.904,19591.904,19591.904
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+2opt,2652.643,2652.643,2652.643,2336.933,2336.933,2336.933
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+2.5opt,2538.166,2538.166,2538.166,11310.226,11310.226,11310.226
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,MST,2942.156,3130.141,3328.548,710.528,1040.416,11554.178
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+NSh,2480.085,2550.051,2672.205,43671.877,53295.102,91973.050
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+2opt,2405.083,2469.276,2521.438,7523.654,9392.158,22409.656
+rat195,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+2.5opt,2390.623,2440.744,2498.322,21628.230,27328.612,44600.086
+rat99,Rattled grid (Pulleyblank),Greedy,NN,1369.535,1478.013,1629.009,143.180,188.087,919.532
+rat99,Rattled grid (Pulleyblank),Greedy,NN+NSh,1271.636,1323.870,1417.836,2596.845,4367.385,9087.775
+rat99,Rattled grid (Pulleyblank),Greedy,NN+2opt,1221.007,1266.337,1318.228,768.644,1162.173,2107.146
+rat99,Rattled grid (Pulleyblank),Greedy,NN+2.5opt,1221.007,1262.722,1314.418,1971.910,2997.943,6803.515
+rat99,Rattled grid (Pulleyblank),Greedy,FI,1318.699,1318.699,1318.699,590.725,590.725,590.725
+rat99,Rattled grid (Pulleyblank),Greedy,FI+NSh,1278.952,1278.952,1278.952,2394.621,2394.621,2394.621
+rat99,Rattled grid (Pulleyblank),Greedy,FI+2opt,1299.066,1299.066,1299.066,695.773,695.773,695.773
+rat99,Rattled grid (Pulleyblank),Greedy,FI+2.5opt,1280.944,1280.944,1280.944,2088.370,2088.370,2088.370
+rat99,Rattled grid (Pulleyblank),Greedy,MST,1551.311,1636.000,1704.220,179.644,215.767,472.723
+rat99,Rattled grid (Pulleyblank),Greedy,MST+NSh,1322.294,1356.299,1439.995,5420.080,7439.634,10863.280
+rat99,Rattled grid (Pulleyblank),Greedy,MST+2opt,1221.384,1280.059,1333.606,961.946,1393.720,2572.565
+rat99,Rattled grid (Pulleyblank),Greedy,MST+2.5opt,1220.360,1259.361,1308.783,2931.926,4159.513,6529.958
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,NN,2009.794,2412.527,2731.068,481.998,545.281,960.062
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+NSh,1299.779,1404.897,1553.383,7673.966,10653.841,17320.323
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+2opt,1263.873,1335.372,1429.952,2345.844,3462.656,7113.840
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,NN+2.5opt,1230.919,1308.409,1366.217,6219.107,8793.564,17572.780
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,FI,1324.173,1324.173,1324.173,787.750,787.750,787.750
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+NSh,1303.464,1303.464,1303.464,1304.568,1304.568,1304.568
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+2opt,1303.856,1303.856,1303.856,488.192,488.192,488.192
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,FI+2.5opt,1282.178,1282.178,1282.178,741.390,741.390,741.390
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,MST,1551.311,1636.000,1704.220,181.254,271.765,1613.661
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+NSh,1322.294,1356.299,1439.995,5703.355,7390.646,11994.494
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+2opt,1221.384,1280.059,1333.606,914.616,1408.296,2696.707
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 3,MST+2.5opt,1220.360,1259.361,1308.783,2936.640,4110.454,6843.632
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,NN,2614.212,3012.584,3554.789,475.778,525.392,718.702
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+NSh,1337.051,1444.097,1594.699,9205.005,13653.528,19483.659
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+2opt,1256.964,1338.293,1411.093,3233.993,4085.240,6444.749
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,NN+2.5opt,1238.323,1311.617,1385.708,7600.827,11003.827,27669.152
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,FI,1321.313,1321.313,1321.313,683.172,683.172,683.172
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+NSh,1286.288,1286.288,1286.288,1328.818,1328.818,1328.818
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+2opt,1280.856,1280.856,1280.856,255.369,255.369,255.369
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,FI+2.5opt,1248.886,1248.886,1248.886,493.924,493.924,493.924
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,MST,1551.311,1636.000,1704.220,207.749,283.179,662.367
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+NSh,1322.294,1356.299,1439.995,5778.916,8505.642,14404.494
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+2opt,1221.384,1280.059,1333.606,854.835,1426.542,3093.876
+rat99,Rattled grid (Pulleyblank),Semi-Greedy 5,MST+2.5opt,1220.360,1259.361,1308.783,2732.954,3962.558,6651.300
+st70,70-city problem (Smith/Thompson),Greedy,NN,761.689,826.523,901.271,83.689,100.528,532.620
+st70,70-city problem (Smith/Thompson),Greedy,NN+NSh,694.712,739.101,784.218,970.293,1613.440,3538.551
+st70,70-city problem (Smith/Thompson),Greedy,NN+2opt,684.176,711.712,751.173,265.954,515.569,1651.446
+st70,70-city problem (Smith/Thompson),Greedy,NN+2.5opt,682.664,702.316,748.177,725.780,1327.808,2943.758
+st70,70-city problem (Smith/Thompson),Greedy,FI,742.747,742.747,742.747,225.853,225.853,225.853
+st70,70-city problem (Smith/Thompson),Greedy,FI+NSh,734.837,734.837,734.837,510.354,510.354,510.354
+st70,70-city problem (Smith/Thompson),Greedy,FI+2opt,742.747,742.747,742.747,65.841,65.841,65.841
+st70,70-city problem (Smith/Thompson),Greedy,FI+2.5opt,735.550,735.550,735.550,533.860,533.860,533.860
+st70,70-city problem (Smith/Thompson),Greedy,MST,846.099,873.244,897.007,56.323,91.895,139.042
+st70,70-city problem (Smith/Thompson),Greedy,MST+NSh,709.423,742.154,775.196,1336.517,2167.309,5861.227
+st70,70-city problem (Smith/Thompson),Greedy,MST+2opt,693.472,714.008,725.337,509.021,715.845,1484.051
+st70,70-city problem (Smith/Thompson),Greedy,MST+2.5opt,691.604,705.704,721.318,1423.358,2091.101,3446.889
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,NN,1146.600,1307.712,1533.676,311.981,375.314,651.641
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,NN+NSh,712.280,772.417,873.802,2408.754,3723.470,6869.512
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,NN+2opt,682.660,719.426,776.290,906.951,1320.044,2669.205
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,NN+2.5opt,684.030,714.500,761.113,2329.749,3158.465,5219.492
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,FI,734.620,734.620,734.620,434.987,434.987,434.987
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,FI+NSh,734.620,734.620,734.620,95.993,95.993,95.993
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,FI+2opt,712.847,712.847,712.847,32.118,32.118,32.118
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,FI+2.5opt,688.781,688.781,688.781,292.777,292.777,292.777
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,MST,846.099,873.244,897.007,53.999,71.250,116.593
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,MST+NSh,709.423,742.154,775.196,1294.564,2107.268,10039.789
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,MST+2opt,693.472,714.008,725.337,532.334,658.730,1034.059
+st70,70-city problem (Smith/Thompson),Semi-Greedy 3,MST+2.5opt,691.604,705.704,721.318,1348.080,1822.771,3951.667
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,NN,1376.253,1619.779,1924.002,311.416,389.086,827.581
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,NN+NSh,712.834,792.303,895.107,3337.007,4807.454,7253.898
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,NN+2opt,684.627,721.604,817.762,1231.164,1560.338,3389.460
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,NN+2.5opt,683.640,713.149,754.819,2947.660,3754.818,6116.995
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,FI,727.025,727.025,727.025,503.119,503.119,503.119
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,FI+NSh,707.271,707.271,707.271,776.084,776.084,776.084
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,FI+2opt,690.072,690.072,690.072,137.547,137.547,137.547
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,FI+2.5opt,717.269,717.269,717.269,237.871,237.871,237.871
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,MST,846.099,873.244,897.007,55.152,67.175,115.342
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,MST+NSh,709.423,742.154,775.196,1352.360,2154.612,4345.211
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,MST+2opt,693.472,714.008,725.337,515.067,799.732,1696.854
+st70,70-city problem (Smith/Thompson),Semi-Greedy 5,MST+2.5opt,691.604,705.704,721.318,1407.455,1879.693,3059.255
